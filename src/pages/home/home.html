@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Save the Babies
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list no-lines>
+
+    <!-- Segment and header 1 -->
+    <ion-list-header text-center>
+      Values 1
+    </ion-list-header>
+    <ion-item>
+      <ion-segment [(ngModel)]="segment1" (ngModelChange)="whatToDo()">
+        <ion-segment-button value="x1">
+          Value 1
+        </ion-segment-button>
+        <ion-segment-button value="x2">
+          Value 2
+        </ion-segment-button>
+        <ion-segment-button value="x3">
+          Value 3
+        </ion-segment-button>
+        <ion-segment-button value="x4">
+          Value 4
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <!-- END -->
+
+
+    <!-- Segment and header 2 -->
+    <ion-list-header text-center>
+      Values 2
+    </ion-list-header>
+    <ion-item>
+      <ion-segment [(ngModel)]="segment2" (ngModelChange)="whatToDo()">
+        <ion-segment-button value="y1">
+          Value 1
+        </ion-segment-button>
+        <ion-segment-button value="y2">
+          Value 2
+        </ion-segment-button>
+        <ion-segment-button value="y3">
+          Value 3
+        </ion-segment-button>
+        <ion-segment-button value="y4">
+          Value 4
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <!-- END -->
+
+
+    <!-- Segment and header 3 -->
+    <ion-list-header text-center>
+      Values Z
+    </ion-list-header>
+    <ion-item>
+      <ion-segment [(ngModel)]="segment3" (ngModelChange)="whatToDo()">
+        <ion-segment-button value="z1">
+          Value 1
+        </ion-segment-button>
+        <ion-segment-button value="z2">
+          Value 2
+        </ion-segment-button>
+        <ion-segment-button value="z3">
+          Value 3
+        </ion-segment-button>
+        <ion-segment-button value="z4">
+          Value 4
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <!-- END -->
+  </ion-list>
+
+
+  <!-- What to do goes here -->
+  <ion-card color="secondary">
+    <ion-card-content>
+
+      <ion-row>
+        <ion-col width-20>
+          <ion-icon class="info-icon" name="information-circle" icon-left></ion-icon>
+        </ion-col>
+        <ion-col>
+            {{ whatTodoText }}
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- TEMP: selected vaules  -->
+  <div text-center>
+    <h4>Selected Values</h4>
+    {{values1}} | {{values2}} | {{values3}}
+  </div>
+
+
+</ion-content>
