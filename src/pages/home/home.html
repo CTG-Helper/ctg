@@ -12,7 +12,7 @@
 
     <!-- Segment and header 1 -->
     <ion-list-header text-center>
-      Values 1
+      Values Segment 1
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="segment1" (ngModelChange)="whatToDo()">
@@ -35,7 +35,7 @@
 
     <!-- Segment and header 2 -->
     <ion-list-header text-center>
-      Values 2
+      Values Segment 2
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="segment2" (ngModelChange)="whatToDo()">
@@ -58,7 +58,7 @@
 
     <!-- Segment and header 3 -->
     <ion-list-header text-center>
-      Values Z
+      Values Segment 3
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="segment3" (ngModelChange)="whatToDo()">
@@ -100,7 +100,7 @@
   <!-- TEMP: selected vaules  -->
   <div text-center>
     <h4>Selected Values</h4>
-    {{values1}} | {{values2}} | {{values3}}
+    {{segment1}} | {{segment2}} | {{segment3}}
   </div>
 
 
