@@ -14,6 +14,15 @@ page-home {
     font-size: 35px;
   }
 
+  .segment-ios .segment-button,
+  .segment-md .segment-button {
+    line-height: 1.5rem;
+    white-space: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 
   // old

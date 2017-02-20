@@ -1,4 +1,6 @@
 import {Component, Output, EventEmitter, Input, OnChanges, SimpleChanges} from '@angular/core';
+import { ModalController } from 'ionic-angular';
+import {MesureModal} from './mesure-modal';
 
 
 @Component({
@@ -7,16 +9,31 @@ import {Component, Output, EventEmitter, Input, OnChanges, SimpleChanges} from '
 })
 
 export class HomePage implements OnChanges {
+constructor(private modalCtrl: ModalController){
+}
 
-  segment1: string;
-  segment2: string;
-  segment3: string;
-  whatTodoText: string;
+  baseline: string;
+  variability: string;
+  decelarationsFrequency: string;
+  decelarationsForm: string;
+  accelerations: string;
+  measures: string;
+  color: string = "secondary";
+  canModalOpen: boolean = false;
+
+  whatTodoText: string = "Please choose some parameters";
+
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log(changes);
   }
 
+  openModal(characterNum) {
+    if (this.canModalOpen == true){
+      let modal = this.modalCtrl.create(MesureModal, {color:this.color, measure:this.measures});
+      modal.present();
+    }
+  }
 
   whatToDo() {
 
@@ -31,38 +48,38 @@ export class HomePage implements OnChanges {
     console.log("some segment button pressed");
 
 
-    // Case 1
-    if (this.segment1 == "x1"
-      && this.segment2 == "y1"
-      && this.segment3 == "z1") {
-      this.whatTodoText = "Du kan nu vara berred på att en bäbis kommer.."
+    // Case 1, if results are patological
+    if (this.baseline == "x5" ||
+    this.variability == "y1" ||
+    this.variability == "y2" ||
+    this.variability == "y4" ||
+    this.decelarationsFrequency == "z3") {
+      this.canModalOpen = true
+      this.color = "danger"
+      this.measures = "fatal"
+      this.whatTodoText = "Watch out, the baby can die. Click here for measurelist"
     }
 
 
-    // Case 2
-    if (this.segment1 == "x2"
-      && this.segment2 == "y2"
-      && this.segment3 == "z2") {
-      this.whatTodoText = "Du behöver gå och ta en kaffe, kom sedan tillbaka och gör ditt jobb och få ut barnet!"
+    // Case 2, if restults are not that bad but bad
+    else if (this.baseline == "x2" ||
+      this.baseline == "x3" ||
+      this.baseline == "x4" ||
+      this.decelarationsFrequency == "z2"
+    ) {
+      this.canModalOpen = true
+      this.color = "warning"
+      this.measures = "abnormal"
+      this.whatTodoText = "The results are abnormal. Click here for measurelist"
     }
 
 
-    // Case 3
-    if (this.segment1 == "x3"
-      && this.segment2 == "y3"
-      && this.segment3 == "z3") {
-      this.whatTodoText = "Du behöver inte göra något, ta de lugnt! "
+    // Case 3, if restults are normal
+    else {
+      this.canModalOpen = true
+      this.color = "secondary"
+      this.measures = "normal"
+      this.whatTodoText = "Loookn goooiid (normalt)! "
     }
-
-
   }
-
-
- // Old 
-  isSelected = false;
-  tapEvent(event) {
-    this.isSelected = !this.isSelected;
-    console.log(this.isSelected);
-  }
-
 }
