@@ -17,28 +17,29 @@
 
     <ion-item>
       <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="x2">
+        <ion-segment-button value="baseline1">
+          Less than 100 bpm
+        </ion-segment-button>
+        <ion-segment-button value="baseline2">
           100-110 bpm
         </ion-segment-button>
-        <ion-segment-button value="x3">
-          110- 160 bpm
-        </ion-segment-button>
-        <ion-segment-button value="x4">
-          160-170 bpm
+        <ion-segment-button value="baseline3">
+          110-160 bpm
         </ion-segment-button>
       </ion-segment>
     </ion-item>
 
     <ion-item>
       <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="x1">
-          Less than 100 bpm
+        <ion-segment-button value="baseline4">
+          160-170 bpm
         </ion-segment-button>
-        <ion-segment-button value="x5">
+        <ion-segment-button value="baseline5">
           More than 170 bpm
         </ion-segment-button>
       </ion-segment>
     </ion-item>
+    <hr>
     <!-- END -->
 
 
@@ -48,10 +49,10 @@
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="y1">
+        <ion-segment-button value="variability1">
           Less than 2 bpm
         </ion-segment-button>
-        <ion-segment-button value="y2">
+        <ion-segment-button value="variability2">
           2-5 bpm
         </ion-segment-button>
       </ion-segment>
@@ -59,14 +60,19 @@
 
     <ion-item>
       <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="y3">
+        <ion-segment-button value="variability3">
           5—25 bpm
         </ion-segment-button>
-        <ion-segment-button value="y4">
+        <ion-segment-button value="variability5">
+          More than 25 bpm
+        </ion-segment-button>
+        <ion-segment-button value="variability4">
           Sinusoidal pattern
         </ion-segment-button>
       </ion-segment>
     </ion-item>
+    <hr>
+    <hr>
     <!-- END -->
 
 
@@ -76,17 +82,20 @@
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="decelarationsFrequency" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="z1">
+        <ion-segment-button value="decelarationsFrequency1">
           No repetitive
         </ion-segment-button>
-        <ion-segment-button value="z2">
-          Repetitive decelerations last 30 min
-        </ion-segment-button>
-        <ion-segment-button value="z3">
+        <ion-segment-button value="decelarationsFrequency3">
           Repetitive decelerations last 20 min
+        </ion-segment-button>
+        <ion-segment-button value="decelarationsFrequency2">
+          Repetitive decelerations last 30 min
         </ion-segment-button>
       </ion-segment>
     </ion-item>
+    <hr>
+    <hr>
+
     <!-- END -->
 
 
@@ -96,13 +105,21 @@
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="decelarationsForm" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="b1">
+        <ion-segment-button value="decelarationsForm1">
           Prolonged
         </ion-segment-button>
-        <ion-segment-button value="b4">
-          Uniform
+        <ion-segment-button value="decelarationsForm3">
+          Variable decelerations (Moderate- and severe–complicated)
         </ion-segment-button>
-        <ion-segment-button value="b5">
+      </ion-segment>
+    </ion-item>
+
+    <ion-item>
+      <ion-segment [(ngModel)]="decelarationsForm" (ngModelChange)="whatToDo()">
+        <ion-segment-button value="decelarationsForm4">
+          Uniform early
+        </ion-segment-button>
+        <ion-segment-button value="decelarationsForm5">
           Uniform Late
         </ion-segment-button>
       </ion-segment>
@@ -110,14 +127,16 @@
 
     <ion-item>
       <ion-segment [(ngModel)]="decelarationsForm" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="b2">
-          Variable decelerations (Mild/non-complicated)
+        <ion-segment-button value="decelarationsForm2">
+          Variable decelerations (depth > 80 bpm, amplitude < 60 bpm & duration < than 60 sec)
         </ion-segment-button>
-        <ion-segment-button value="b3">
-          Variable decelerations (Moderate- and severe–complicated)
+        <ion-segment-button value="decelarationsForm6">
+          Variable decelerations (depth 70-80 bpm, amplitude > 60 bpm or duration 30-60 sec)
         </ion-segment-button>
       </ion-segment>
     </ion-item>
+    <hr>
+    <hr>
     <!-- END -->
 
 
@@ -127,10 +146,10 @@
     </ion-list-header>
     <ion-item>
       <ion-segment [(ngModel)]="accelerations" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="k1">
+        <ion-segment-button value="accelerations1">
           Presence
         </ion-segment-button>
-        <ion-segment-button value="k2">
+        <ion-segment-button value="accelerations2">
           Absence
         </ion-segment-button>
       </ion-segment>
@@ -153,6 +172,8 @@
         </ion-col>
         <ion-col>
             {{ whatTodoText }}
+            <br>
+            {{ clickHere }}
         </ion-col>
       </ion-row>
 

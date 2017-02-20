@@ -11,7 +11,7 @@ import {MesureModal} from './mesure-modal';
 export class HomePage implements OnChanges {
 constructor(private modalCtrl: ModalController){
 }
-
+  modalCounter: number = 0;
   baseline: string;
   variability: string;
   decelarationsFrequency: string;
@@ -22,6 +22,7 @@ constructor(private modalCtrl: ModalController){
   canModalOpen: boolean = false;
 
   whatTodoText: string = "Please choose some parameters";
+  clickHere: string = "";
 
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -29,57 +30,55 @@ constructor(private modalCtrl: ModalController){
   }
 
   openModal(characterNum) {
-    if (this.canModalOpen == true){
+    if (this.baseline != null && this.variability != null && this.decelarationsFrequency != null && this.accelerations != null && this.decelarationsForm != null && this.measures != "normal"){
       let modal = this.modalCtrl.create(MesureModal, {color:this.color, measure:this.measures});
       modal.present();
     }
   }
 
   whatToDo() {
+    if (this.baseline != null && this.variability != null && this.decelarationsFrequency != null && this.accelerations != null && this.decelarationsForm != null){
+        // Case 1, if results are patological
+        if (this.baseline == "baseline1" ||
+        this.variability == "variability1" ||
+        this.variability == "variability2" ||
+        this.variability == "variability4" ||
+        this.decelarationsFrequency == "decelarationsFrequency2" ||
+        this.decelarationsForm == "decelarationsForm1" ||
+        this.decelarationsForm == "decelarationsForm3" ||
+        this.decelarationsForm == "decelarationsForm5"
+        ) {
+          this.color = "danger"
+          this.measures = "fatal"
+          this.whatTodoText = "Moderate risk for hypoxia (pathological),"
+          this.clickHere = "Click here for measures";
+          console.log("danger");
+        }
 
-    // Segment 1
-    // x1 x2 x3 x4
+        // Case 2, if restults are not that bad but bad
+        else if (this.baseline == "baseline2" ||
+          this.baseline == "baseline4" ||
+          this.baseline == "baseline5" ||
+          this.variability == "variability5" ||
+          this.accelerations == "accelerations2" ||
+          this.decelarationsForm == "decelarationsForm6" ||
+          this.decelarationsFrequency == "decelarationsFrequency3"
+        ) {
+          this.color = "warning"
+          this.measures = "abnormal"
+          this.whatTodoText = "Low risk for hypoxia (abnormal),"
+          this.clickHere = "Click here for measures";
+          console.log("warning");
+        }
 
-    // Segment 2
-    // y1 y2 y3 y4
-
-    // Segment 3
-    // z1 z2 z3 z4
-    console.log("some segment button pressed");
-
-
-    // Case 1, if results are patological
-    if (this.baseline == "x5" ||
-    this.variability == "y1" ||
-    this.variability == "y2" ||
-    this.variability == "y4" ||
-    this.decelarationsFrequency == "z3") {
-      this.canModalOpen = true
-      this.color = "danger"
-      this.measures = "fatal"
-      this.whatTodoText = "Watch out, the baby can die. Click here for measurelist"
-    }
-
-
-    // Case 2, if restults are not that bad but bad
-    else if (this.baseline == "x2" ||
-      this.baseline == "x3" ||
-      this.baseline == "x4" ||
-      this.decelarationsFrequency == "z2"
-    ) {
-      this.canModalOpen = true
-      this.color = "warning"
-      this.measures = "abnormal"
-      this.whatTodoText = "The results are abnormal. Click here for measurelist"
-    }
-
-
-    // Case 3, if restults are normal
-    else {
-      this.canModalOpen = true
-      this.color = "secondary"
-      this.measures = "normal"
-      this.whatTodoText = "Loookn goooiid (normalt)! "
-    }
+        // Case 3, if restults are normal
+        else {
+          this.color = "secondary"
+          this.measures = "normal"
+          this.whatTodoText = "Non ongoing hypoxia (normal)"
+          this.clickHere = "";
+          console.log("normal");
+        }
+      }
   }
 }

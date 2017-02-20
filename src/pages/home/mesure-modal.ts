@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavParams} from 'ionic-angular';
+import {NavParams, ViewController} from 'ionic-angular';
 
 @Component({
   selector: 'mesure-modal',
@@ -11,7 +11,8 @@ color:string;
 measures:string;
 measureList = [];
 
-  constructor(private navParams: NavParams){
+  constructor(private navParams: NavParams, public View: ViewController){
+
     this.color = this.navParams.get("color");
     this.measures = this.navParams.get("measure");
 
@@ -37,5 +38,9 @@ measureList = [];
         { measure: 'Lisa'}
       ];
     }
+  }
+
+  close(){
+    this.View.dismiss();
   }
 }
