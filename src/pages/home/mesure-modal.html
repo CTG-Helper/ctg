@@ -7,8 +7,16 @@
 </ion-header>
 
 <ion-content>
-  <h1 center-text>asd</h1>
 
-  
+<h2 text-center class="modal-header">Measures</h2>
+
+
+
+<ul>
+  <li *ngFor="let m of measureList">
+    {{ m.measure }}
+  </li>
+</ul>
+
 
 </ion-content>
