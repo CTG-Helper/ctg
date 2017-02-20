@@ -2,5 +2,19 @@ mesure-modal {
   .change-color {
     color:red;
   }
-
+  .back-icon {
+    height: 140%;
+    width: 13%;
+    background: none;
+  }
+  .interpretation-text{
+    font-style: italic;
+  }
+  .interpretation-header{
+    text-decoration: underline;
+    font-style: oblique;
+  }
+  .measure-listItem{
+    font-size: 15px;
+  }
 }

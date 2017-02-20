@@ -1,18 +1,21 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <span (click)="close()">Close</span>
+  <ion-navbar color="{{color}}">
+    <button (click)="close()" ion-button color="light" icon-only class="back-icon">
+      <ion-icon name='arrow-down'></ion-icon>
+    </button>
     <ion-title>
-      Save the Babies
+      CTG decision support
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
 
-<h2 text-center class="modal-header">Measures</h2>
-
+<h3 text-center class="modal-header interpretation-text">{{Interpretation}}</h3>
+<hr>
+<h4 text-center>Measures</h4>
 <ul>
-  <li *ngFor="let m of measureList">
+  <li *ngFor="let m of measureList" class="measure-listItem">
     {{ m.measure }}
   </li>
 </ul>

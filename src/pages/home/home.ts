@@ -21,7 +21,7 @@ constructor(private modalCtrl: ModalController){
   color: string = "secondary";
   canModalOpen: boolean = false;
 
-  whatTodoText: string = "Please choose some parameters";
+  whatTodoText: string = "Please choose the conditions above to get appropriate measures.";
   clickHere: string = "";
 
 
@@ -50,9 +50,8 @@ constructor(private modalCtrl: ModalController){
         ) {
           this.color = "danger"
           this.measures = "fatal"
-          this.whatTodoText = "Moderate risk for hypoxia (pathological),"
+          this.whatTodoText = "Risk for hypoxia (pathological)."
           this.clickHere = "Click here for measures";
-          console.log("danger");
         }
 
         // Case 2, if restults are not that bad but bad
@@ -66,18 +65,16 @@ constructor(private modalCtrl: ModalController){
         ) {
           this.color = "warning"
           this.measures = "abnormal"
-          this.whatTodoText = "Low risk for hypoxia (abnormal),"
+          this.whatTodoText = "Low risk for hypoxia (abnormal)."
           this.clickHere = "Click here for measures";
-          console.log("warning");
         }
 
         // Case 3, if restults are normal
         else {
           this.color = "secondary"
           this.measures = "normal"
-          this.whatTodoText = "Non ongoing hypoxia (normal)"
-          this.clickHere = "";
-          console.log("normal");
+          this.whatTodoText = "Non ongoing hypoxia (normal)."
+          this.clickHere = "No measures needed";
         }
       }
   }

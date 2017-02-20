@@ -9,6 +9,7 @@ export class MesureModal {
 
 color:string;
 measures:string;
+Interpretation:string;
 measureList = [];
 
   constructor(private navParams: NavParams, public View: ViewController){
@@ -17,18 +18,20 @@ measureList = [];
     this.measures = this.navParams.get("measure");
 
     if (this.measures == "normal"){
-      this.measureList[0] = {measure:"measure 3"};
-      this.measureList[1] = {measure:"measure 4"};
+      //If measures are to be applied to a normal state do it here!
     }
 
     else if (this.measures == "abnormal"){
-      this.measureList[0] = {measure:"measure 1"};
-      this.measureList[1] = {measure:"measure 2"};
+      this.Interpretation = "Low risk for hypoxia";
+      this.measureList[0] = {measure:"Correct reversible causes"};
+      this.measureList[1] = {measure:"Continue CTG"};
+      this.measureList[2] = {measure:"Consider stimulationtest/scalpbloodtest"};
     }
 
     else if (this.measures == "fatal"){
-      this.measureList[0] = {measure:"measure 5"};
-      this.measureList[1] = {measure:"measure 6"};
+      this.Interpretation = "Moderate/high risk for hypoxia";
+      this.measureList[0] = {measure:"Correct reversible causes"};
+      this.measureList[1] = {measure:"Perform stimulationtest/scalpbloodtest or deliver baby"};
     }
 
     else {
