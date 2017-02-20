@@ -1,20 +1,21 @@
-mesure-modal {
+measure-modal {
   .change-color {
-    color:red;
+    color: red;
   }
   .back-icon {
     height: 140%;
     width: 13%;
     background: none;
   }
-  .interpretation-text{
+  .interpretation-text {
     font-style: italic;
   }
-  .interpretation-header{
+  .interpretation-header {
     text-decoration: underline;
     font-style: oblique;
   }
-  .measure-listItem{
-    font-size: 15px;
+  .measure-listItem {
+    font-size: 16px;
+    margin-top: 10px;
   }
 }

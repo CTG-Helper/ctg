@@ -2,13 +2,13 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import {MesureModal} from '../pages/home/mesure-modal';
+import {MeasureModal} from '../pages/home/measure-modal';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MesureModal
+    MeasureModal
   ],
   imports: [
     IonicModule.forRoot(MyApp, {mode:"ios"})
@@ -17,7 +17,7 @@ import {MesureModal} from '../pages/home/mesure-modal';
   entryComponents: [
     MyApp,
     HomePage,
-    MesureModal
+    MeasureModal
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

@@ -1,9 +1,9 @@
 page-home {
 
   .segment-button {
-   min-height: 7.2rem;
-   padding: 20px 0;
- }
+    min-height: 7.2rem;
+    padding: 20px 0;
+  }
 
   .text-todo {
     color: white;
@@ -18,21 +18,11 @@ page-home {
   .segment-md .segment-button {
     line-height: 1.5rem;
     white-space: normal;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-
-  // old
-  .selected-item {
-    background-color: red;
-  }
 }
 
-page-mesure-modal {
-  .modal-header{
-    color:red;
-  }
-}
+

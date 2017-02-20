@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="{{color}}">
+    <ion-title>
+      CTG decision support
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <h3 text-center class="modal-header interpretation-text">{{interpretation}}</h3>
+  <hr>
+  <h4 text-center>Measures</h4>
+  <ul>
+    <li *ngFor="let m of measureList" class="measure-listItem">
+      {{ m.measure }}
+    </li>
+  </ul>
+
+  <div text-center>
+    <button ion-button icon-right (click)="close()">
+      Close down
+      <ion-icon name="arrow-down"></ion-icon>
+    </button>
+  </div>
+
+
+</ion-content>
