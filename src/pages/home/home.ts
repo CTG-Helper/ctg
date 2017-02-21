@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
 import {ModalController} from 'ionic-angular';
-import {MeasureModal} from './measure-modal';
 import {COLOR, MEASURE, TODO, DECISION} from "../../shared/consts/globals";
 import * as _ from 'lodash';
+import {InformationModalPage} from "../information-modal/information-modal";
+import {MeasureModalPage} from "../measure-modal/measure-modal";
 
 @Component({
   selector: 'page-home',
@@ -27,23 +28,27 @@ export class HomePage {
   clickHere: string = "";
 
 
-  openModal(characterNum) {
+  openModal() {
     if (this.baseline != null
       && this.variability != null
       && this.decelerationsFrequency != null
       && this.accelerations != null
       && this.decelerationsForm != null
       && this.measures != MEASURE.NORMAL) {
-      let modal = this.modalCtrl.create(MeasureModal, {color: this.color, measure: this.measures});
+      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measures});
       modal.present();
     }
+  }
+
+  openInfoModal() {
+    let modal = this.modalCtrl.create(InformationModalPage, {color: this.color, measure: this.measures});
+    modal.present();
   }
 
 
   arrayToCheckAgainst = [DECISION.VARIABILITY_1, DECISION.VARIABILITY_2, DECISION.VARIABILITY_4];
 
   whatToDo() {
-
     // Test using lodash
     _.includes(this.arrayToCheckAgainst, "variability1"); // true
     _.includes(this.arrayToCheckAgainst, "variability00"); // false

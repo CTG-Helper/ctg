@@ -157,24 +157,31 @@
 
   <!--Åtgärder-->
   <div text-center>
-    <h4>Measures</h4>
+    <h4>Current status</h4>
   </div>
 
-  <!-- What to do goes here -->
-  <ion-card (click)="openModal()" color="{{color}}">
-    <ion-card-content>
-      <ion-row>
-        <ion-col width-20>
-          <ion-icon class="info-icon" name="information-circle" icon-left></ion-icon>
-        </ion-col>
-        <ion-col>
+
+
+</ion-content>
+<ion-footer no-border>
+  <ion-toolbar>
+
+    <!-- What to do goes here -->
+    <ion-card (click)="openModal()" color="{{color}}">
+      <ion-card-content>
+        <ion-row>
+          <ion-col width-20>
+            <ion-icon class="info-icon" name="information-circle" icon-left></ion-icon>
+          </ion-col>
+          <ion-col>
             {{ whatTodoText }}
             <br>
             {{ clickHere }}
-        </ion-col>
-      </ion-row>
+          </ion-col>
+        </ion-row>
 
-    </ion-card-content>
-  </ion-card>
+      </ion-card-content>
+    </ion-card>
 
-</ion-content>
+  </ion-toolbar>
+</ion-footer>

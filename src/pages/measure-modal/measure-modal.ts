@@ -6,7 +6,8 @@ import {MEASURE} from "../../shared/consts/globals";
   selector: 'measure-modal',
   templateUrl: 'measure-modal.html'
 })
-export class MeasureModal implements OnInit {
+
+export class MeasureModalPage implements OnInit {
 
   color: string;
   measures: string;
@@ -23,6 +24,7 @@ export class MeasureModal implements OnInit {
     if (this.measures == MEASURE.NORMAL) {
       //If measures are to be applied to a normal state do it here!
     }
+
     else if (this.measures == MEASURE.ABNORMAL) {
       this.interpretation = "Low risk for hypoxia";
       this.measureList[0] = {measure: "Correct reversible causes"};
