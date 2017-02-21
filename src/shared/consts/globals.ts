@@ -6,7 +6,6 @@ export const DECISION = {
   BASELINE_2:  "baseline2",
   BASELINE_3:  "baseline3",
   BASELINE_4:  "baseline4",
-  BASELINE_5:  "baseline5",
 
   // Decelerations Frequency
   DECELERATIONS_FREQUENCY_2: "decelerationsFrequency2",
@@ -18,7 +17,6 @@ export const DECISION = {
   DECELERATIONS_FORM_3: "decelerationsForm3",
   DECELERATIONS_FORM_4: "decelerationsForm4",
   DECELERATIONS_FORM_5: "decelerationsForm5",
-  DECELERATIONS_FORM_6: "decelerationsForm6",
 
   // Variability
   VARIABILITY_1: "variability1",
@@ -26,6 +24,8 @@ export const DECISION = {
   VARIABILITY_3: "variability3",
   VARIABILITY_4: "variability4",
   VARIABILITY_5: "variability5",
+  VARIABILITY_6: "variability6",
+  VARIABILITY_7: "variability7",
 
   // Accelerations
   ACCELERATIONS_2: "accelerations2",
@@ -56,4 +56,3 @@ export const MEASURE = {
   FATAL: "fatal",
   ABNORMAL: "abnormal"
 };
-

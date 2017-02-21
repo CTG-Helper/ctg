@@ -28,18 +28,28 @@ export class HomePage {
   clickHere: string = "";
 
 
+<<<<<<< HEAD
+  openModal() {
+    if (this.baseline != null
+=======
   openModal(characterNum) {
 
     if (this.measures != MEASURE.NORMAL
       /*this.baseline != null
+>>>>>>> ef3da4d62e537c326bda55ddfe13a4ff250c5dea
       && this.variability != null
       && this.decelerationsFrequency != null
       && this.accelerations != null
       && this.decelerationsForm != null
+<<<<<<< HEAD
+      && this.measures != MEASURE.NORMAL) {
+      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measures});
+=======
       && */
     ) {
 
-      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measures});
+      let modal = this.modalCtrl.create(MeasureModal, {color: this.color, measure: this.measures});
+>>>>>>> ef3da4d62e537c326bda55ddfe13a4ff250c5dea
       modal.present();
     }
   }
@@ -53,7 +63,15 @@ export class HomePage {
   arrayToCheckAgainst = [DECISION.VARIABILITY_1, DECISION.VARIABILITY_2, DECISION.VARIABILITY_4];
 
   whatToDo() {
+<<<<<<< HEAD
+    // Test using lodash
+    _.includes(this.arrayToCheckAgainst, "variability1"); // true
+    _.includes(this.arrayToCheckAgainst, "variability00"); // false
+
+
+=======
     /*
+>>>>>>> ef3da4d62e537c326bda55ddfe13a4ff250c5dea
     if (this.baseline != null
       && this.variability != null
       && this.decelerationsFrequency != null
@@ -63,13 +81,21 @@ export class HomePage {
 
       // Case 1, if results are patological
       if (
+<<<<<<< HEAD
+
+        this.baseline == DECISION.BASELINE_1 ||
+
+=======
         (this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 &&
         this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2)||
         this.baseline == DECISION.BASELINE_1 ||
+>>>>>>> ef3da4d62e537c326bda55ddfe13a4ff250c5dea
         this.variability == DECISION.VARIABILITY_1 ||
         this.variability == DECISION.VARIABILITY_2 ||
         this.variability == DECISION.VARIABILITY_4 ||
+
         this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
+
         this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 ||
         this.decelerationsForm == DECISION.DECELERATIONS_FORM_5) {
 
