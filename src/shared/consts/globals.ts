@@ -33,14 +33,31 @@ export const DECISION = {
 };
 
 
+export const DECISION_TYPE = {
+  BASELINE:  "baseline",
+  DECELERATIONS_FREQUENCY: 'decelerationsFrequency',
+  DECELERATIONS_FORM: 'decelerationsForm',
+  VARIABILITY: 'variability',
+  ACCELERATIONS: 'accelerations'
+};
+
+
+export const DECISION_INFORMATION = {
+  BASELINE:  "Baseline is... blablabla",
+  DECELERATION_FREQUENCY: 'Decelerations Frequency is.... blalbalba',
+  DECELERATION_FORM: 'Decelerations Form is..... blabla',
+  VARIABILITY: 'Variability is.... blablalba',
+  ACCELERATION: 'Accelerations is... blablal'
+};
+
+
+
 export const TODO = {
   CHOOSE_CONDITIONS: "Please choose the conditions above to get appropriate measuresInfoText",
   RISK_HYPOXIA_PATHOLOGICAL: "Risk for hypoxia (pathological)",
   LOW_RISK_HYPOXIA_ABNORMAL: "Low risk for hypoxia (abnormal).",
   NO_HYPOXIA: "Non ongoing hypoxia (normal).",
 };
-
-
 
 
 export const COLOR = {

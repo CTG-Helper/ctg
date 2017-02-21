@@ -5,14 +5,23 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>informationModal</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>
+      <ion-icon name="information-circle" icon-left></ion-icon>
+      {{title}}
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <h1>Info modal test</h1>
+  <p>{{informationText}}</p>
+
+  <div text-center>
+    <button ion-button icon-right (click)="close()">
+      Close down
+      <ion-icon name="arrow-down"></ion-icon>
+    </button>
+  </div>
 </ion-content>

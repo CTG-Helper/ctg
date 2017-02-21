@@ -1,7 +1,5 @@
 page-home {
 
-
-
   .segment-button {
     min-height: 7.2rem;
     padding: 20px 0;
@@ -12,8 +10,12 @@ page-home {
     font-weight: bold;
   }
 
-  .info-icon {
+  .measure-icon {
     font-size: 35px;
+  }
+
+  .info-icon {
+    cursor: pointer;
   }
 
   .segment-ios .segment-button,
@@ -25,29 +27,18 @@ page-home {
     justify-content: center;
   }
 
+  .segment-ios {
+    padding: 0 10px;
+  }
 
+  .item-divider-ios {
+    background-color: #ecffe7;
+    margin: 20px 0;
+  }
 
   .card-ios {
     box-shadow:  0 1px 2px rgba(0, 0, 0, 0.48);
   }
-
-
-  /*
- .footer {
-   *,
-   *:before,
-   *:after {
-     -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-     box-sizing: content-box !important;
-   }
-
-   ion-footer {
-     background-color: #149e92; // this can be transparent if we want
-   }
- }
-*/
-
 
 
 }

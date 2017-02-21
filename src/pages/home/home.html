@@ -6,162 +6,161 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
   <ion-list no-lines>
 
+
     <!-- Segment and header 1 -->
-    <ion-list-header text-center>
-      Variability
-    </ion-list-header>
+    <ion-item-group text-center>
 
-    <ion-item>
-      <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="variability1">
-          Less than 2 bpm for more than 20 min
-        </ion-segment-button>
-        <ion-segment-button value="variability6">
-          Less than 2 bpm between 10 and 20 min
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
+      <ion-item-divider color="light">
+        Variability
+        <ion-icon (click)="openInfoModal('variability')" name='information-circle' class="info-icon"></ion-icon>
+      </ion-item-divider>
 
-    <ion-item>
-      <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="variability7">
-          Less than 2 bpm for less than 10 min
-        </ion-segment-button>
-        <ion-segment-button value="variability2">
-          2-5 bpm
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
+      <ion-item>
+        <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="variability1">
+            Less than 2 bpm for more than 20 min
+          </ion-segment-button>
+          <ion-segment-button value="variability6">
+            Less than 2 bpm between 10 and 20 min
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
 
-    <ion-item>
-      <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="variability3">
-          5—25 bpm
-        </ion-segment-button>
-        <ion-segment-button value="variability5">
-          More than 25 bpm
-        </ion-segment-button>
-        <ion-segment-button value="variability4">
-          Sinusoidal pattern
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
-    <hr>
-    <hr>
-    <!-- END -->
+      <ion-item>
+        <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="variability7">
+            Less than 2 bpm for less than 10 min
+          </ion-segment-button>
+          <ion-segment-button value="variability2">
+            2-5 bpm
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+
+      <ion-item>
+        <ion-segment [(ngModel)]="variability" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="variability3">
+            5—25 bpm
+          </ion-segment-button>
+          <ion-segment-button value="variability5">
+            More than 25 bpm
+          </ion-segment-button>
+          <ion-segment-button value="variability4">
+            Sinusoidal pattern
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
 
 
     <!-- Segment and header 2 -->
-    <ion-list-header text-center>
-      Baseline
-    </ion-list-header>
-
-    <ion-item>
-      <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="baseline1">
-          Less than 100 bpm
-        </ion-segment-button>
-        <ion-segment-button value="baseline2">
-          100-110 bpm
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
-    <ion-item>
-      <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="baseline3">
-          110-160 bpm
-        </ion-segment-button>
-        <ion-segment-button value="baseline4">
-          160 bpm or more
-        </ion-segment-button>
-
-      </ion-segment>
-    </ion-item>
-    <hr>
-    <hr>
+    <ion-item-group text-center>
+      <ion-item-divider color="light">
+        Baseline
+        <ion-icon (click)="openInfoModal('baseline')" name='information-circle' class="info-icon"></ion-icon>
+      </ion-item-divider>
+      <ion-item>
+        <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="baseline1">
+            Less than 100 bpm
+          </ion-segment-button>
+          <ion-segment-button value="baseline2">
+            100-110 bpm
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+      <ion-item>
+        <ion-segment [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="baseline3">
+            110-160 bpm
+          </ion-segment-button>
+          <ion-segment-button value="baseline4">
+            160 bpm or more
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
     <!-- END -->
 
 
     <!-- Segment and header 3 -->
-    <ion-list-header text-center>
-      Decelerations frequency
-    </ion-list-header>
-    <ion-item>
-      <ion-segment [(ngModel)]="decelerationsFrequency" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="decelerationsFrequency1">
-          No repetitive
-        </ion-segment-button>
-        <ion-segment-button value="decelerationsFrequency3">
-          Repetitive decelerations last 20 min
-        </ion-segment-button>
-        <ion-segment-button value="decelerationsFrequency2">
-          Repetitive decelerations last 30 min
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
-    <hr>
+    <ion-item-group text-center>
+      <ion-item-divider color="light">
+        Decelerations frequency
+        <ion-icon (click)="openInfoModal('decelerationsFrequency')" name='information-circle' class="info-icon"></ion-icon>
+      </ion-item-divider>
+      <ion-item>
+        <ion-segment [(ngModel)]="decelerationsFrequency" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="decelerationsFrequency1">
+            No repetitive
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsFrequency3">
+            Repetitive decelerations last 20 min
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsFrequency2">
+            Repetitive decelerations last 30 min
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
     <!-- END -->
 
 
     <!-- Segment and header 4 -->
-    <ion-list-header text-center>
-      Decelerations form
-    </ion-list-header>
-    <ion-item>
-      <ion-segment [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-
-        <ion-segment-button value="decelerationsForm2">
-          Variable decelerations (Mild/none complicated)
-        </ion-segment-button>
-        <ion-segment-button value="decelerationsForm3">
-          Variable decelerations (Severe/complicated)
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
-
-    <ion-item>
-      <ion-segment [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="decelerationsForm4">
-          Uniform early
-        </ion-segment-button>
-        <ion-segment-button value="decelerationsForm5">
-          Uniform Late
-        </ion-segment-button>
-        <ion-segment-button value="decelerationsForm1">
-          Prolonged
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
-    <hr>
-    <!-- END -->
+    <ion-item-group text-center>
+      <ion-item-divider color="light">
+        Decelerations form
+        <ion-icon (click)="openInfoModal('decelerationsForm')" name='information-circle' class="info-icon"></ion-icon>
+      </ion-item-divider>
+      <ion-item>
+        <ion-segment [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="decelerationsForm2">
+            Variable decelerations (Mild/none complicated)
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm3">
+            Variable decelerations (Severe/complicated)
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+      <ion-item>
+        <ion-segment [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="decelerationsForm4">
+            Uniform early
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm5">
+            Uniform Late
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm1">
+            Prolonged
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
 
 
     <!-- Segment and header 5 -->
-    <ion-list-header text-center>
-      Accelerations
-    </ion-list-header>
-    <ion-item>
-      <ion-segment [(ngModel)]="accelerations" (ngModelChange)="whatToDo()">
-        <ion-segment-button value="accelerations1">
-          Presence
-        </ion-segment-button>
-        <ion-segment-button value="accelerations2">
-          Absence
-        </ion-segment-button>
-      </ion-segment>
-    </ion-item>
+    <ion-item-group text-center>
+      <ion-item-divider color="light">
+        Accelerations
+        <ion-icon (click)="openInfoModal('accelerations')" name='information-circle' class="info-icon"></ion-icon>
+      </ion-item-divider>
+      <ion-item>
+        <ion-segment [(ngModel)]="accelerations" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="accelerations1">
+            Presence
+          </ion-segment-button>
+          <ion-segment-button value="accelerations2">
+            Absence
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
     <!-- END -->
   </ion-list>
-
-  <!--Åtgärder-->
-  <div text-center>
-    <h4>Current status</h4>
-  </div>
-
 
 
 </ion-content>
@@ -173,7 +172,7 @@
       <ion-card-content>
         <ion-row>
           <ion-col width-20>
-            <ion-icon class="info-icon" name="information-circle" icon-left></ion-icon>
+            <ion-icon class="measure-icon" name="information-circle" icon-left></ion-icon>
           </ion-col>
           <ion-col>
             {{ whatTodoText }}
@@ -181,10 +180,8 @@
             {{ clickHere }}
           </ion-col>
         </ion-row>
-
       </ion-card-content>
     </ion-card>
-
   </ion-toolbar>
 </ion-footer>
 

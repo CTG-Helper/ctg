@@ -59,7 +59,6 @@ export class HomePage {
       _.includes(this.case_abnormal_variabilitys, this.variability) ||
       _.includes(this.case_abnormal_accelerations, this.accelerations) ||
       _.includes(this.case_abnormal_decelerationsFrequencies, this.decelerationsFrequency)) {
-
       this.color = COLOR.WARNING;
       this.measuresInfoText = MEASURE.ABNORMAL;
       this.whatTodoText = TODO.LOW_RISK_HYPOXIA_ABNORMAL;
@@ -83,8 +82,8 @@ export class HomePage {
     }
   }
 
-  openInfoModal() {
-    let modal = this.modalCtrl.create(InformationModalPage, {color: this.color, measure: this.measuresInfoText});
+  openInfoModal(decisionName: string) {
+    let modal = this.modalCtrl.create(InformationModalPage, {decisionName: decisionName});
     modal.present();
   }
 
