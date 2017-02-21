@@ -17,12 +17,13 @@ export class MeasureModalPage implements OnInit {
   constructor(private navParams: NavParams, public viewCtrl: ViewController) {
   }
 
+
   ngOnInit() {
     this.color = this.navParams.get("color");
     this.measures = this.navParams.get("measure");
 
     if (this.measures == MEASURE.NORMAL) {
-      //If measures are to be applied to a normal state do it here!
+      //If measuresInfoText are to be applied to a normal state do it here!
     }
 
     else if (this.measures == MEASURE.ABNORMAL) {

@@ -34,7 +34,7 @@ export const DECISION = {
 
 
 export const TODO = {
-  CHOOSE_CONDITIONS: "Please choose the conditions above to get appropriate measures",
+  CHOOSE_CONDITIONS: "Please choose the conditions above to get appropriate measuresInfoText",
   RISK_HYPOXIA_PATHOLOGICAL: "Risk for hypoxia (pathological)",
   LOW_RISK_HYPOXIA_ABNORMAL: "Low risk for hypoxia (abnormal).",
   NO_HYPOXIA: "Non ongoing hypoxia (normal).",
