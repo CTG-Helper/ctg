@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {ModalController} from 'ionic-angular';
 import {MeasureModal} from './measure-modal';
+import {GLOBALS} from "../../shared/consts/consts";
 
 
 @Component({
@@ -15,8 +16,8 @@ export class HomePage {
   modalCounter: number = 0;
   baseline: string;
   variability: string;
-  decelarationsFrequency: string;
-  decelarationsForm: string;
+  decelerationsFrequency: string;
+  decelerationsForm: string;
   accelerations: string;
   measures: string;
   color: string = "secondary";
@@ -29,9 +30,9 @@ export class HomePage {
   openModal(characterNum) {
     if (this.baseline != null
       && this.variability != null
-      && this.decelarationsFrequency != null
+      && this.decelerationsFrequency != null
       && this.accelerations != null
-      && this.decelarationsForm != null
+      && this.decelerationsForm != null
       && this.measures != "normal") {
       let modal = this.modalCtrl.create(MeasureModal, {color: this.color, measure: this.measures});
       modal.present();
@@ -41,19 +42,19 @@ export class HomePage {
   whatToDo() {
     if (this.baseline != null
       && this.variability != null
-      && this.decelarationsFrequency != null
+      && this.decelerationsFrequency != null
       && this.accelerations != null
-      && this.decelarationsForm != null) {
+      && this.decelerationsForm != null) {
 
       // Case 1, if results are patological
-      if (this.baseline == "baseline1" ||
-        this.variability == "variability1" ||
-        this.variability == "variability2" ||
-        this.variability == "variability4" ||
-        this.decelarationsFrequency == "decelarationsFrequency2" ||
-        this.decelarationsForm == "decelarationsForm1" ||
-        this.decelarationsForm == "decelarationsForm3" ||
-        this.decelarationsForm == "decelarationsForm5") {
+      if (this.baseline == GLOBALS.BASELINE_1 ||
+        this.variability == GLOBALS.VARIABILITY_1 ||
+        this.variability == GLOBALS.VARIABILITY_2 ||
+        this.variability == GLOBALS.VARIABILITY_4 ||
+        this.decelerationsFrequency == GLOBALS.DECELERATIONS_FREQUENCY_2 ||
+        this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_1 ||
+        this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_3 ||
+        this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_5) {
 
         this.color = "danger";
         this.measures = "fatal";
@@ -61,14 +62,15 @@ export class HomePage {
         this.clickHere = "Click here for measures";
       }
 
-      // Case 2, if restults are not that bad but bad
-      else if (this.baseline == "baseline2" ||
-        this.baseline == "baseline4" ||
-        this.baseline == "baseline5" ||
-        this.variability == "variability5" ||
-        this.accelerations == "accelerations2" ||
-        this.decelarationsForm == "decelarationsForm6" ||
-        this.decelarationsFrequency == "decelarationsFrequency3") {
+      // Case 2, if results are not that bad but bad
+      else if (this.baseline == GLOBALS.BASELINE_2 ||
+        this.baseline == GLOBALS.BASELINE_4 ||
+        this.baseline == GLOBALS.BASELINE_5 ||
+        this.variability == GLOBALS.VARIABILITY_5 ||
+        this.accelerations == GLOBALS.ACCELERATIONS_2 ||
+        this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_6 ||
+        this.decelerationsFrequency == GLOBALS.DECELERATIONS_FREQUENCY_3) {
+
         this.color = "warning";
         this.measures = "abnormal";
         this.whatTodoText = "Low risk for hypoxia (abnormal).";
