@@ -17,7 +17,6 @@ export class MeasureModal implements OnInit {
   }
 
   ngOnInit() {
-
     this.color = this.navParams.get("color");
     this.measures = this.navParams.get("measure");
 
@@ -35,14 +34,6 @@ export class MeasureModal implements OnInit {
       this.interpretation = "Moderate/high risk for hypoxia";
       this.measureList[0] = {measure: "Correct reversible causes"};
       this.measureList[1] = {measure: "Perform stimulationtest/scalpbloodtest or deliver baby"};
-    }
-
-    else {
-      let measureList = [
-        {measure: 'Jilles'},
-        {measure: 'Todd'},
-        {measure: 'Lisa'}
-      ];
     }
   }
 
