@@ -28,8 +28,25 @@ export const GLOBALS = {
   VARIABILITY_5: "variability5",
 
   // Accelerations
-  ACCELERATIONS_2: "accelerations2"
+  ACCELERATIONS_2: "accelerations2",
+
+
+  // Text
+  WHAT_TO_TODO: "Please choose the conditions above to get appropriate measures",
+
 };
 
 
+export const COLOR = {
+  WARNING: "warning",
+  PRIMARY: "primary",
+  SECONDARY: "secondary",
+  DANGER: "danger"
+};
+
+export const MEASURE = {
+  NORMAL: "normal",
+  FATAL: "fatal",
+  ABNORMAL: "abnormal"
+};
 

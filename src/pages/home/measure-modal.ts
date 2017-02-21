@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NavParams, ViewController} from 'ionic-angular';
+import {MEASURE} from "../../shared/consts/consts";
 
 @Component({
   selector: 'measure-modal',
@@ -20,17 +21,17 @@ export class MeasureModal implements OnInit {
     this.color = this.navParams.get("color");
     this.measures = this.navParams.get("measure");
 
-    if (this.measures == "normal") {
+    if (this.measures == MEASURE.NORMAL) {
       //If measures are to be applied to a normal state do it here!
     }
-    else if (this.measures == "abnormal") {
+    else if (this.measures == MEASURE.ABNORMAL) {
       this.interpretation = "Low risk for hypoxia";
       this.measureList[0] = {measure: "Correct reversible causes"};
       this.measureList[1] = {measure: "Continue CTG"};
       this.measureList[2] = {measure: "Consider stimulationtest/scalpbloodtest"};
     }
 
-    else if (this.measures == "fatal") {
+    else if (this.measures == MEASURE.FATAL) {
       this.interpretation = "Moderate/high risk for hypoxia";
       this.measureList[0] = {measure: "Correct reversible causes"};
       this.measureList[1] = {measure: "Perform stimulationtest/scalpbloodtest or deliver baby"};

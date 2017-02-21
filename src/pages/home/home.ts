@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ModalController} from 'ionic-angular';
 import {MeasureModal} from './measure-modal';
-import {GLOBALS} from "../../shared/consts/consts";
+import {GLOBALS, COLOR, MEASURE} from "../../shared/consts/consts";
 
 
 @Component({
@@ -20,10 +20,10 @@ export class HomePage {
   decelerationsForm: string;
   accelerations: string;
   measures: string;
-  color: string = "secondary";
+  color: string = COLOR.SECONDARY;
   canModalOpen: boolean = false;
 
-  whatTodoText: string = "Please choose the conditions above to get appropriate measures.";
+  whatTodoText: string = GLOBALS.WHAT_TO_TODO;
   clickHere: string = "";
 
 
@@ -33,7 +33,7 @@ export class HomePage {
       && this.decelerationsFrequency != null
       && this.accelerations != null
       && this.decelerationsForm != null
-      && this.measures != "normal") {
+      && this.measures != MEASURE.NORMAL) {
       let modal = this.modalCtrl.create(MeasureModal, {color: this.color, measure: this.measures});
       modal.present();
     }
@@ -56,8 +56,8 @@ export class HomePage {
         this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_3 ||
         this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_5) {
 
-        this.color = "danger";
-        this.measures = "fatal";
+        this.color = COLOR.DANGER;
+        this.measures = MEASURE.FATAL;
         this.whatTodoText = "Risk for hypoxia (pathological).";
         this.clickHere = "Click here for measures";
       }
@@ -71,16 +71,16 @@ export class HomePage {
         this.decelerationsForm == GLOBALS.DECELERATIONS_FORM_6 ||
         this.decelerationsFrequency == GLOBALS.DECELERATIONS_FREQUENCY_3) {
 
-        this.color = "warning";
-        this.measures = "abnormal";
+        this.color = COLOR.WARNING;
+        this.measures = MEASURE.ABNORMAL;
         this.whatTodoText = "Low risk for hypoxia (abnormal).";
         this.clickHere = "Click here for measures";
       }
 
       // Case 3, if restults are normal
       else {
-        this.color = "secondary";
-        this.measures = "normal";
+        this.color = COLOR.SECONDARY;
+        this.measures = MEASURE.NORMAL;
         this.whatTodoText = "Non ongoing hypoxia (normal).";
         this.clickHere = "No measures needed";
       }
