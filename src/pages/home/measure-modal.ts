@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NavParams, ViewController} from 'ionic-angular';
-import {MEASURE} from "../../shared/consts/consts";
+import {MEASURE} from "../../shared/consts/globals";
 
 @Component({
   selector: 'measure-modal',

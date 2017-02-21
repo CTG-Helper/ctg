@@ -1,5 +1,5 @@
 
-export const GLOBALS = {
+export const DECISION = {
 
   // BaseLine
   BASELINE_1:  "baseline1",
@@ -30,11 +30,17 @@ export const GLOBALS = {
   // Accelerations
   ACCELERATIONS_2: "accelerations2",
 
-
-  // Text
-  WHAT_TO_TODO: "Please choose the conditions above to get appropriate measures",
-
 };
+
+
+export const TODO = {
+  CHOOSE_CONDITIONS: "Please choose the conditions above to get appropriate measures",
+  RISK_HYPOXIA_PATHOLOGICAL: "Risk for hypoxia (pathological)",
+  LOW_RISK_HYPOXIA_ABNORMAL: "Low risk for hypoxia (abnormal).",
+  NO_HYPOXIA: "Non ongoing hypoxia (normal).",
+};
+
+
 
 
 export const COLOR = {
@@ -43,6 +49,7 @@ export const COLOR = {
   SECONDARY: "secondary",
   DANGER: "danger"
 };
+
 
 export const MEASURE = {
   NORMAL: "normal",
