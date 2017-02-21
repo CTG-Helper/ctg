@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {ModalController} from 'ionic-angular';
 import {MeasureModal} from './measure-modal';
 import {COLOR, MEASURE, TODO, DECISION} from "../../shared/consts/globals";
-
+import * as _ from 'lodash';
 
 @Component({
   selector: 'page-home',
@@ -39,7 +39,16 @@ export class HomePage {
     }
   }
 
+
+  arrayToCheckAgainst = [DECISION.VARIABILITY_1, DECISION.VARIABILITY_2, DECISION.VARIABILITY_4];
+
   whatToDo() {
+
+    // Test using lodash
+    _.includes(this.arrayToCheckAgainst, "variability1"); // true
+    _.includes(this.arrayToCheckAgainst, "variability00"); // false
+
+
     if (this.baseline != null
       && this.variability != null
       && this.decelerationsFrequency != null
@@ -47,11 +56,16 @@ export class HomePage {
       && this.decelerationsForm != null) {
 
       // Case 1, if results are patological
-      if (this.baseline == DECISION.BASELINE_1 ||
+      if (
+
+        this.baseline == DECISION.BASELINE_1 ||
+
         this.variability == DECISION.VARIABILITY_1 ||
         this.variability == DECISION.VARIABILITY_2 ||
         this.variability == DECISION.VARIABILITY_4 ||
+
         this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
+
         this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 ||
         this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 ||
         this.decelerationsForm == DECISION.DECELERATIONS_FORM_5) {
