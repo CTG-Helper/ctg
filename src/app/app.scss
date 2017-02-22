@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/v2/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -16,3 +15,34 @@
 // automatically applied to the <body> element in the app.
 
 
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 801px) {
+  ion-app {
+    height: 480px;
+    width: 272px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 18px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iphone-background {
+    min-width: 330px;
+    height: 800px;
+    position: absolute;
+    background-image: url("../assets/iphone-gold.png");
+    background-size: auto 620px;
+    background-repeat: no-repeat;
+  }
+
+  div.modal-wrapper {
+    margin-left: 60% !important;
+    width: 100% !important;
+  }
+}
