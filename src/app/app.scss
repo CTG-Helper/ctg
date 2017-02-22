@@ -20,11 +20,11 @@
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
   ion-app {
-    height: 480px;
-    width: 272px;
+    height: 620px;
+    width: 350px;
     position: relative;
-    margin-top: 70px;
-    margin-left: 18px;
+    margin-top: 90px;
+    margin-left: 23px;
   }
 
   body {
@@ -33,16 +33,18 @@
   }
 
   .iphone-background {
-    min-width: 330px;
+    min-width: 490px;
     height: 800px;
     position: absolute;
     background-image: url("../assets/iphone-gold.png");
-    background-size: auto 620px;
+    background-size: auto 800px;
     background-repeat: no-repeat;
   }
 
   div.modal-wrapper {
-    margin-left: 60% !important;
-    width: 100% !important;
+    margin-left: 136px;
+    width: 93% !important;
+     height: 92%;
+    top: 19px;
   }
 }

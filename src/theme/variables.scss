@@ -32,7 +32,31 @@ $colors: (
   dark:       #222,
   warning:    #f4b342,
   result-box: #B2DFDB,
-  transparent:rgba(0, 121, 107, 0.84)
+  transparent:rgba(0, 121, 107, 0.84),
+
+
+  //variability variables
+  variability1:  #f53d3d, //danger
+  variability2:  #f53d3d, //danger
+  variability3:  #009688, //normal
+  variability4:  #f53d3d, //danger
+  variability5:  #f4b342, //warning
+  variability6:  #f4b342, //warning
+  variability7:  #009688, //normal
+
+  //baseline variables
+  baseline1:  #f53d3d, //danger
+  baseline2:  #f4b342, //warning
+  baseline3:  #009688, //normal
+  baseline4:  #f4b342, //warning
+
+  // deceleration frequency variables
+  decelerationsFrequency1:  #f53d3d, //danger
+  decelerationsFrequency2:  #f4b342, //warning
+
+  // accelerations variables
+  accelerations1:  #009688, //normal
+  accelerations2:  #f4b342 //warning
 );
 
 

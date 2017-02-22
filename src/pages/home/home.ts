@@ -20,6 +20,8 @@ export class HomePage {
   clickHere: string;
   color: string = COLOR.PRIMARY;
   whatTodoText: string = TODO.CHOOSE_CONDITIONS;
+  decelerationStatus: string;
+
 
   constructor(private modalCtrl: ModalController) {
   }
@@ -39,6 +41,7 @@ export class HomePage {
 
 
   whatToDo() {
+    this.setColorToDecelerationSegments();
 
     // Case Fatal, if results are pathological
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -85,6 +88,24 @@ export class HomePage {
   openInfoModal(decisionName: string) {
     let modal = this.modalCtrl.create(InformationModalPage, {decisionName: decisionName});
     modal.present();
+  }
+
+
+  setColorToDecelerationSegments() {
+    if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
+      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
+      this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 ||
+      this.decelerationsForm == DECISION.DECELERATIONS_FORM_1) {
+      this.decelerationStatus = "danger";
+    }
+    else if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
+      (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_2) ||
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3)) {
+      this.decelerationStatus = "warning";
+    }
+    else {
+      this.decelerationStatus = "primary";
+    }
   }
 
 
