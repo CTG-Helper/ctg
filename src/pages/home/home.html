@@ -21,10 +21,10 @@
 
       <ion-item>
         <ion-segment [color]="variability" [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="variability1">
+          <ion-segment-button value="variability1" class="remove-border-bottom">
             Less than 2 bpm for more than 20 min
           </ion-segment-button>
-          <ion-segment-button value="variability6">
+          <ion-segment-button value="variability6" class="remove-border-bottom">
             Less than 2 bpm between 10 and 20 min
           </ion-segment-button>
         </ion-segment>
@@ -32,10 +32,10 @@
 
       <ion-item>
         <ion-segment [color]="variability" [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="variability7">
+          <ion-segment-button value="variability7" class="remove-border-bottom">
             Less than 2 bpm for less than 10 min
           </ion-segment-button>
-          <ion-segment-button value="variability2">
+          <ion-segment-button value="variability2" class="remove-border-bottom">
             2-5 bpm
           </ion-segment-button>
         </ion-segment>
@@ -65,10 +65,10 @@
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="baseline" [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="baseline1">
+          <ion-segment-button value="baseline1" class="remove-border-bottom">
             Less than 100 bpm
           </ion-segment-button>
-          <ion-segment-button value="baseline2">
+          <ion-segment-button value="baseline2" class="remove-border-bottom">
             100-110 bpm
           </ion-segment-button>
         </ion-segment>
@@ -118,10 +118,10 @@
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="decelerationsForm2">
+          <ion-segment-button value="decelerationsForm2" class="remove-border-bottom">
             Variable decelerations (Mild/none complicated)
           </ion-segment-button>
-          <ion-segment-button value="decelerationsForm3">
+          <ion-segment-button value="decelerationsForm3" class="remove-border-bottom">
             Variable decelerations (Severe/complicated)
           </ion-segment-button>
         </ion-segment>
