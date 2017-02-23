@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar color="{{color}}">
-    <ion-title>
-      CTG decision support
+    <ion-title text-center>
+      {{'MEASURES' | translate }}
     </ion-title>
     <ion-buttons start>
       <button ion-button (click)="close()">
-        <span ion-text>Cancel</span>
+        <span ion-text>{{'CANCEL' | translate }}</span>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -13,18 +13,18 @@
 
 <ion-content>
 
-  <h3 text-center class="modal-header interpretation-text">{{interpretation}}</h3>
+  <h3 text-center class="modal-header interpretation-text">{{interpretation | translate }}</h3>
   <hr>
-  <h4 text-center>Measures</h4>
+  <h4 text-center>{{'MEASURES' | translate }}</h4>
   <ul>
-    <li *ngFor="let m of measureList" class="measure-listItem">
-      {{ m.measure }}
+    <li *ngFor="let measureItem of measureList" class="measure-listItem">
+      {{ measureItem | translate }}
     </li>
   </ul>
 
   <div text-center>
     <button ion-button icon-right (click)="close()" class="dismissButton">
-      Close down
+      {{'CLOSE_DOWN' | translate }}
       <ion-icon name="arrow-down"></ion-icon>
     </button>
   </div>

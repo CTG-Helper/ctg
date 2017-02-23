@@ -1,8 +1,11 @@
 <ion-header no-border>
   <ion-navbar color="primary">
-    <ion-title>
-      CTG decision support
-    </ion-title>
+    <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="onLanguageChange()">
+        <span ion-text>{{nextLanguageText}}</span>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -15,17 +18,16 @@
     <ion-item-group text-center>
 
       <ion-item-divider color="light">
-        Variability
+        {{ 'VARIABILITY' | translate }}
         <ion-icon (click)="openInfoModal('variability')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
-
       <ion-item>
         <ion-segment [color]="variability" [(ngModel)]="variability" (ngModelChange)="whatToDo()">
           <ion-segment-button value="variability1" class="remove-border-bottom">
-            Less than 2 bpm for more than 20 min
+            {{'LESS_THAN_2_BPM_MORE_THAN_20_MIN' | translate }}
           </ion-segment-button>
           <ion-segment-button value="variability6" class="remove-border-bottom">
-            Less than 2 bpm between 10 and 20 min
+            {{'LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN' | translate }}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -33,7 +35,7 @@
       <ion-item>
         <ion-segment [color]="variability" [(ngModel)]="variability" (ngModelChange)="whatToDo()">
           <ion-segment-button value="variability7" class="remove-border-bottom">
-            Less than 2 bpm for less than 10 min
+            {{'LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN' | translate }}
           </ion-segment-button>
           <ion-segment-button value="variability2" class="remove-border-bottom">
             2-5 bpm
@@ -47,26 +49,25 @@
             5—25 bpm
           </ion-segment-button>
           <ion-segment-button value="variability5">
-            More than 25 bpm
+            {{'MORE_THAN_25_BPM' | translate }}
           </ion-segment-button>
           <ion-segment-button value="variability4">
-            Sinusoidal pattern
+            {{'SINUSOIDAL_PATTERN' | translate}}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
     </ion-item-group>
 
-
     <!-- Segment and header 2 -->
     <ion-item-group text-center>
       <ion-item-divider color="light">
-        Baseline
+        {{ 'BASELINE' | translate }}
         <ion-icon (click)="openInfoModal('baseline')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="baseline" [(ngModel)]="baseline" (ngModelChange)="whatToDo()">
           <ion-segment-button value="baseline1" class="remove-border-bottom">
-            Less than 100 bpm
+            {{'LESS_THAN_100_BPM' | translate }}
           </ion-segment-button>
           <ion-segment-button value="baseline2" class="remove-border-bottom">
             100-110 bpm
@@ -79,7 +80,7 @@
             110-160 bpm
           </ion-segment-button>
           <ion-segment-button value="baseline4">
-            160 bpm or more
+            {{'160_BPM_OR_MORE' | translate}}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -90,19 +91,19 @@
     <!-- Segment and header 3 -->
     <ion-item-group text-center>
       <ion-item-divider color="light">
-        Decelerations frequency
-        <ion-icon (click)="openInfoModal('decelerationsFrequency')" name='information-circle'  item-right></ion-icon>
+        {{ 'DECELERATION_FREQUENCY' | translate }}
+        <ion-icon (click)="openInfoModal('decelerationsFrequency')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsFrequency" (ngModelChange)="whatToDo()">
           <ion-segment-button value="decelerationsFrequency1">
-            No repetitive
+            {{'NO_REPETITIVE' | translate }}
           </ion-segment-button>
           <ion-segment-button value="decelerationsFrequency3">
-            Repetitive decelerations last 20 min
+            {{'REPETITIVE_DECELERATIONS_LAST_20_MIN' | translate }}
           </ion-segment-button>
           <ion-segment-button value="decelerationsFrequency2">
-            Repetitive decelerations last 30 min
+            {{'REPETITIVE_DECELERATIONS_LAST_30_MIN' | translate }}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -113,29 +114,29 @@
     <!-- Segment and header 4 -->
     <ion-item-group text-center>
       <ion-item-divider color="light">
-        Decelerations form
+        {{ 'DECELERATION_FORM' | translate }}
         <ion-icon (click)="openInfoModal('decelerationsForm')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
           <ion-segment-button value="decelerationsForm2" class="remove-border-bottom">
-            Variable decelerations (Mild/none complicated)
+            {{'VARIABLE_DECELERATION_MILD_NONE_COMPLICATED' | translate }}
           </ion-segment-button>
           <ion-segment-button value="decelerationsForm3" class="remove-border-bottom">
-            Variable decelerations (Severe/complicated)
+            {{'VARIABLE_DECELERATIONS_SEVERE_COMPLICATED' | translate}}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
       <ion-item>
         <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
           <ion-segment-button value="decelerationsForm4">
-            Uniform early
+            {{'UNIFORM_EARLY' | translate}}
           </ion-segment-button>
           <ion-segment-button value="decelerationsForm5">
-            Uniform Late
+            {{'UNIFORM_LATE' | translate}}
           </ion-segment-button>
           <ion-segment-button value="decelerationsForm1">
-            Prolonged
+            {{'PROLONGED' | translate}}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -145,22 +146,23 @@
     <!-- Segment and header 5 -->
     <ion-item-group text-center>
       <ion-item-divider color="light">
-        Accelerations
+        {{ 'ACCELERATIONS' | translate }}
         <ion-icon (click)="openInfoModal('accelerations')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="accelerations" [(ngModel)]="accelerations" (ngModelChange)="whatToDo()">
           <ion-segment-button value="accelerations1">
-            Presence
+            {{'PRESENCE' | translate }}
           </ion-segment-button>
           <ion-segment-button value="accelerations2">
-            Absence
+            {{'ABSENCE' | translate }}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
     </ion-item-group>
     <!-- END -->
   </ion-list>
+
 
   <ion-card class="todo-card" (click)="openMeasureModal()" color="{{color}}">
     <ion-card-content>
@@ -169,10 +171,11 @@
           <ion-icon class="measure-icon" name="information-circle" icon-left></ion-icon>
         </ion-col>
         <ion-col no-padding>
-          {{ whatTodoText }}
+          {{ whatTodoText | translate }}
           <br>
-          <button *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{moreInfoText}}</button>
-          <p *ngIf="isNormalState">{{normalStateText}}</p>
+          <button *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{'MORE_INFO' | translate}}
+          </button>
+          <p *ngIf="isNormalState">{{'CONTINUE_WITH_STANDARD_PROCEDURES' | translate}}</p>
         </ion-col>
       </ion-row>
     </ion-card-content>

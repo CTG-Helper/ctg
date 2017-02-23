@@ -4,6 +4,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {MeasureModalPage} from "../pages/measure-modal/measure-modal";
 import {InformationModalPage} from "../pages/information-modal/information-modal";
+import {TranslateModule, TranslateStaticLoader, TranslateLoader} from "ng2-translate";
+import {Http} from "@angular/http";
+
+
+export function createTranslateLoader(http: Http) {
+  return new TranslateStaticLoader(http, 'assets/i18n', '.json');
+}
+
 
 @NgModule({
   declarations: [
@@ -13,7 +21,12 @@ import {InformationModalPage} from "../pages/information-modal/information-modal
     InformationModalPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp, {mode:"ios"})
+    IonicModule.forRoot(MyApp, {mode:"ios"}),
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [Http]
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

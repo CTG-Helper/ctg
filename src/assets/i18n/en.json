@@ -1,0 +1,76 @@
+{
+  "HOME_TITLE": "CTG decision support",
+
+
+  "VARIABILITY": "Variability",
+  "BASELINE": "Basline",
+  "DECELERATION_FREQUENCY": "Decelerations frequency",
+  "DECELERATION_FORM": "Decelerations form",
+  "ACCELERATIONS": "Accelerations",
+
+
+  "BASELINE_INFO": "The NICHD nomenclature[9] defines baseline fetal heart rate as: The baseline FHR is determined by approximating the mean FHR rounded to increments of 5 beats per minute (bpm) during a 10-minute window, excluding accelerations and decelerations and periods of marked FHR variability (greater than 25 bpm). There must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10-minute window, or the baseline for that period is indeterminate. In such cases, it may be necessary to refer to the previous 10-minute window for determination of the baseline. Abnormal baseline is termed bradycardia when the baseline FHR is less than 110 bpm; it is termed tachycardia when the baseline FHR is greater than 160 bpm.[",
+  "DECELERATION_FREQUENCY_INFO": "Periodic refers to decelerations that are associated with contractions; episodic refers to those not associated with contractions. There are four types of decelerations as defined by the NICHD nomenclature, all of which are visually assessed",
+  "DECELERATION_FORM_INFO": "Periodic refers to decelerations that are associated with contractions; episodic refers to those not associated with contractions. There are four types of decelerations as defined by the NICHD nomenclature, all of which are visually assessed",
+  "VARIABILITY_INFO": "Moderate baseline fetal heart rate variability reflects the delivery of oxygen to the fetal central nervous system. Its presence is reassuring in predicting an absence of metabolic acidemia and hypoxic injury to the fetus at the time it is observed.[9] In contrast, the presence of mild baseline FHR variability, or an absence of FHR variability does not reliably predict fetal acidemia or hypoxia; lack of moderate baseline FHR variability may be a result of the fetal sleep cycle, or a result of medications, extreme prematurity, congenital anomalies, or pre-existing neurological injury.[9]",
+  "ACCELERATION_INFO": "The NICHD nomenclature[9] defines an acceleration as a visually apparent abrupt increase in fetal heart rate. An abrupt increase is defined as an increase from the onset of acceleration to the peak in less than or equal to 30 seconds. To be called an acceleration, the peak must be greater than or equal to 15 bpm, and the acceleration must last greater than or equal to 15 seconds from the onset to return to baseline.[12] A prolonged acceleration is greater than or equal to 2 minutes but less than 10 minutes in duration. An acceleration lasting greater than or equal to 10 minutes is defined as a baseline change. Before 32 weeks of gestation, accelerations are defined as having a peak greater than or equal to 10 bpm and a duration of greater than or equal to 10 seconds.",
+
+
+  "CHOOSE_CONDITIONS": "Please choose the conditions above to get appropriate measuresInfoText",
+  "RISK_HYPOXIA_PATHOLOGICAL": "Risk for hypoxia (pathological)",
+  "LOW_RISK_HYPOXIA_ABNORMAL": "Low risk for hypoxia (abnormal).",
+  "NO_HYPOXIA": "Non ongoing hypoxia (normal).",
+
+
+  "LESS_THAN_2_BPM_MORE_THAN_20_MIN": "Less than 2 bpm for more than 20 min",
+  "LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN": "Less than 2 bpm between 10 and 20 min",
+  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"Less than 2 bpm for less than 10 min",
+  "MORE_THAN_25_BPM": "More than 25 bpm",
+  "SINUSOIDAL_PATTERN":"Sinusoidal pattern",
+
+
+  "LESS_THAN_100_BPM": "Less than 100 bpm",
+  "160_BPM_OR_MORE": "160 bpm or more",
+
+
+  "NO_REPETITIVE": "No repetitive",
+  "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Repetitive decelerations last 20 min",
+  "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Repetitive decelerations last 30 min",
+
+
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variable decelerations (Mild/none complicated)",
+  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Severe/complicated)",
+  "UNIFORM_EARLY": "Uniform early",
+  "UNIFORM_LATE": "Uniform Late",
+  "PROLONGED": "Prolonged",
+
+
+  "ABSENCE": "Absence",
+  "PRESENCE": "Presence",
+
+
+  "CONTINUE_WITH_STANDARD_PROCEDURES": "Continue with standard procedures",
+  "MORE_INFO": "More info",
+
+
+  "DO_YOU_WANT_TO_RESET_FORM": "Do you want to reset the form?",
+  "RESET_FORM": "Reset form",
+  "CANCEL": "Cancel",
+  "YES": "Yes",
+  "CLOSE_DOWN": "Close down",
+
+
+  "MEASURES": "Measures",
+
+  "ABNORMAL_INTERPRETATION": "Low risk for hypoxia",
+  "ABNORMAL_CORRECT_REVERSIBLE_CAUSES": "Correct reversible causes",
+  "ABNORMAL_CONTINUE_CTG": "Continue CTG",
+  "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST": "Consider stimulation test and scalp bloodtest",
+
+  "FATAL_INTERPRETATION": "Moderate/high risk for hypoxia",
+  "FATAL_CORRECT_REVERSIBLE_CAUSES": "Correct reversible causes",
+  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Perform stimulationtest/scalpbloodtest or deliver baby"
+
+
+
+}

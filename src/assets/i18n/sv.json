@@ -1,0 +1,80 @@
+{
+  "HOME_TITLE": "CTG Beslutstöd",
+
+
+  "VARIABILITY": "Variabilitet",
+  "BASELINE": "Basal hjärtfrekvens",
+  "DECELERATION_FREQUENCY": "Decelerations frekvens",
+  "DECELERATION_FORM": "Decelerations form",
+  "ACCELERATIONS": "Accelerationer",
+
+  "BASELINE_INFO": "Fostrets hjärta börjar slå under den femte graviditetsveckan. I början slår hjärtat med 80-85 slag i minuten. Under de följande fyra veckorna ökar hjärtfrekvensen med c:a tre slag per dag, för att i den nionde graviditetsveckan ligga mellan 155-195 slag/minuten.",
+  "DECELERATION_FREQUENCY_INFO": "Uniforma decelerationer har en rundad U-form och likartat utseende från en deceleration till en annan. En internationellt använd distinktion från variabla decelerationer är att frekvensnedgången från basalfrekvens till botten i decelerationen tar > 30 sekunder. De har sällan uttalad amplitud (=slagförlust) och det är ovanligt att de går under 100 slag/minut. ",
+  "DECELERATION_FORM_INFO": "Decelerationer är tillfälliga sänkningar i hjärtfrekvensen som kan orsakas av tryck mot fostrets huvud eller navelsträngen i samband med kontraktioner, och/eller hypoxi.",
+  "VARIABILITY_INFO": "Variabilitet utgörs av snabba variationer kring den basala hjärtfrekvensen, och mäts med amplituden i variationernas bandbredd.Variabiliteten regleras delvis av autonoma nervsystemet och ger information om förmågan hos det centrala nervsystemet att reglera det kardiovaskulära systemet. Det parasympatiska systemet har en snabbt insättande retarderande effekt, medan det sympatiska har en höjande mer långsamt insättande effekt. De två systemen arbetar med olika tidskonstanter vilket ger upphov till en variabilitet så länge båda systemen är intakta.",
+  "ACCELERATION_INFO": "Accelerationer Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
+
+
+  "CHOOSE_CONDITIONS": "Var vänlig och välj ovan blabla",
+  "RISK_HYPOXIA_PATHOLOGICAL": "Risk för hypoxia (patalogisk)",
+  "LOW_RISK_HYPOXIA_ABNORMAL": "Låg risk för hypoxia (abnormal).",
+  "NO_HYPOXIA": "Ingen hypoxi (normal).",
+
+
+  "LESS_THAN_2_BPM_MORE_THAN_20_MIN": "Mindre än 2 bpm för mer än 20 min",
+  "LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN": "Mindre än 2 bpm mellan 10 och 20 min",
+  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"Mindre än 2 bpm för mindre än 10 min",
+  "MORE_THAN_25_BPM": "Mer än 25 bpm",
+  "SINUSOIDAL_PATTERN":"Sinus mönster",
+
+
+  "LESS_THAN_100_BPM": "Mindre än 100 bpm",
+  "160_BPM_OR_MORE": "160 bpm eller mer",
+
+
+  "NO_REPETITIVE": "Inget återkommande",
+  "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Återkommande decelerationer senaste 20 min",
+  "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Återkommande decelerationer senaste 30 min",
+
+
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variabla decelerationer (Mild/icke komplicerat)",
+  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Allvarligt/komplicerat)",
+  "UNIFORM_EARLY": "Enhetligt tidigt",
+  "UNIFORM_LATE": "Enhetligt sent",
+  "PROLONGED": "Långvarig",
+
+
+  "ABSENCE": "Frånvaro",
+  "PRESENCE": "Närvaro",
+
+
+  "CONTINUE_WITH_STANDARD_PROCEDURES": "Fortsätt med vanliga rutiner",
+  "MORE_INFO": "Mer info",
+
+
+  "DO_YOU_WANT_TO_RESET_FORM": "Vill du nollställa värderna?",
+  "RESET_FORM": "Nollställ värdena",
+  "CANCEL": "Avbryt",
+  "YES": "Ja",
+  "CLOSE_DOWN": "Stäng ner",
+
+  "MEASURES": "Åtgärder",
+
+  "ABNORMAL_INTERPRETATION": "Låg risk för hypoxi",
+  "ABNORMAL_CORRECT_REVERSIBLE_CAUSES": "Korrekta reversibel orsak",
+  "ABNORMAL_CONTINUE_CTG": "Fortsätt med CTG",
+  "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST": "Överväga stimuleringstest och hårbotten blodprov",
+
+
+  "FATAL_INTERPRETATION": "Måttlig / hög risk för hypoxi",
+  "FATAL_CORRECT_REVERSIBLE_CAUSES": "rätta till reversibla orsaker",
+  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Utför stimulering och hårbottens blodprov eller var redo för baby"
+
+
+
+}
+
+
+
+
+

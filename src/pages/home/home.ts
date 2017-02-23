@@ -1,28 +1,28 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ModalController, AlertController} from 'ionic-angular';
-import {COLOR, MEASURE, TODO, DECISION} from "../../shared/consts/globals";
+import {COLOR, MEASURE, DECISION} from "../../shared/consts/globals";
 import {InformationModalPage} from "../information-modal/information-modal";
 import {MeasureModalPage} from "../measure-modal/measure-modal";
 import * as _ from 'lodash';
+import {TranslateService, LangChangeEvent} from "ng2-translate";
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 
-export class HomePage {
+export class HomePage implements OnInit {
   baseline = "";
   variability = "";
   decelerationsFrequency = "";
   decelerationsForm = "";
   accelerations = "";
-  measuresInfoText = "";
+  measuresInfoText = MEASURE.NORMAL;
   decelerationStatus = "";
-  normalStateText = "Continue with standard procedures";
   moreInfoText = "More Info";
   isNormalState = true;
   color: string = COLOR.PRIMARY;
-  whatTodoText: string = TODO.CHOOSE_CONDITIONS;
+  whatTodoText: string = "CHOOSE_CONDITIONS";
 
   // Arrays with the fatal conditions to check against to see if the current status is fatal.
   case_fatal_baselines = [DECISION.BASELINE_1];
@@ -38,7 +38,16 @@ export class HomePage {
 
 
   constructor(private modalCtrl: ModalController,
-              private alertCtrl: AlertController) {}
+              private alertCtrl: AlertController,
+              private translateService: TranslateService) {
+  }
+
+  ngOnInit() {
+    this.initTranslateSubscriber();
+
+    // just to invoke changes in the initTranslateSubscruber
+    this.translateService.use('sv');
+  }
 
 
   whatToDo() {
@@ -51,11 +60,10 @@ export class HomePage {
       _.includes(this.case_fatal_variabilitys, this.variability) ||
       _.includes(this.case_fatal_decelerationsFrequencies, this.decelerationsFrequency) ||
       _.includes(this.case_fatal_decelerationsForms, this.decelerationsForm)) {
-
       this.isNormalState = false;
       this.color = COLOR.DANGER;
       this.measuresInfoText = MEASURE.FATAL;
-      this.whatTodoText = TODO.RISK_HYPOXIA_PATHOLOGICAL;
+      this.whatTodoText = "RISK_HYPOXIA_PATHOLOGICAL";
     }
 
     // Case Abnormal, if results are not that bad but bad
@@ -67,14 +75,14 @@ export class HomePage {
       this.isNormalState = false;
       this.color = COLOR.WARNING;
       this.measuresInfoText = MEASURE.ABNORMAL;
-      this.whatTodoText = TODO.LOW_RISK_HYPOXIA_ABNORMAL;
+      this.whatTodoText = "LOW_RISK_HYPOXIA_ABNORMAL";
     }
 
     // Case Normal, if results are normal
     else {
       this.color = COLOR.PRIMARY;
       this.measuresInfoText = MEASURE.NORMAL;
-      this.whatTodoText = TODO.NO_HYPOXIA;
+      this.whatTodoText = "NO_HYPOXIA";
       this.isNormalState = true;
     }
   }
@@ -82,7 +90,7 @@ export class HomePage {
 
   openMeasureModal() {
     if (this.measuresInfoText != MEASURE.NORMAL) {
-      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
+      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText, language: this.selectedLanguage});
       modal.present();
       modal.onDidDismiss(data => {
         this.resetAlert();
@@ -91,7 +99,10 @@ export class HomePage {
   }
 
   openInfoModal(decisionName: string) {
-    let modal = this.modalCtrl.create(InformationModalPage, {decisionName: decisionName});
+    let modal = this.modalCtrl.create(InformationModalPage, {
+      decisionName: decisionName,
+      language: this.selectedLanguage
+    });
     modal.present();
   }
 
@@ -114,6 +125,7 @@ export class HomePage {
   }
 
 
+
   resetDesicions() {
     this.baseline = "";
     this.variability = "";
@@ -122,7 +134,7 @@ export class HomePage {
     this.accelerations = "";
     this.decelerationStatus = "";
     this.color = COLOR.PRIMARY;
-    this.whatTodoText = TODO.CHOOSE_CONDITIONS;
+    this.whatTodoText = "CHOOSE_CONDITIONS";
     this.isNormalState = true;
   }
 
@@ -138,20 +150,46 @@ export class HomePage {
   }
 
 
+
+
+  initTranslateSubscriber() {
+
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.yesText =  this.translateService.instant("YES");
+      this.cancelText =  this.translateService.instant("CANCEL");
+      this.alertMessage =  this.translateService.instant("DO_YOU_WANT_TO_RESET_FORM");
+      this.alertTitle =  this.translateService.instant("RESET_FORM");
+    });
+
+
+
+
+  }
+
+
+
+
+  yesText = "Yes";
+  cancelText = "Cancel";
+  alertMessage = "Do you want to reset the form?";
+  alertTitle = "Reset form";
+
   resetAlert() {
+
     let alert = this.alertCtrl.create({
-      title: 'Reset form',
-      message: 'Do you want to reset the form?',
+      title: this.alertTitle,
+      message: this.alertMessage,
       buttons: [
         {
-          text: 'Cancel',
+          text: this.cancelText,
           role: 'cancel',
           handler: () => {
-            console.log('Cancel clicked');
+
           }
         },
         {
-          text: 'Yes',
+          text: this.yesText,
           handler: () => {
             this.resetDesicions();
           }
@@ -161,5 +199,24 @@ export class HomePage {
     alert.present();
   }
 
+
+  isEnglish = false;
+  selectedLanguage = "sv";
+  nextLanguageText = "English";
+
+  onLanguageChange() {
+    // Toggles between true or false when pressed;
+    this.isEnglish = !this.isEnglish;
+
+    if (this.isEnglish) {
+      this.selectedLanguage = 'en';
+      this.nextLanguageText = "Swedish";
+    } else {
+      this.selectedLanguage = 'sv';
+      this.nextLanguageText = "English";
+    }
+    // Sets the current language
+    this.translateService.use(this.selectedLanguage);
+  }
 
 }

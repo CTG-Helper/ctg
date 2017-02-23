@@ -42,22 +42,18 @@ export const DECISION_TYPE = {
 };
 
 
+
+
+// IS USED IN /assets/i18n
 export const DECISION_INFORMATION = {
-  BASELINE:  "Baseline is... blablabla",
-  DECELERATION_FREQUENCY: 'Decelerations Frequency is.... blalbalba',
-  DECELERATION_FORM: 'Decelerations Form is..... blabla',
-  VARIABILITY: 'Variability is.... blablalba',
-  ACCELERATION: 'Accelerations is... blablal'
+  BASELINE_INFO:  "BASELINE_INFO",
+  DECELERATION_FREQUENCY_INFO: 'DECELERATION_FREQUENCY_INFO',
+  DECELERATION_FORM_INFO: 'DECELERATION_FORM_INFO',
+  VARIABILITY_INFO: 'VARIABILITY_INFO',
+  ACCELERATION_INFO: 'ACCELERATION_INFO'
 };
 
 
-
-export const TODO = {
-  CHOOSE_CONDITIONS: "Please choose the conditions above to get appropriate measuresInfoText",
-  RISK_HYPOXIA_PATHOLOGICAL: "Risk for hypoxia (pathological)",
-  LOW_RISK_HYPOXIA_ABNORMAL: "Low risk for hypoxia (abnormal).",
-  NO_HYPOXIA: "Non ongoing hypoxia (normal).",
-};
 
 
 export const COLOR = {

@@ -7,11 +7,11 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      {{title}}
+      {{title | translate }}
     </ion-title>
     <ion-buttons start>
       <button ion-button (click)="close()">
-        <span ion-text>Cancel</span>
+        <span ion-text>{{'CANCEL' | translate }}</span>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -20,11 +20,12 @@
 
 
 <ion-content padding>
-  <p>{{informationText}}</p>
+  <h4>{{title | translate }}</h4>
+  <p>{{informationText | translate}}</p>
 
   <div text-center>
     <button ion-button icon-right (click)="close()">
-      Close down
+      {{'CLOSE_DOWN' | translate }}
       <ion-icon name="arrow-down"></ion-icon>
     </button>
   </div>
