@@ -23,6 +23,9 @@
   <h4>{{title | translate }}</h4>
   <p>{{informationText | translate}}</p>
 
+  <img *ngIf="title == 'ACCELERATIONS'" src="./assets/ctg-images/accelerations.png" alt="">
+
+
   <div text-center>
     <button ion-button icon-right (click)="close()">
       {{'CLOSE_DOWN' | translate }}
