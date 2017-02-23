@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar color="primary">
     <ion-title>
       CTG decision support
@@ -165,13 +165,14 @@
   <ion-card class="todo-card" (click)="openMeasureModal()" color="{{color}}">
     <ion-card-content>
       <ion-row>
-        <ion-col width-20 no-padding>
+        <ion-col class="col-fix" width-20 no-padding>
           <ion-icon class="measure-icon" name="information-circle" icon-left></ion-icon>
         </ion-col>
         <ion-col no-padding>
           {{ whatTodoText }}
           <br>
-          {{ clickHere }}
+          <button *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{moreInfoText}}</button>
+          <p *ngIf="isNormalState">{{normalStateText}}</p>
         </ion-col>
       </ion-row>
     </ion-card-content>

@@ -11,22 +11,18 @@ import * as _ from 'lodash';
 })
 
 export class HomePage {
-  baseline: string = "";
-  variability: string = "";
-  decelerationsFrequency: string = "";
-  decelerationsForm: string = "";
-  accelerations: string = "";
-  measuresInfoText: string = "";
-  clickHere: string;
+  baseline = "";
+  variability = "";
+  decelerationsFrequency = "";
+  decelerationsForm = "";
+  accelerations = "";
+  measuresInfoText = "";
+  decelerationStatus = "";
+  normalStateText = "Continue with standard procedures";
+  moreInfoText = "More Info";
+  isNormalState = true;
   color: string = COLOR.PRIMARY;
   whatTodoText: string = TODO.CHOOSE_CONDITIONS;
-  decelerationStatus: string = "";
-
-  isTest = true;
-
-  constructor(private modalCtrl: ModalController, private alertCtrl: AlertController) {
-  }
-
 
   // Arrays with the fatal conditions to check against to see if the current status is fatal.
   case_fatal_baselines = [DECISION.BASELINE_1];
@@ -41,11 +37,13 @@ export class HomePage {
   case_abnormal_accelerations = [DECISION.ACCELERATIONS_2];
 
 
-  whatToDo(event) {
-    this.setColorToDecelerationSegments();
-    this.isLastDesicion();
+  constructor(private modalCtrl: ModalController,
+              private alertCtrl: AlertController) {}
 
-    console.log(event);
+
+  whatToDo() {
+    this.setColorToDecelerationSegments();
+    this.lastDesicion();
 
     // Case Fatal, if results are pathological
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -54,10 +52,10 @@ export class HomePage {
       _.includes(this.case_fatal_decelerationsFrequencies, this.decelerationsFrequency) ||
       _.includes(this.case_fatal_decelerationsForms, this.decelerationsForm)) {
 
+      this.isNormalState = false;
       this.color = COLOR.DANGER;
       this.measuresInfoText = MEASURE.FATAL;
       this.whatTodoText = TODO.RISK_HYPOXIA_PATHOLOGICAL;
-      this.clickHere = "Click here for measuresInfoText";
     }
 
     // Case Abnormal, if results are not that bad but bad
@@ -66,10 +64,10 @@ export class HomePage {
       _.includes(this.case_abnormal_variabilitys, this.variability) ||
       _.includes(this.case_abnormal_accelerations, this.accelerations) ||
       _.includes(this.case_abnormal_decelerationsFrequencies, this.decelerationsFrequency)) {
+      this.isNormalState = false;
       this.color = COLOR.WARNING;
       this.measuresInfoText = MEASURE.ABNORMAL;
       this.whatTodoText = TODO.LOW_RISK_HYPOXIA_ABNORMAL;
-      this.clickHere = "Click here for measuresInfoText";
     }
 
     // Case Normal, if results are normal
@@ -77,10 +75,9 @@ export class HomePage {
       this.color = COLOR.PRIMARY;
       this.measuresInfoText = MEASURE.NORMAL;
       this.whatTodoText = TODO.NO_HYPOXIA;
-      this.clickHere = "Continue with standard procedures";
+      this.isNormalState = true;
     }
   }
-
 
 
   openMeasureModal() {
@@ -124,9 +121,13 @@ export class HomePage {
     this.decelerationsForm = "";
     this.accelerations = "";
     this.decelerationStatus = "";
+    this.color = COLOR.PRIMARY;
+    this.whatTodoText = TODO.CHOOSE_CONDITIONS;
+    this.isNormalState = true;
   }
 
-  isLastDesicion(){
+
+  lastDesicion() {
     if (this.baseline != "" &&
       this.variability != "" &&
       this.decelerationsFrequency != "" &&
@@ -135,6 +136,7 @@ export class HomePage {
       this.openMeasureModal();
     }
   }
+
 
   resetAlert() {
     let alert = this.alertCtrl.create({
@@ -158,7 +160,6 @@ export class HomePage {
     });
     alert.present();
   }
-
 
 
 }

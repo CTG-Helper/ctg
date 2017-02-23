@@ -14,8 +14,9 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
-
+.header-ios {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
+}
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {

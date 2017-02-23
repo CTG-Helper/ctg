@@ -15,7 +15,12 @@ page-home {
   }
 
   .info-icon {
+    font-size: 40px;
     cursor: pointer;
+  }
+
+  .toolbar-ios ion-title {
+    padding: 0;
   }
 
   .segment-ios .segment-button,
@@ -33,8 +38,9 @@ page-home {
   }
 
   .item-divider-ios {
-    background-color: #ecffe7;
+    background-color: #00695C;
     margin: 20px 0;
+    color: white;
   }
 
   .card-ios {
@@ -50,6 +56,14 @@ page-home {
     border-bottom: 0;
   }
 
+  .click-here {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .col-fix {
+
+  }
 
 }
 
