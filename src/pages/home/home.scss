@@ -25,6 +25,7 @@ page-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2px;
   }
 
   .segment-ios {
@@ -41,8 +42,10 @@ page-home {
     padding: 0;
   }
 
+  .label-ios {
+    margin: 0;
+  }
 
 
 }
-
 

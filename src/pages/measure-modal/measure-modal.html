@@ -3,6 +3,11 @@
     <ion-title>
       CTG decision support
     </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="close()">
+        <span ion-text>Cancel</span>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -18,7 +23,7 @@
   </ul>
 
   <div text-center>
-    <button ion-button icon-right (click)="close()">
+    <button ion-button icon-right (click)="close()" class="dismissButton">
       Close down
       <ion-icon name="arrow-down"></ion-icon>
     </button>
