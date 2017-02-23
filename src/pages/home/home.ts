@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ModalController} from 'ionic-angular';
+import {ModalController, AlertController} from 'ionic-angular';
 import {COLOR, MEASURE, TODO, DECISION} from "../../shared/consts/globals";
 import {InformationModalPage} from "../information-modal/information-modal";
 import {MeasureModalPage} from "../measure-modal/measure-modal";
@@ -22,8 +22,9 @@ export class HomePage {
   whatTodoText: string = TODO.CHOOSE_CONDITIONS;
   decelerationStatus: string = "";
 
+  isTest = true;
 
-  constructor(private modalCtrl: ModalController) {
+  constructor(private modalCtrl: ModalController, private alertCtrl: AlertController) {
   }
 
 
@@ -40,9 +41,11 @@ export class HomePage {
   case_abnormal_accelerations = [DECISION.ACCELERATIONS_2];
 
 
-  whatToDo() {
+  whatToDo(event) {
     this.setColorToDecelerationSegments();
     this.isLastDesicion();
+
+    console.log(event);
 
     // Case Fatal, if results are pathological
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -79,11 +82,14 @@ export class HomePage {
   }
 
 
+
   openMeasureModal() {
     if (this.measuresInfoText != MEASURE.NORMAL) {
       let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
       modal.present();
-      this.resetDesicions();
+      modal.onDidDismiss(data => {
+        this.resetAlert();
+      });
     }
   }
 
@@ -129,5 +135,30 @@ export class HomePage {
       this.openMeasureModal();
     }
   }
+
+  resetAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Reset form',
+      message: 'Do you want to reset the form?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Yes',
+          handler: () => {
+            this.resetDesicions();
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+
 
 }
