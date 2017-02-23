@@ -11,16 +11,16 @@ import * as _ from 'lodash';
 })
 
 export class HomePage {
-  baseline: string;
-  variability: string;
-  decelerationsFrequency: string;
-  decelerationsForm: string;
-  accelerations: string;
-  measuresInfoText: string;
+  baseline: string = "";
+  variability: string = "";
+  decelerationsFrequency: string = "";
+  decelerationsForm: string = "";
+  accelerations: string = "";
+  measuresInfoText: string = "";
   clickHere: string;
   color: string = COLOR.PRIMARY;
   whatTodoText: string = TODO.CHOOSE_CONDITIONS;
-  decelerationStatus: string;
+  decelerationStatus: string = "";
 
 
   constructor(private modalCtrl: ModalController) {
@@ -42,6 +42,7 @@ export class HomePage {
 
   whatToDo() {
     this.setColorToDecelerationSegments();
+    this.isLastDesicion();
 
     // Case Fatal, if results are pathological
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -82,6 +83,7 @@ export class HomePage {
     if (this.measuresInfoText != MEASURE.NORMAL) {
       let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
       modal.present();
+      this.resetDesicions();
     }
   }
 
@@ -108,5 +110,24 @@ export class HomePage {
     }
   }
 
+
+  resetDesicions() {
+    this.baseline = "";
+    this.variability = "";
+    this.decelerationsFrequency = "";
+    this.decelerationsForm = "";
+    this.accelerations = "";
+    this.decelerationStatus = "";
+  }
+
+  isLastDesicion(){
+    if (this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") {
+      this.openMeasureModal();
+    }
+  }
 
 }

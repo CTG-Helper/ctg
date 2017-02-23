@@ -162,31 +162,23 @@
     <!-- END -->
   </ion-list>
 
+  <ion-card class="todo-card" (click)="openMeasureModal()" color="{{color}}">
+    <ion-card-content>
+      <ion-row>
+        <ion-col width-20 no-padding>
+          <ion-icon class="measure-icon" name="information-circle" icon-left></ion-icon>
+        </ion-col>
+        <ion-col no-padding>
+          {{ whatTodoText }}
+          <br>
+          {{ clickHere }}
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 
-  <div style="height: 80px"></div>
 
 </ion-content>
 
 
-<div>
-  <ion-footer no-border>
-    <ion-toolbar color="transparent">
-      <!-- What to do goes here -->
-      <ion-card class="todo-card" (click)="openMeasureModal()" color="{{color}}">
-        <ion-card-content>
-          <ion-row>
-            <ion-col width-20 no-padding>
-              <ion-icon class="measure-icon" name="information-circle" icon-left></ion-icon>
-            </ion-col>
-            <ion-col no-padding>
-              {{ whatTodoText }}
-              <br>
-              {{ clickHere }}
-            </ion-col>
-          </ion-row>
-        </ion-card-content>
-      </ion-card>
-    </ion-toolbar>
-  </ion-footer>
-</div>
 
