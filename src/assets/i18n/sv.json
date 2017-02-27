@@ -4,21 +4,51 @@
 
   "VARIABILITY": "Variabilitet",
   "BASELINE": "Basal hjärtfrekvens",
-  "DECELERATION_FREQUENCY": "Decelerations frekvens",
-  "DECELERATION_FORM": "Decelerations form",
+  "DECELERATION_FREQUENCY": "Kombinerade decelerationer",
+  "DECELERATION_FORM": "Variabla decelerationer",
   "ACCELERATIONS": "Accelerationer",
 
-  "BASELINE_INFO": "Fostrets hjärta börjar slå under den femte graviditetsveckan. I början slår hjärtat med 80-85 slag i minuten. Under de följande fyra veckorna ökar hjärtfrekvensen med c:a tre slag per dag, för att i den nionde graviditetsveckan ligga mellan 155-195 slag/minuten.",
-  "DECELERATION_FREQUENCY_INFO": "Uniforma decelerationer har en rundad U-form och likartat utseende från en deceleration till en annan. En internationellt använd distinktion från variabla decelerationer är att frekvensnedgången från basalfrekvens till botten i decelerationen tar > 30 sekunder. De har sällan uttalad amplitud (=slagförlust) och det är ovanligt att de går under 100 slag/minut. ",
-  "DECELERATION_FORM_INFO": "Decelerationer är tillfälliga sänkningar i hjärtfrekvensen som kan orsakas av tryck mot fostrets huvud eller navelsträngen i samband med kontraktioner, och/eller hypoxi.",
-  "VARIABILITY_INFO": "Variabilitet utgörs av snabba variationer kring den basala hjärtfrekvensen, och mäts med amplituden i variationernas bandbredd.Variabiliteten regleras delvis av autonoma nervsystemet och ger information om förmågan hos det centrala nervsystemet att reglera det kardiovaskulära systemet. Det parasympatiska systemet har en snabbt insättande retarderande effekt, medan det sympatiska har en höjande mer långsamt insättande effekt. De två systemen arbetar med olika tidskonstanter vilket ger upphov till en variabilitet så länge båda systemen är intakta.",
-  "ACCELERATION_INFO": "Accelerationer Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
+  "BASELINE_INFO":"Förändringar av forstrets hjärtfrekvens behöver inte bero på hypoxi utan på andra omständigheter hos fostret eller i dess omgivning. Som exempel kan nämnas normala förändringar i fostrets aktivitet, yttre faktorer (som tryck på fosterhuvudet under kontraktion, mammans läge, smärta, uttorkning, hyperventilering), ökad temperatur hos mamman och läkemedel.",
+  "DECELERATION_FREQUENCY_INFO":"Kombinationer av uniforma tidiga eller variabla decelerationer med uniforma sena decelerationer i anslutning till varje värk, utgör ett patologiskt mönster. Detta mönster kan ses vid hyperaktivt värkarbete, framförallt orsakat av överstimulering med oxytocin. Mönstret kan vara svårt att känna igen, och de täta decelerationerna kan ge ett falskt intryck av god variabilitet.",
+  "DECELERATION_FORM_INFO": "Variabla decelerationer är den mest vanligt förekommande typen av deceleration under förlossning. Variabla decelerationer skiljer sig från uniforma tidiga och sena decelerationer genom att de varierar i form, djup, duration och ibland i tidsrelation till kontraktionerna. Decelerationerna kan ses i början, på toppen eller slutet av kontraktionerna och ibland även mellan kontraktionerna. Amplituden och durationen kan variera från kontraktion till kontraktion. Mönstret kan förändras mycket snabbt. I samband med variabla decelerationer ses ofta pre- och postaccelerationer. ",
+  "VARIABILITY_INFO":"Variabilitet utgörs av snabba variationer kring den basala hjärtfrekvensen, och mäts med amplituden i variationernas bandbredd. Normal variabilitet skall ligga mellan 5 och 25 slag/minut. Man kan skilja mellan korttids- och långtidsvariabilitet vid datoriserad tolkning. Korttidsvariabilitet är variationen i slag-till-slag-intervallet mellan två hjärtslag medan långtidsvariabiliteten är förändringar i basalfrekvensen som se under längre tid.",
+  "ACCELERATION_INFO": "Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
 
 
-  "CHOOSE_CONDITIONS": "Var vänlig och välj ovan blabla",
+  "BASELINE_SEGMENT_INFO_1":"Mindre än 100 BPM ",
+  "BASELINE_SEGMENT_INFO_2":"100-110 BPM",
+  "BASELINE_SEGMENT_INFO_3":"110-160 BPM",
+  "BASELINE_SEGMENT_INFO_4":"Mer än 160 BPM",
+
+
+  "VARIABILITY_SEGMENT_INFO_1":"Mindre än 2 BPM för mer än 20 min, Upphävd variabilitet (<2 slag/min), indicerar omedelbar förlossning.",
+  "VARIABILITY_SEGMENT_INFO_2":"Mindre än 2 BPM under 10 – 20 minuter, barnet kan sova överväg att väcka barnet",
+  "VARIABILITY_SEGMENT_INFO_3":"Mindre än 2 BPM för mindre än 10 minuter, barnet kan sova vilket är normalt",
+  "VARIABILITY_SEGMENT_INFO_4":"Mellan 2 – 5 BPM",
+  "VARIABILITY_SEGMENT_INFO_5":"Mellan 5 – 25 BPM",
+  "VARIABILITY_SEGMENT_INFO_6":"Mer än 25 BPM",
+  "VARIABILITY_SEGMENT_INFO_7":"Sinus mönster , Sinusodialt mönster definieras som ett jämnt vågliknande mönster med periodiska förändringar av hjärtfrekvensen, utan korttidsvariabilitet och utan accelerationer.",
+
+
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Ej återkommande",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_2":"Återkommande decelerationer senaste 20 min",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_3":"Återkommande decelerationer senaste 30 min",
+
+
+  "DECELERATION_FORM_SEGMENT_INFO_1":"Mild eller okomplicerat deceleration",
+  "DECELERATION_FORM_SEGMENT_INFO_2":"Komplicerad deceleration",
+  "DECELERATION_FORM_SEGMENT_INFO_3":"Uniforma tidiga",
+  "DECELERATION_FORM_SEGMENT_INFO_4":"Uniforma sena",
+  "DECELERATION_FORM_SEGMENT_INFO_5":"Långvarig deceleration",
+
+
+  "ACCELERATION_SEGMENT_INFO_1":"Förekommande",
+  "ACCELERATION_SEGMENT_INFO_2":"Icke förekommande",
+
+  "CHOOSE_CONDITIONS": "Inga val gjorda, var vänlig välj alternativ för att få åtgärdsförslag",
   "RISK_HYPOXIA_PATHOLOGICAL": "Risk för hypoxia (patalogisk)",
   "LOW_RISK_HYPOXIA_ABNORMAL": "Låg risk för hypoxia (abnormal).",
-  "NO_HYPOXIA": "Ingen hypoxi (normal).",
+  "NO_HYPOXIA": "Ingen risk för hypoxi (normal).",
 
 
   "LESS_THAN_2_BPM_MORE_THAN_20_MIN": "Mindre än 2 bpm för mer än 20 min",
@@ -32,20 +62,20 @@
   "160_BPM_OR_MORE": "160 bpm eller mer",
 
 
-  "NO_REPETITIVE": "Inget återkommande",
+  "NO_REPETITIVE": "Ej återkommande",
   "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Återkommande decelerationer senaste 20 min",
   "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Återkommande decelerationer senaste 30 min",
 
 
-  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variabla decelerationer (Mild/icke komplicerat)",
-  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Allvarligt/komplicerat)",
-  "UNIFORM_EARLY": "Enhetligt tidigt",
-  "UNIFORM_LATE": "Enhetligt sent",
-  "PROLONGED": "Långvarig",
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Mild eller okomplicerat deceleration",
+  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Komplicerad deceleration",
+  "UNIFORM_EARLY": "Uniforma tidiga",
+  "UNIFORM_LATE": "Uniforma sena",
+  "PROLONGED": "Långvarig deceleration",
 
 
-  "ABSENCE": "Frånvaro",
-  "PRESENCE": "Närvaro",
+  "ABSENCE": "Förekommande",
+  "PRESENCE": "Icke förekommande",
 
 
   "CONTINUE_WITH_STANDARD_PROCEDURES": "Fortsätt med vanliga rutiner",
@@ -64,17 +94,17 @@
   "ABNORMAL_INTERPRETATION": "Låg risk för hypoxi",
   "ABNORMAL_CORRECT_REVERSIBLE_CAUSES": "Korrekta reversibel orsak",
   "ABNORMAL_CONTINUE_CTG": "Fortsätt med CTG",
-  "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST": "Överväga stimuleringstest och hårbotten blodprov",
+  "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST": "Överväga stimuleringstest och skalpprov",
 
 
   "FATAL_INTERPRETATION": "Måttlig / hög risk för hypoxi",
   "FATAL_CORRECT_REVERSIBLE_CAUSES": "rätta till reversibla orsaker",
-  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Utför stimulering och hårbottens blodprov eller var redo för baby",
+  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Utför stimulering och skalpprov ",
 
   "CURRENT_INSTRUCTION_VARIABILITY": "Välj ett alternativ under variabilitet",
   "CURRENT_INSTRUCTION_BASELINE": "Välj ett alternativ under basal hjärtfrekvens",
-  "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Välj ett alternativ under decelerations frekvens",
-  "CURRENT_INSTRUCTION_DECELARATIONFORM": "Välj ett alternativ under decelerations form",
+  "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Välj ett alternativ under Kombinerade decelerationer",
+  "CURRENT_INSTRUCTION_DECELARATIONFORM": "Välj ett alternativ under Variabla decelerationer",
   "CURRENT_INSTRUCTION_ACCELARATIONS": "Välj ett alternativ under accelerationer",
   "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "Resultatet är avvikande, klicka på åtgärdsknappen längst ner för instruktioner!",
   "CURRENT_INSTRUCTION_FINISHED_NORMAL": "Resultatet är normalt, fortsätt med normalt arbete!",
