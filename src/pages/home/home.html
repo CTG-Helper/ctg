@@ -7,8 +7,10 @@
       </button>
     </ion-buttons>
   </ion-navbar>
-  <ion-toolbar color="secondary" no-border text-center>
-   <p class="instruction-p">{{currentInstruction | translate}}</p>
+
+  <ion-toolbar color="primary" no-border text-center>
+  <hr class="hr-style">
+   <p style="font-style:italic;" class="instruction-p">{{currentInstruction | translate}}</p>
   </ion-toolbar>
 </ion-header>
 
@@ -170,9 +172,9 @@
 
   <ion-card text-center class="todo-card" (click)="openMeasureModal()" color="{{color}}">
       <ion-card-content>
-        <p>{{ measureButtonTitle | translate}}</p>
+        <p class="measure-button-title">{{ measureButtonTitle | translate}}</p>
         <br *ngIf="measureButtonClick !== ''">
-        <p>{{ measureButtonClick | translate}}</p>
+        <p class="measure-button-click" *ngIf="measureButtonClick !== ''">{{ measureButtonClick | translate }}</p>
       </ion-card-content>
   </ion-card>
 

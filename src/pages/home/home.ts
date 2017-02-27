@@ -109,7 +109,7 @@ export class HomePage implements OnInit {
       this.color = COLOR.PRIMARY;
       this.measuresInfoText = MEASURE.NORMAL;
       this.measureButtonTitle = "RESULTBUTTON_NORMAL_TITLE";
-      this.measureButtonClick = "RESULTBUTTON_NORMAL_CLICK";
+      this.measureButtonClick = "";
       this.isNormalState = true;
       console.log(this.measureButtonTitle);
       console.log(this.measureButtonClick);
@@ -185,7 +185,9 @@ export class HomePage implements OnInit {
   }
 
   generateNextStep() {
-    if (this.baseline == "") {
+    if (this.variability == "") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_VARIABILITY";
+    } else if (this.baseline == "") {
       this.currentInstruction = "CURRENT_INSTRUCTION_BASELINE";
     } else if (this.decelerationsFrequency == "") {
       this.currentInstruction = "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY";
