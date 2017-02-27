@@ -15,9 +15,7 @@
   "ACCELERATION_INFO": "Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
 
 
-<<<<<<< HEAD
   "CHOOSE_CONDITIONS": "Välj korrekta värden ovan",
-=======
   "BASELINE_SEGMENT_INFO_1":"Mindre än 100 BPM ",
   "BASELINE_SEGMENT_INFO_2":"100-110 BPM",
   "BASELINE_SEGMENT_INFO_3":"110-160 BPM",
@@ -49,7 +47,6 @@
   "ACCELERATION_SEGMENT_INFO_2":"Icke förekommande",
 
   "CHOOSE_CONDITIONS": "Inga val gjorda, var vänlig välj alternativ för att få åtgärdsförslag",
->>>>>>> d921a3ad85a4b8522cc307655490826db1810921
   "RISK_HYPOXIA_PATHOLOGICAL": "Risk för hypoxia (patalogisk)",
   "LOW_RISK_HYPOXIA_ABNORMAL": "Låg risk för hypoxia (abnormal).",
   "NO_HYPOXIA": "Ingen risk för hypoxi (normal).",
