@@ -52,7 +52,6 @@ export class HomePage implements OnInit {
 
   whatToDo() {
     this.setColorToDecelerationSegments();
-    this.lastDesicion();
 
     // Case Fatal, if results are pathological
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -85,6 +84,7 @@ export class HomePage implements OnInit {
       this.whatTodoText = "NO_HYPOXIA";
       this.isNormalState = true;
     }
+    //this.lastDesicion();
   }
 
 
@@ -134,6 +134,7 @@ export class HomePage implements OnInit {
     this.accelerations = "";
     this.decelerationStatus = "";
     this.color = COLOR.PRIMARY;
+    this.measuresInfoText = MEASURE.NORMAL;
     this.whatTodoText = "CHOOSE_CONDITIONS";
     this.isNormalState = true;
   }
