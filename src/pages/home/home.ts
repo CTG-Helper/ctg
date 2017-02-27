@@ -5,7 +5,6 @@ import {InformationModalPage} from "../information-modal/information-modal";
 import {MeasureModalPage} from "../measure-modal/measure-modal";
 import * as _ from 'lodash';
 import {TranslateService, LangChangeEvent} from "ng2-translate";
-import {InstructionModalPage} from "../instruction-modal/instruction-modal";
 
 @Component({
   selector: 'page-home',
@@ -121,13 +120,6 @@ export class HomePage implements OnInit {
     modal.present();
   }
 
-
-  openInstructionModal() {
-    let modal = this.modalCtrl.create(InstructionModalPage, {
-      language: this.selectedLanguage
-    });
-    modal.present();
-  }
 
 
   setColorToDecelerationSegments() {
