@@ -16,7 +16,7 @@
   "ACCELERATION_INFO": "The NICHD nomenclature[9] defines an acceleration as a visually apparent abrupt increase in fetal heart rate. An abrupt increase is defined as an increase from the onset of acceleration to the peak in less than or equal to 30 seconds. To be called an acceleration, the peak must be greater than or equal to 15 bpm, and the acceleration must last greater than or equal to 15 seconds from the onset to return to baseline.[12] A prolonged acceleration is greater than or equal to 2 minutes but less than 10 minutes in duration. An acceleration lasting greater than or equal to 10 minutes is defined as a baseline change. Before 32 weeks of gestation, accelerations are defined as having a peak greater than or equal to 10 bpm and a duration of greater than or equal to 10 seconds.",
 
 
-  "CHOOSE_CONDITIONS": "Please choose the conditions above to get appropriate measuresInfoText",
+  "CHOOSE_CONDITIONS": "Choose correct values above",
   "RISK_HYPOXIA_PATHOLOGICAL": "Risk for hypoxia (pathological)",
   "LOW_RISK_HYPOXIA_ABNORMAL": "Low risk for hypoxia (abnormal).",
   "NO_HYPOXIA": "Non ongoing hypoxia (normal).",
@@ -49,8 +49,17 @@
   "PRESENCE": "Presence",
 
 
+  "RESULTBUTTON_NORMAL_TITLE": "The result are normal, no special measures needed",
+  "RESULTBUTTON_NORMAL_CLICK": "",
+
+  "RESULTBUTTON_ABNORMAL_TITLE": "The result are abnormal",
+  "RESULTBUTTON_ABNORMAL_CLICK": "CLICK HERE FOR MEASURES!",
+
+  "RESULTBUTTON_FATAL_TITLE": "The result are pathological",
+  "RESULTBUTTON_FATAL_CLICK": "CLICK HERE FOR MEASURES!",
+
   "CONTINUE_WITH_STANDARD_PROCEDURES": "Continue with standard procedures",
-  "MORE_INFO": "More info",
+  "MORE_INFO": "Click here for measures",
 
 
   "DO_YOU_WANT_TO_RESET_FORM": "Do you want to reset the form?",
