@@ -11,13 +11,13 @@ import {TranslateService} from "ng2-translate";
 export class InformationModalPage implements OnInit {
   informationText: string;
   title: string;
-  segmentText_1:string;
-  segmentText_2:string;
-  segmentText_3:string;
-  segmentText_4:string;
-  segmentText_5:string;
-  segmentText_6:string;
-  segmentText_7:string;
+  segmentText_1:string = "";
+  segmentText_2:string = "";
+  segmentText_3:string = "";
+  segmentText_4:string = "";
+  segmentText_5:string = "";
+  segmentText_6:string = "";
+  segmentText_7:string = "";
 
   constructor(
     private viewCtrl: ViewController,

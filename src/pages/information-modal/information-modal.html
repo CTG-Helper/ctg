@@ -23,25 +23,25 @@
   <h4>{{title | translate }}</h4>
   <p>{{informationText | translate}}</p>
   <ul>
-    <li>
+    <li *ngIf="segmentText_1 !== ''">
       <b>{{segmentText_1 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_2 !== ''">
       <b>{{segmentText_2 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_3 !== ''">
       <b>{{segmentText_3 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_4 !== ''">
       <b>{{segmentText_4 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_5 !== ''">
       <b>{{segmentText_5 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_6 !== ''">
       <b>{{segmentText_6 | translate}}</b>
     </li>
-    <li>
+    <li *ngIf="segmentText_7 !== ''">
       <b>{{segmentText_7 | translate}}</b>
     </li>
   </ul>

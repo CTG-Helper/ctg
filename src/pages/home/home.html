@@ -170,9 +170,9 @@
 
   <ion-card text-center class="todo-card" (click)="openMeasureModal()" color="{{color}}">
       <ion-card-content>
-        <p>{{ measureButtonTitle | translate}}</p>
+        <p class="measure-button-title">{{ measureButtonTitle | translate}}</p>
         <br *ngIf="measureButtonClick !== ''">
-        <p>{{ measureButtonClick | translate}}</p>
+        <p class="measure-button-click" *ngIf="measureButtonClick !== ''">{{ measureButtonClick | translate }}</p>
       </ion-card-content>
   </ion-card>
 
