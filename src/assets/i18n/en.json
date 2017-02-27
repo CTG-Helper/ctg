@@ -69,8 +69,13 @@
 
   "FATAL_INTERPRETATION": "Moderate/high risk for hypoxia",
   "FATAL_CORRECT_REVERSIBLE_CAUSES": "Correct reversible causes",
-  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Perform stimulationtest/scalpbloodtest or deliver baby"
+  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Perform stimulationtest/scalpbloodtest or deliver baby",
 
+  "CURRENT_INSTRUCTION_VARIABILITY": "Choose one option in variability",
+  "CURRENT_INSTRUCTION_BASELINE": "Choose one option in baseline",
+  "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Choose one option in decelaration frequency",
+  "CURRENT_INSTRUCTION_DECELARATIONFORM": "Choose one option in decelaration form",
+  "CURRENT_INSTRUCTION_ACCELARATIONS": "Choose one option in accelerations",
 
-
+  "CURRENT_INSTRUCTION_FATAL": "The result are pathological, click on the measurebutton at the bottom"
 }

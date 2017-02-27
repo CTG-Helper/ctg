@@ -24,6 +24,8 @@ export class HomePage implements OnInit {
   color: string = COLOR.PRIMARY;
   whatTodoText: string = "CHOOSE_CONDITIONS";
 
+  currentInstruction: string = "CURRENT_INSTRUCTION_VARIABILITY";
+
   // Arrays with the fatal conditions to check against to see if the current status is fatal.
   case_fatal_baselines = [DECISION.BASELINE_1];
   case_fatal_variabilitys = [DECISION.VARIABILITY_1, DECISION.VARIABILITY_2, DECISION.VARIABILITY_4];
@@ -85,6 +87,7 @@ export class HomePage implements OnInit {
       this.isNormalState = true;
     }
     //this.lastDesicion();
+    this.generateNextStep();
   }
 
 
@@ -150,8 +153,19 @@ export class HomePage implements OnInit {
     }
   }
 
-
-
+  generateNextStep() {
+    if (this.baseline == "") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_BASELINE";
+    } else if (this.decelerationsFrequency == "") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY";
+    } else if (this.decelerationsForm == "") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_DECELARATIONFORM";
+    } else if (this.accelerations == "") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_ACCELARATIONS";
+    } if (this.measuresInfoText == "fatal") {
+      this.currentInstruction += "."+"CURRENT_INSTRUCTION_FATAL";
+    }
+  }
 
   initTranslateSubscriber() {
 
