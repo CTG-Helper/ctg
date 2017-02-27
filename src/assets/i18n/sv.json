@@ -68,13 +68,15 @@
 
   "FATAL_INTERPRETATION": "Måttlig / hög risk för hypoxi",
   "FATAL_CORRECT_REVERSIBLE_CAUSES": "rätta till reversibla orsaker",
-  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Utför stimulering och hårbottens blodprov eller var redo för baby"
+  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Utför stimulering och hårbottens blodprov eller var redo för baby",
 
+  "CURRENT_INSTRUCTION_VARIABILITY": "Välj ett alternativ under variabilitet",
+  "CURRENT_INSTRUCTION_BASELINE": "Välj ett alternativ under basal hjärtfrekvens",
+  "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Välj ett alternativ under decelerations frekvens",
+  "CURRENT_INSTRUCTION_DECELARATIONFORM": "Välj ett alternativ under decelerations form",
+  "CURRENT_INSTRUCTION_ACCELARATIONS": "Välj ett alternativ under accelerationer",
 
+  "CURRENT_INSTRUCTION_FATAL": "Resultatet är patologisk, klicka på åtgärdsknappen längst ner"
 
 }
-
-
-
-
-
+*-+
