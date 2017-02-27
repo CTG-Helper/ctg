@@ -234,10 +234,8 @@ export class HomePage implements OnInit {
 
     if (this.isEnglish) {
       this.selectedLanguage = 'en';
-      this.nextLanguageText = "Swedish";
     } else {
       this.selectedLanguage = 'sv';
-      this.nextLanguageText = "English";
     }
     // Sets the current language
     this.translateService.use(this.selectedLanguage);
