@@ -5,16 +5,22 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>instructionModal</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>
+      Instructions
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="close()">
+        <span ion-text>{{'CANCEL' | translate }}</span>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
  <p>INSTRUCTIONS</p>
+
   <div text-center>
     <button ion-button icon-right (click)="close()">
       {{'CLOSE_DOWN' | translate }}
