@@ -1,9 +1,7 @@
-
-
 <ion-content padding class="content">
 
   <div class="flex-container flex-end">
-    <button ion-button clear  class="shadow-light-button" (click)="onLanguageChange()">
+    <button ion-button clear class="shadow-light-button" (click)="onLanguageChange()">
       <i [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'"></i>
     </button>
   </div>
@@ -12,11 +10,12 @@
   <div text-center>
     <img class="team-logo" src="./assets/team-logo.png" alt="">
   </div>
+
   <hr class="hr-style">
   <div style="margin-top:10%; font-weight:bold;" text-center>
-    <button color="light" class="shadow-light-button" ion-button [navPush]="ctgPage" full block>CTG</button>
-    <button color="light" class="shadow-light-button" ion-button [navPush]="instructionPage" full>Instructions</button>
-    <button color="light" class="shadow-light-button" ion-button [navPush]="aboutPage" full>About us</button>
+    <button color="light" class="shadow-light-button" ion-button [navPush]="ctgPage" full block>{{'CTG_BUTTON' | translate}}</button>
+    <button color="light" class="shadow-light-button" ion-button [navPush]="instructionPage" full>{{'INSTRUCTIONS_BUTTON' | translate}}</button>
+    <button color="light" class="shadow-light-button" ion-button [navPush]="aboutPage" full>{{'ABOUT_BUTTON' | translate}}</button>
     </div>
     <hr style="margin-top:10%;" class="hr-style">
     <p text-center>© Developerteam</p>
