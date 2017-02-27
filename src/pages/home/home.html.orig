@@ -1,14 +1,5 @@
-<ion-header no-border>
-  <ion-navbar color="primary">
-<<<<<<< HEAD
-
-    <ion-buttons start>
-      <button ion-button (click)="openInstructionModal()">
-        <span ion-text>Instruktion</span>
-      </button>
-    </ion-buttons>
-=======
->>>>>>> 140462c4a05e525ce470f53e4b249383f236ffa3
+<ion-header no-border [ngClass]="shadowFixShow ? 'header-shadow' : ''">
+  <ion-navbar color="primary" >
     <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
     <ion-buttons end>
       <button ion-button (click)="onLanguageChange()">
@@ -22,7 +13,6 @@
 </ion-header>
 
 <ion-content>
-
   <ion-list no-lines>
 
 
@@ -176,6 +166,16 @@
   </ion-list>
 
 
+
+  <ion-card text-center class="todo-card" (click)="openMeasureModal()" color="{{color}}">
+      <ion-card-content>
+        <p>{{ measureButtonTitle | translate}}</p>
+        <br *ngIf="measureButtonClick !== ''">
+        <p>{{ measureButtonClick | translate}}</p>
+      </ion-card-content>
+  </ion-card>
+
+<!--
   <ion-card class="todo-card" (click)="openMeasureModal()" color="{{color}}">
     <ion-card-content>
       <ion-row>
@@ -185,13 +185,16 @@
         <ion-col no-padding>
           {{ whatTodoText | translate }}
           <br>
-          <button outline *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{'MORE_INFO' | translate}}
+          <button clear *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{'MORE_INFO' | translate}}
           </button>
           <p *ngIf="isNormalState">{{'CONTINUE_WITH_STANDARD_PROCEDURES' | translate}}</p>
         </ion-col>
       </ion-row>
     </ion-card-content>
   </ion-card>
+<<<<<<< HEAD
+=======
+-->
 
-
+>>>>>>> 237c78a7abce7daa9ef4e755f6faf8919b65e8e3
 </ion-content>

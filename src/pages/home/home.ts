@@ -22,7 +22,9 @@ export class HomePage implements OnInit {
   moreInfoText = "More Info";
   isNormalState = true;
   color: string = COLOR.PRIMARY;
-  whatTodoText: string = "CHOOSE_CONDITIONS";
+
+  measureButtonTitle: string = "CHOOSE_CONDITIONS";
+  measureButtonClick: string = "";
 
   currentInstruction: string = "CURRENT_INSTRUCTION_VARIABILITY";
 
@@ -81,7 +83,10 @@ export class HomePage implements OnInit {
       this.isNormalState = false;
       this.color = COLOR.DANGER;
       this.measuresInfoText = MEASURE.FATAL;
-      this.whatTodoText = "RISK_HYPOXIA_PATHOLOGICAL";
+      this.measureButtonTitle = "RESULTBUTTON_FATAL_TITLE";
+      this.measureButtonClick = "RESULTBUTTON_FATAL_CLICK";
+      console.log(this.measureButtonTitle);
+      console.log(this.measureButtonClick);
     }
 
     // Case Abnormal, if results are not that bad but bad
@@ -93,15 +98,21 @@ export class HomePage implements OnInit {
       this.isNormalState = false;
       this.color = COLOR.WARNING;
       this.measuresInfoText = MEASURE.ABNORMAL;
-      this.whatTodoText = "LOW_RISK_HYPOXIA_ABNORMAL";
+      this.measureButtonTitle = "RESULTBUTTON_ABNORMAL_TITLE";
+      this.measureButtonClick = "RESULTBUTTON_ABNORMAL_CLICK";
+      console.log(this.measureButtonTitle);
+      console.log(this.measureButtonClick);
     }
 
     // Case Normal, if results are normal
     else {
       this.color = COLOR.PRIMARY;
       this.measuresInfoText = MEASURE.NORMAL;
-      this.whatTodoText = "NO_HYPOXIA";
+      this.measureButtonTitle = "RESULTBUTTON_NORMAL_TITLE";
+      this.measureButtonClick = "RESULTBUTTON_NORMAL_CLICK";
       this.isNormalState = true;
+      console.log(this.measureButtonTitle);
+      console.log(this.measureButtonClick);
     }
     //this.lastDesicion();
     this.generateNextStep();
@@ -156,7 +167,8 @@ export class HomePage implements OnInit {
     this.decelerationStatus = "";
     this.color = COLOR.PRIMARY;
     this.measuresInfoText = MEASURE.NORMAL;
-    this.whatTodoText = "CHOOSE_CONDITIONS";
+    this.measureButtonTitle = "CHOOSE_CONDITIONS";
+    this.measureButtonClick = "";
     this.isNormalState = true;
     this.currentInstruction = "CURRENT_INSTRUCTION_VARIABILITY";
   }
@@ -216,22 +228,13 @@ export class HomePage implements OnInit {
   }
 
   initTranslateSubscriber() {
-
-
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.yesText =  this.translateService.instant("YES");
       this.cancelText =  this.translateService.instant("CANCEL");
       this.alertMessage =  this.translateService.instant("DO_YOU_WANT_TO_RESET_FORM");
       this.alertTitle =  this.translateService.instant("RESET_FORM");
     });
-
-
-
-
   }
-
-
-
 
   yesText = "Yes";
   cancelText = "Cancel";

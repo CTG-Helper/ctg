@@ -15,6 +15,9 @@
   "ACCELERATION_INFO": "Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
 
 
+<<<<<<< HEAD
+  "CHOOSE_CONDITIONS": "Välj korrekta värden ovan",
+=======
   "BASELINE_SEGMENT_INFO_1":"Mindre än 100 BPM ",
   "BASELINE_SEGMENT_INFO_2":"100-110 BPM",
   "BASELINE_SEGMENT_INFO_3":"110-160 BPM",
@@ -46,6 +49,7 @@
   "ACCELERATION_SEGMENT_INFO_2":"Icke förekommande",
 
   "CHOOSE_CONDITIONS": "Inga val gjorda, var vänlig välj alternativ för att få åtgärdsförslag",
+>>>>>>> d921a3ad85a4b8522cc307655490826db1810921
   "RISK_HYPOXIA_PATHOLOGICAL": "Risk för hypoxia (patalogisk)",
   "LOW_RISK_HYPOXIA_ABNORMAL": "Låg risk för hypoxia (abnormal).",
   "NO_HYPOXIA": "Ingen risk för hypoxi (normal).",
@@ -77,9 +81,17 @@
   "ABSENCE": "Förekommande",
   "PRESENCE": "Icke förekommande",
 
+  "RESULTBUTTON_NORMAL_TITLE": "Resultatet är normalt, inga speciella åtgärder behövs",
+  "RESULTBUTTON_NORMAL_CLICK": "",
+
+  "RESULTBUTTON_ABNORMAL_TITLE": "Resultatet är avvikande",
+  "RESULTBUTTON_ABNORMAL_CLICK": "KLICKA HÄR FÖR ÅTGÄRDER",
+
+  "RESULTBUTTON_FATAL_TITLE": "Resultatet är patologiskt",
+  "RESULTBUTTON_FATAL_CLICK": "KLICKA HÄR FÖR ÅTGÄRDER",
 
   "CONTINUE_WITH_STANDARD_PROCEDURES": "Fortsätt med vanliga rutiner",
-  "MORE_INFO": "Mer info",
+  "MORE_INFO": "Klicka här för åtgärder",
 
 
   "DO_YOU_WANT_TO_RESET_FORM": "Vill du nollställa värdena?",
