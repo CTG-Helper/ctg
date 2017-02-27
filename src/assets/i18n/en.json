@@ -76,6 +76,8 @@
   "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Choose one option in decelaration frequency",
   "CURRENT_INSTRUCTION_DECELARATIONFORM": "Choose one option in decelaration form",
   "CURRENT_INSTRUCTION_ACCELARATIONS": "Choose one option in accelerations",
+  "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "The result are abnormal, Press measurebutton at the bottom for instructions",
+  "CURRENT_INSTRUCTION_FINISHED_NORMAL": "The result are normal, continue with standard procedures!",
 
-  "CURRENT_INSTRUCTION_FATAL": "The result are pathological, click on the measurebutton at the bottom"
+  "CURRENT_INSTRUCTION_FATAL": "The result are pathological, press measurebutton at the bottom for instructions!"
 }
