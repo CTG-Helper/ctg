@@ -1,4 +1,4 @@
-<ion-header no-border class="header-shadow">
+<ion-header no-border [ngClass]="shadowFixShow ? 'header-shadow' : ''">
   <ion-navbar color="primary" >
     <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
     <ion-buttons end>
@@ -13,7 +13,6 @@
 </ion-header>
 
 <ion-content>
-
   <ion-list no-lines>
 
 
@@ -183,6 +182,4 @@
       </ion-row>
     </ion-card-content>
   </ion-card>
-
-
 </ion-content>

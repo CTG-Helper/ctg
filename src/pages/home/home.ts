@@ -52,6 +52,23 @@ export class HomePage implements OnInit {
   }
 
 
+  shadowFixShow = false;
+
+
+
+  ionViewDidEnter() {
+    console.log("Life Cycle @  ionViewWillEnter");
+    this.shadowFixShow = true;
+
+  }
+
+  ionViewWillLeave() {
+    this.shadowFixShow = false;
+
+    console.log("Life Cycle @  ionWillLeave");
+  }
+
+
   whatToDo() {
     this.setColorToDecelerationSegments();
 
