@@ -1,22 +1,34 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {Component, OnInit} from '@angular/core';
+import {NavParams, ViewController} from 'ionic-angular';
+import {TranslateService} from "ng2-translate";
 
-/*
-  Generated class for the InstructionModal page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
-  selector: 'page-instruction-modal',
-  templateUrl: 'instruction-modal.html'
+  selector: 'measure-modal',
+  templateUrl: 'measure-modal.html'
 })
-export class InstructionModalPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+export class InstructionModalPage implements OnInit {
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InstructionModalPage');
+
+  constructor(private navParams: NavParams,
+              private viewCtrl: ViewController,
+              private translateService: TranslateService) {
   }
 
+
+  ngOnInit() {
+    let language = this.navParams.get('language');
+    this.translateService.use(language);
+
+    this.initText();
+  }
+
+  initText() {
+
+  }
+
+
+  close() {
+    this.viewCtrl.dismiss();
+  }
 }

@@ -6,6 +6,7 @@ import {MeasureModalPage} from "../pages/measure-modal/measure-modal";
 import {InformationModalPage} from "../pages/information-modal/information-modal";
 import {TranslateModule, TranslateStaticLoader, TranslateLoader} from "ng2-translate";
 import {Http} from "@angular/http";
+import {InstructionModalPage} from "../pages/instruction-modal/instruction-modal";
 
 
 export function createTranslateLoader(http: Http) {
@@ -18,7 +19,8 @@ export function createTranslateLoader(http: Http) {
     MyApp,
     HomePage,
     MeasureModalPage,
-    InformationModalPage
+    InformationModalPage,
+    InstructionModalPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp, {mode:"ios"}),
@@ -33,7 +35,8 @@ export function createTranslateLoader(http: Http) {
     MyApp,
     HomePage,
     MeasureModalPage,
-    InformationModalPage
+    InformationModalPage,
+    InstructionModalPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
