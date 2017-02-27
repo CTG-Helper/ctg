@@ -22,12 +22,40 @@
 <ion-content padding>
   <h4>{{title | translate }}</h4>
   <p>{{informationText | translate}}</p>
-
+  <ul>
+    <li>
+      <b>{{segmentText_1 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_2 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_3 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_4 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_5 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_6 | translate}}</b>
+    </li>
+    <li>
+      <b>{{segmentText_7 | translate}}</b>
+    </li>
+  </ul>
+  <img *ngIf="title == 'VARIABILITY'" src="./assets/ctg-images/Varialibitet.png" alt="">
+  <img *ngIf="title == 'BASELINE'" src="./assets/ctg-images/BasalFrekvens.png" alt="">
+  <img *ngIf="title == 'DECELERATION_FREQUENCY'" src="./assets/ctg-images/KombineradeDec.png" alt="">
+  <img *ngIf="title == 'DECELERATION_FORM'" src="./assets/ctg-images/VariablaDec.png" alt="">
   <img *ngIf="title == 'ACCELERATIONS'" src="./assets/ctg-images/accelerations.png" alt="">
 
-
   <div text-center>
-    <button ion-button icon-right (click)="close()">
+    <button ion-button icon-r
+
+
+  (click)="close()">
       {{'CLOSE_DOWN' | translate }}
       <ion-icon name="arrow-down"></ion-icon>
     </button>
