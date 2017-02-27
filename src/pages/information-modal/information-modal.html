@@ -11,7 +11,7 @@
     </ion-title>
     <ion-buttons start>
       <button ion-button (click)="close()">
-        <span ion-text>{{'CANCEL' | translate }}</span>
+        <span ion-text>{{'BACK' | translate }}</span>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -52,12 +52,6 @@
   <img *ngIf="title == 'ACCELERATIONS'" src="./assets/ctg-images/accelerations.png" alt="">
 
   <div text-center>
-    <button ion-button icon-r
-
-
-  (click)="close()">
-      {{'CLOSE_DOWN' | translate }}
       <ion-icon name="arrow-down"></ion-icon>
-    </button>
   </div>
 </ion-content>

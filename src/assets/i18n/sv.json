@@ -86,7 +86,8 @@
   "RESET_FORM": "Nollställ värdena",
   "CANCEL": "Avbryt",
   "YES": "Ja",
-  "CLOSE_DOWN": "Stäng ner",
+  "CLOSE": "Stäng",
+  "BACK": "Tillbaka",
 
   "MEASURES": "Åtgärder",
 
@@ -105,7 +106,9 @@
   "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Välj ett alternativ under Kombinerade decelerationer",
   "CURRENT_INSTRUCTION_DECELARATIONFORM": "Välj ett alternativ under Variabla decelerationer",
   "CURRENT_INSTRUCTION_ACCELARATIONS": "Välj ett alternativ under accelerationer",
+  "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "Resultatet är avvikande, klicka på åtgärdsknappen längst ner för instruktioner!",
+  "CURRENT_INSTRUCTION_FINISHED_NORMAL": "Resultatet är normalt, fortsätt med normalt arbete!",
 
-  "CURRENT_INSTRUCTION_FATAL": "Resultatet är patologisk, klicka på åtgärdsknappen längst ner"
+  "CURRENT_INSTRUCTION_FATAL": "Resultatet är patologisk, klicka på åtgärdsknappen längst ner för instruktioner!"
 
 }

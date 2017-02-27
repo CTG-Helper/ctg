@@ -5,7 +5,6 @@ import {InformationModalPage} from "../information-modal/information-modal";
 import {MeasureModalPage} from "../measure-modal/measure-modal";
 import * as _ from 'lodash';
 import {TranslateService, LangChangeEvent} from "ng2-translate";
-import {InstructionModalPage} from "../instruction-modal/instruction-modal";
 
 @Component({
   selector: 'page-home',
@@ -111,13 +110,6 @@ export class HomePage implements OnInit {
   }
 
 
-  openInstructionModal() {
-    let modal = this.modalCtrl.create(InstructionModalPage, {
-      language: this.selectedLanguage
-    });
-    modal.present();
-  }
-
 
   setColorToDecelerationSegments() {
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
@@ -149,6 +141,7 @@ export class HomePage implements OnInit {
     this.measuresInfoText = MEASURE.NORMAL;
     this.whatTodoText = "CHOOSE_CONDITIONS";
     this.isNormalState = true;
+    this.currentInstruction = "CURRENT_INSTRUCTION_VARIABILITY";
   }
 
 
@@ -171,9 +164,38 @@ export class HomePage implements OnInit {
       this.currentInstruction = "CURRENT_INSTRUCTION_DECELARATIONFORM";
     } else if (this.accelerations == "") {
       this.currentInstruction = "CURRENT_INSTRUCTION_ACCELARATIONS";
-    } if (this.measuresInfoText == "fatal") {
-      this.currentInstruction += "."+"CURRENT_INSTRUCTION_FATAL";
     }
+
+    if (this.measuresInfoText == "fatal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FATAL";
+    }
+
+    if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "abnormal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_ABNORMAL";
+    }
+
+    else if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "fatal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FATAL";
+    }
+
+      else if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "normal") {
+        this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_NORMAL";
+      }
   }
 
   initTranslateSubscriber() {
@@ -226,7 +248,6 @@ export class HomePage implements OnInit {
 
   isEnglish = false;
   selectedLanguage = "sv";
-  nextLanguageText = "English";
 
   onLanguageChange() {
     // Toggles between true or false when pressed;
@@ -234,10 +255,8 @@ export class HomePage implements OnInit {
 
     if (this.isEnglish) {
       this.selectedLanguage = 'en';
-      this.nextLanguageText = "Swedish";
     } else {
       this.selectedLanguage = 'sv';
-      this.nextLanguageText = "English";
     }
     // Sets the current language
     this.translateService.use(this.selectedLanguage);

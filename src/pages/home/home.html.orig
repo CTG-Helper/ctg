@@ -1,5 +1,14 @@
-<ion-header no-border class="header-shadow">
-  <ion-navbar color="primary" >
+<ion-header no-border>
+  <ion-navbar color="primary">
+<<<<<<< HEAD
+
+    <ion-buttons start>
+      <button ion-button (click)="openInstructionModal()">
+        <span ion-text>Instruktion</span>
+      </button>
+    </ion-buttons>
+=======
+>>>>>>> 140462c4a05e525ce470f53e4b249383f236ffa3
     <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
     <ion-buttons end>
       <button ion-button (click)="onLanguageChange()">
