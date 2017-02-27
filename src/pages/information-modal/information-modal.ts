@@ -28,8 +28,6 @@ export class InformationModalPage implements OnInit {
 
   ngOnInit() {
     let decision = this.navParams.get('decisionName');
-    let language = this.navParams.get('language');
-    this.translateService.use(language);
     this.showInformation(decision);
   }
 

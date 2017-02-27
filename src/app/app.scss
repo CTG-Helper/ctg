@@ -15,6 +15,26 @@
 // automatically applied to the <body> element in the app.
 
 
+
+.icon-flag-english {
+  background-image: url("../assets/flags/english-flag.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-flag-swedish {
+  background-image: url('../assets/flags/swedish-flag.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.black-87 {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
   ion-app {

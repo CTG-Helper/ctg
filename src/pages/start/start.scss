@@ -1,3 +1,37 @@
 page-start {
 
+  .content {
+   background-color: #009688;
+  }
+
+  .icon-flag-english,
+  .icon-flag-swedish {
+    width: 70px;
+    height: 70px;
+  }
+
+  .shadow-light-button {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+
+  .flex-container {
+    display: flex;
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+
+  .team-logo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 204px;
+  }
 }

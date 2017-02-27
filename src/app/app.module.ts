@@ -8,6 +8,7 @@ import {TranslateModule, TranslateStaticLoader, TranslateLoader} from "ng2-trans
 import {Http} from "@angular/http";
 import { InstructionsPage} from "../pages/instructions/instructions";
 import {StartPage} from "../pages/start/start";
+import {AboutPage} from "../pages/about/about";
 
 
 export function createTranslateLoader(http: Http) {
@@ -21,6 +22,7 @@ export function createTranslateLoader(http: Http) {
     StartPage,
     HomePage,
     InstructionsPage,
+    AboutPage,
     MeasureModalPage,
     InformationModalPage
   ],
@@ -37,10 +39,12 @@ export function createTranslateLoader(http: Http) {
     MyApp,
     StartPage,
     HomePage,
+    AboutPage,
     InstructionsPage,
     MeasureModalPage,
     InformationModalPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

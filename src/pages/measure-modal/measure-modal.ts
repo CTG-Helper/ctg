@@ -24,9 +24,6 @@ export class MeasureModalPage implements OnInit {
   ngOnInit() {
     this.color = this.navParams.get("color");
     this.measures = this.navParams.get("measure");
-    let language = this.navParams.get('language');
-    this.translateService.use(language);
-
     this.initText();
   }
 

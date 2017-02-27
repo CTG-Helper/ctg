@@ -12,12 +12,12 @@ export class InstructionsPage implements OnInit {
 
   constructor(private navParams: NavParams,
               private viewCtrl: ViewController,
-              private translateService: TranslateService) {
+              private translateService: TranslateService,) {
   }
 
 
   ngOnInit() {
-
+    this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
     this.initText();
   }
 

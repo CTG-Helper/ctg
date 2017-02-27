@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ModalController, AlertController} from 'ionic-angular';
+import {ModalController, AlertController, ViewController} from 'ionic-angular';
 import {COLOR, MEASURE, DECISION} from "../../shared/consts/globals";
 import {InformationModalPage} from "../information-modal/information-modal";
 import {MeasureModalPage} from "../measure-modal/measure-modal";
@@ -43,19 +43,18 @@ export class HomePage implements OnInit {
 
   constructor(private modalCtrl: ModalController,
               private alertCtrl: AlertController,
+              private viewCtrl: ViewController,
               private translateService: TranslateService) {
   }
 
   ngOnInit() {
     this.initTranslateSubscriber();
+    this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
 
-    // just to invoke changes in the initTranslateSubscruber
-    this.translateService.use('sv');
   }
 
 
   shadowFixShow = false;
-
 
 
   ionViewDidEnter() {
@@ -121,7 +120,7 @@ export class HomePage implements OnInit {
 
   openMeasureModal() {
     if (this.measuresInfoText != MEASURE.NORMAL) {
-      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText, language: this.selectedLanguage});
+      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
       modal.present();
       modal.onDidDismiss(data => {
         this.resetAlert();
@@ -131,8 +130,7 @@ export class HomePage implements OnInit {
 
   openInfoModal(decisionName: string) {
     let modal = this.modalCtrl.create(InformationModalPage, {
-      decisionName: decisionName,
-      language: this.selectedLanguage
+      decisionName: decisionName
     });
     modal.present();
   }
@@ -235,6 +233,9 @@ export class HomePage implements OnInit {
       this.cancelText =  this.translateService.instant("CANCEL");
       this.alertMessage =  this.translateService.instant("DO_YOU_WANT_TO_RESET_FORM");
       this.alertTitle =  this.translateService.instant("RESET_FORM");
+
+      this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
+
     });
   }
 
@@ -269,19 +270,17 @@ export class HomePage implements OnInit {
 
 
   isEnglish = false;
-  selectedLanguage = "sv";
 
   onLanguageChange() {
     // Toggles between true or false when pressed;
     this.isEnglish = !this.isEnglish;
 
     if (this.isEnglish) {
-      this.selectedLanguage = 'en';
+      this.translateService.use('en');
     } else {
-      this.selectedLanguage = 'sv';
+      this.translateService.use('sv');
     }
-    // Sets the current language
-    this.translateService.use(this.selectedLanguage);
+
   }
 
 }
