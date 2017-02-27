@@ -2,6 +2,12 @@
   "HOME_TITLE": "CTG decision support",
 
 
+  "CTG_BUTTON": "CTG",
+  "ABOUT_BUTTON": "About us",
+  "INSTRUCTIONS_BUTTON": "Instructions",
+
+
+
   "VARIABILITY": "Variability",
   "BASELINE": "Baseline",
   "DECELERATION_FREQUENCY": "Decelerations frequency",

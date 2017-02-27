@@ -1,9 +1,7 @@
-
-
 <ion-content padding class="content">
 
   <div class="flex-container flex-end">
-    <button ion-button clear  class="shadow-light-button" (click)="onLanguageChange()">
+    <button ion-button clear class="shadow-light-button" (click)="onLanguageChange()">
       <i [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'"></i>
     </button>
   </div>
@@ -14,8 +12,8 @@
   </div>
 
   <div text-center>
-    <button class="shadow-light-button" ion-button [navPush]="ctgPage" full block>CTG</button>
-    <button class="shadow-light-button" ion-button [navPush]="instructionPage" full>Instructions</button>
-    <button class="shadow-light-button" ion-button [navPush]="aboutPage" full>About us</button>
+    <button class="shadow-light-button" ion-button [navPush]="ctgPage" full block>{{'CTG_BUTTON' | translate}}</button>
+    <button class="shadow-light-button" ion-button [navPush]="instructionPage" full>{{'INSTRUCTIONS_BUTTON' | translate}}</button>
+    <button class="shadow-light-button" ion-button [navPush]="aboutPage" full>{{'ABOUT_BUTTON' | translate}}</button>
   </div>
 </ion-content>

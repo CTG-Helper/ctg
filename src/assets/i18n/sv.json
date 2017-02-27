@@ -1,6 +1,10 @@
 {
   "HOME_TITLE": "CTG Beslutstöd",
 
+  "CTG_BUTTON": "CTG",
+  "ABOUT_BUTTON": "Om oss",
+  "INSTRUCTIONS_BUTTON": "Instruktioner",
+
 
   "VARIABILITY": "Variabilitet",
   "BASELINE": "Basal hjärtfrekvens",
