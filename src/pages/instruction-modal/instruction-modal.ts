@@ -3,8 +3,8 @@ import {NavParams, ViewController} from 'ionic-angular';
 import {TranslateService} from "ng2-translate";
 
 @Component({
-  selector: 'measure-modal',
-  templateUrl: 'measure-modal.html'
+  selector: 'instruction-modal',
+  templateUrl: 'instruction-modal.html'
 })
 
 export class InstructionModalPage implements OnInit {
