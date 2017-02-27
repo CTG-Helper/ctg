@@ -4,13 +4,14 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import {TranslateService} from "ng2-translate";
+import {StartPage} from "../pages/start/start";
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = HomePage;
+  rootPage = StartPage;
 
   defaultLanguage = "sv";
 

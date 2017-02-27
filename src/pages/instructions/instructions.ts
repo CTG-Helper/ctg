@@ -3,11 +3,11 @@ import {NavParams, ViewController} from 'ionic-angular';
 import {TranslateService} from "ng2-translate";
 
 @Component({
-  selector: 'instruction-modal',
-  templateUrl: 'instruction-modal.html'
+  selector: 'instructions',
+  templateUrl: 'instructions.html'
 })
 
-export class InstructionModalPage implements OnInit {
+export class InstructionsPage implements OnInit {
 
 
   constructor(private navParams: NavParams,
@@ -17,8 +17,6 @@ export class InstructionModalPage implements OnInit {
 
 
   ngOnInit() {
-    let language = this.navParams.get('language');
-    this.translateService.use(language);
 
     this.initText();
   }
