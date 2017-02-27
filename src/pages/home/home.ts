@@ -226,7 +226,6 @@ export class HomePage implements OnInit {
 
   isEnglish = false;
   selectedLanguage = "sv";
-  nextLanguageText = "English";
 
   onLanguageChange() {
     // Toggles between true or false when pressed;

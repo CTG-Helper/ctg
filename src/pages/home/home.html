@@ -6,7 +6,6 @@
         <span ion-text>Instruktion</span>
       </button>
     </ion-buttons>
-
     <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
     <ion-buttons end>
       <button ion-button (click)="onLanguageChange()">
@@ -183,7 +182,7 @@
         <ion-col no-padding>
           {{ whatTodoText | translate }}
           <br>
-          <button *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{'MORE_INFO' | translate}}
+          <button outline *ngIf="!isNormalState" ion-button style="margin-left: 40px; margin-top: 20px;">{{'MORE_INFO' | translate}}
           </button>
           <p *ngIf="isNormalState">{{'CONTINUE_WITH_STANDARD_PROCEDURES' | translate}}</p>
         </ion-col>

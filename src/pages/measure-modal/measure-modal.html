@@ -5,7 +5,7 @@
     </ion-title>
     <ion-buttons start>
       <button ion-button (click)="close()">
-        <span ion-text>{{'CANCEL' | translate }}</span>
+        <span ion-text>{{'BACK' | translate }}</span>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -23,9 +23,9 @@
   </ul>
 
   <div text-center>
-    <button ion-button icon-right (click)="close()" class="dismissButton">
-      {{'CLOSE_DOWN' | translate }}
-      <ion-icon name="arrow-down"></ion-icon>
+    <button ion-button icon-left (click)="close()" class="dismissButton">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+      {{'BACK' | translate }}
     </button>
   </div>
 
