@@ -149,6 +149,7 @@ export class HomePage implements OnInit {
     this.measuresInfoText = MEASURE.NORMAL;
     this.whatTodoText = "CHOOSE_CONDITIONS";
     this.isNormalState = true;
+    this.currentInstruction = "CURRENT_INSTRUCTION_VARIABILITY";
   }
 
 
@@ -171,9 +172,38 @@ export class HomePage implements OnInit {
       this.currentInstruction = "CURRENT_INSTRUCTION_DECELARATIONFORM";
     } else if (this.accelerations == "") {
       this.currentInstruction = "CURRENT_INSTRUCTION_ACCELARATIONS";
-    } if (this.measuresInfoText == "fatal") {
-      this.currentInstruction += "."+"CURRENT_INSTRUCTION_FATAL";
     }
+
+    if (this.measuresInfoText == "fatal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FATAL";
+    }
+
+    if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "abnormal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_ABNORMAL";
+    }
+
+    else if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "fatal") {
+      this.currentInstruction = "CURRENT_INSTRUCTION_FATAL";
+    }
+
+      else if ((this.baseline != "" &&
+      this.variability != "" &&
+      this.decelerationsFrequency != "" &&
+      this.decelerationsForm != "" &&
+      this.accelerations != "") &&
+      this.measuresInfoText == "normal") {
+        this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_NORMAL";
+      }
   }
 
   initTranslateSubscriber() {
