@@ -6,25 +6,28 @@
       <i [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'"></i>
     </button>
   </div>
-  <div text-center>
-    <img class="team-logo" src="./assets/team-logo.png" alt="">
-  </div>
 
-  <div class="bottom-content">
-    <hr class="hr-style">
-    <div text-center class="button-holder">
-      <button color="light" class="shadow-light-button" ion-button [navPush]="ctgPage" full block>{{'CTG_BUTTON' |
-        translate}}
-      </button>
-      <button color="light" class="shadow-light-button" ion-button [navPush]="instructionPage" full>
-        {{'INSTRUCTIONS_BUTTON' | translate}}
-      </button>
-      <button color="light" class="shadow-light-button" ion-button [navPush]="aboutPage" full>{{'ABOUT_BUTTON' |
-        translate}}
-      </button>
+  <div class="make-me-center-y">
+    <div text-center>
+      <img class="team-logo" src="./assets/team-logo.png" alt="">
     </div>
-    <hr class="hr-style">
-    <p text-center>© Developerteam</p>
+
+    <div class="bottom-content">
+      <hr class="hr-style">
+      <div text-center class="button-holder">
+        <button color="light" class="shadow-light-button" ion-button [navPush]="ctgPage" full block>{{'CTG_BUTTON' |
+          translate}}
+        </button>
+        <button color="light" class="shadow-light-button" ion-button [navPush]="instructionPage" full>
+          {{'INSTRUCTIONS_BUTTON' | translate}}
+        </button>
+        <button color="light" class="shadow-light-button" ion-button [navPush]="aboutPage" full>{{'ABOUT_BUTTON' |
+          translate}}
+        </button>
+      </div>
+      <hr class="hr-style">
+      <p text-center>© Developerteam</p>
+    </div>
   </div>
 
 
