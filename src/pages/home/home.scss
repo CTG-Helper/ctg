@@ -52,7 +52,18 @@ page-home {
   .card-ios {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
     padding: 0;
+    border-radius: 6px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
   }
+
+
+  .card-ios:active {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+  }
+
+
 
   .label-ios {
     margin: 0;
@@ -102,6 +113,6 @@ page-home {
   }
 
   .margin-fixer {
-    margin-top: -19px;
+    margin-top: -21px;
   }
 }

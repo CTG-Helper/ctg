@@ -13,9 +13,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="margin-fixer">
+<ion-content>
 
-  <ion-list no-lines>
+  <ion-list no-lines class="margin-fixer">
 
 
     <!-- Segment and header 1 -->
@@ -171,7 +171,6 @@
   <ion-card text-center class="todo-card" (click)="openMeasureModal()" color="{{color}}">
     <ion-card-content>
       <p class="measure-button-title">{{ measureButtonTitle | translate}}</p>
-      <br *ngIf="measureButtonClick !== ''">
       <p class="measure-button-click" *ngIf="measureButtonClick !== ''">{{ measureButtonClick | translate }}</p>
     </ion-card-content>
   </ion-card>

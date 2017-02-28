@@ -86,10 +86,10 @@
   "RESULTBUTTON_NORMAL_CLICK": "",
 
   "RESULTBUTTON_ABNORMAL_TITLE": "Resultatet är avvikande",
-  "RESULTBUTTON_ABNORMAL_CLICK": "KLICKA HÄR FÖR ÅTGÄRDER",
+  "RESULTBUTTON_ABNORMAL_CLICK": "Klicka här för åtgärder",
 
   "RESULTBUTTON_FATAL_TITLE": "Resultatet är patologiskt",
-  "RESULTBUTTON_FATAL_CLICK": "KLICKA HÄR FÖR ÅTGÄRDER",
+  "RESULTBUTTON_FATAL_CLICK": "Klicka här för åtgärder",
 
   "CONTINUE_WITH_STANDARD_PROCEDURES": "Fortsätt med vanliga rutiner",
   "MORE_INFO": "Klicka här för åtgärder",
