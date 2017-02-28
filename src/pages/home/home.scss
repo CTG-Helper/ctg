@@ -70,6 +70,9 @@ page-home {
   .instruction-p {
     color: white;
     font-size: 16px;
+    margin-top: 0px;
+    font-style:italic;
+
   }
 
   .measure-button-title {
@@ -83,12 +86,11 @@ page-home {
   }
 
   .nav-bottom-toolbar {
-   // min-height: 76px;
+    min-height: 60px;
   }
 
   .toolbar-divider {
     min-height: 0;
-    height: 21px;
   }
 
   .item-ios {
@@ -99,4 +101,7 @@ page-home {
     padding-right: 7px;
   }
 
+  .margin-fixer {
+    margin-top: -19px;
+  }
 }

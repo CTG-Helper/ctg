@@ -4,8 +4,9 @@
       {{'MEASURES' | translate }}
     </ion-title>
     <ion-buttons start>
-      <button ion-button (click)="close()">
-        <span ion-text>{{'BACK' | translate }}</span>
+      <button ion-button icon-left (click)="close()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+        {{'BACK' | translate }}
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -21,13 +22,6 @@
       {{ measureItem | translate }}
     </li>
   </ul>
-
-  <div text-center>
-    <button ion-button icon-left (click)="close()" class="dismissButton">
-      <ion-icon name="ios-arrow-back"></ion-icon>
-      {{'BACK' | translate }}
-    </button>
-  </div>
 
 
 </ion-content>

@@ -9,11 +9,11 @@
   </ion-navbar>
   <ion-toolbar no-border color="primary" class="toolbar-divider"> <hr class="hr-style"></ion-toolbar>
   <ion-toolbar color="primary" class="nav-bottom-toolbar" no-border text-center>
-    <p style="font-style:italic;" class="instruction-p">{{currentInstruction | translate}}</p>
+    <p class="instruction-p">{{currentInstruction | translate}}</p>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="margin-fixer">
 
   <ion-list no-lines>
 
@@ -21,8 +21,8 @@
     <!-- Segment and header 1 -->
     <ion-item-group text-center>
 
-      <ion-item-divider color="light">
-        {{ 'VARIABILITY' | translate }}
+      <ion-item-divider>
+       - {{ 'VARIABILITY' | translate }}
         <ion-icon (click)="openInfoModal('variability')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
@@ -64,8 +64,8 @@
 
     <!-- Segment and header 2 -->
     <ion-item-group text-center>
-      <ion-item-divider color="light">
-        {{ 'BASELINE' | translate }}
+      <ion-item-divider>
+      -  {{ 'BASELINE' | translate }}
         <ion-icon (click)="openInfoModal('baseline')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
@@ -94,8 +94,8 @@
 
     <!-- Segment and header 3 -->
     <ion-item-group text-center>
-      <ion-item-divider color="light">
-        {{ 'DECELERATION_FREQUENCY' | translate }}
+      <ion-item-divider>
+       - {{ 'DECELERATION_FREQUENCY' | translate }}
         <ion-icon (click)="openInfoModal('decelerationsFrequency')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
@@ -117,8 +117,8 @@
 
     <!-- Segment and header 4 -->
     <ion-item-group text-center>
-      <ion-item-divider color="light">
-        {{ 'DECELERATION_FORM' | translate }}
+      <ion-item-divider>
+       - {{ 'DECELERATION_FORM' | translate }}
         <ion-icon (click)="openInfoModal('decelerationsForm')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
@@ -149,8 +149,8 @@
 
     <!-- Segment and header 5 -->
     <ion-item-group text-center>
-      <ion-item-divider color="light">
-        {{ 'ACCELERATIONS' | translate }}
+      <ion-item-divider>
+        - {{ 'ACCELERATIONS' | translate }}
         <ion-icon (click)="openInfoModal('accelerations')" name='information-circle' item-right></ion-icon>
       </ion-item-divider>
       <ion-item>
