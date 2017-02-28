@@ -15,7 +15,6 @@
 // automatically applied to the <body> element in the app.
 
 
-
 .icon-flag-english {
   background-image: url("../assets/flags/english-flag.png");
   background-size: cover;
@@ -30,9 +29,6 @@
   height: 40px;
 }
 
-.black-87 {
-  color: rgba(0, 0, 0, 0.87);
-}
 
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -62,7 +58,7 @@
   div.modal-wrapper {
     margin-left: 136px;
     width: 93% !important;
-     height: 92%;
+    height: 92%;
     top: 19px;
   }
 }

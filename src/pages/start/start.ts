@@ -21,7 +21,18 @@ export class StartPage {
   }
 
 
+  ionViewWillEnter() {
+    this.updateFlagFromChild();
+  }
+
+
   isEnglish = false;
+
+
+  updateFlagFromChild() {
+    this.isEnglish = this.translateService.currentLang == 'en';
+  }
+
 
   onLanguageChange() {
     // Toggles between true or false when pressed;

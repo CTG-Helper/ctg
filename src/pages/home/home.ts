@@ -22,6 +22,9 @@ export class HomePage implements OnInit {
   moreInfoText = "More Info";
   isNormalState = true;
   color: string = COLOR.PRIMARY;
+  shadowFixShow = false;
+  currentLang = "";
+  isEnglish = false;
 
   measureButtonTitle: string = "CHOOSE_CONDITIONS";
   measureButtonClick: string = "";
@@ -47,26 +50,29 @@ export class HomePage implements OnInit {
               private translateService: TranslateService) {
   }
 
+
   ngOnInit() {
+    this.currentLang = this.translateService.currentLang;
+    this.initLanguageValues();
     this.initTranslateSubscriber();
     this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
-
   }
 
-
-  shadowFixShow = false;
-
-
-  ionViewDidEnter() {
-    console.log("Life Cycle @  ionViewWillEnter");
-    this.shadowFixShow = true;
-
+  openMeasureModal() {
+    if (this.measuresInfoText != MEASURE.NORMAL) {
+      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
+      modal.present();
+      modal.onDidDismiss(data => {
+        this.resetAlert();
+      });
+    }
   }
 
-  ionViewWillLeave() {
-    this.shadowFixShow = false;
-
-    console.log("Life Cycle @  ionWillLeave");
+  openInfoModal(decisionName: string) {
+    let modal = this.modalCtrl.create(InformationModalPage, {
+      decisionName: decisionName
+    });
+    modal.present();
   }
 
 
@@ -118,25 +124,6 @@ export class HomePage implements OnInit {
   }
 
 
-  openMeasureModal() {
-    if (this.measuresInfoText != MEASURE.NORMAL) {
-      let modal = this.modalCtrl.create(MeasureModalPage, {color: this.color, measure: this.measuresInfoText});
-      modal.present();
-      modal.onDidDismiss(data => {
-        this.resetAlert();
-      });
-    }
-  }
-
-  openInfoModal(decisionName: string) {
-    let modal = this.modalCtrl.create(InformationModalPage, {
-      decisionName: decisionName
-    });
-    modal.present();
-  }
-
-
-
   setColorToDecelerationSegments() {
     if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
       this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
@@ -153,7 +140,6 @@ export class HomePage implements OnInit {
       this.decelerationStatus = "primary";
     }
   }
-
 
 
   resetDesicions() {
@@ -217,45 +203,45 @@ export class HomePage implements OnInit {
       this.currentInstruction = "CURRENT_INSTRUCTION_FATAL";
     }
 
-      else if ((this.baseline != "" &&
+    else if ((this.baseline != "" &&
       this.variability != "" &&
       this.decelerationsFrequency != "" &&
       this.decelerationsForm != "" &&
       this.accelerations != "") &&
       this.measuresInfoText == "normal") {
-        this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_NORMAL";
-      }
+      this.currentInstruction = "CURRENT_INSTRUCTION_FINISHED_NORMAL";
+    }
   }
 
+
   initTranslateSubscriber() {
-      this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.yesText =  this.translateService.instant("YES");
-      this.cancelText =  this.translateService.instant("CANCEL");
-      this.alertMessage =  this.translateService.instant("DO_YOU_WANT_TO_RESET_FORM");
-      this.alertTitle =  this.translateService.instant("RESET_FORM");
-
-      this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
-
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.initLanguageValues();
     });
   }
 
-  yesText = "Yes";
-  cancelText = "Cancel";
-  alertMessage = "Do you want to reset the form?";
-  alertTitle = "Reset form";
+  initLanguageValues() {
+    this.yesText = this.translateService.instant("YES");
+    this.cancelText = this.translateService.instant("CANCEL");
+    this.alertMessage = this.translateService.instant("DO_YOU_WANT_TO_RESET_FORM");
+    this.alertTitle = this.translateService.instant("RESET_FORM");
+  }
+
+
+
+  yesText = "";
+  cancelText = "";
+  alertMessage = "";
+  alertTitle = "";
 
   resetAlert() {
-
     let alert = this.alertCtrl.create({
       title: this.alertTitle,
       message: this.alertMessage,
       buttons: [
         {
           text: this.cancelText,
-          role: 'cancel',
-          handler: () => {
-
-          }
+          role: 'cancel'
         },
         {
           text: this.yesText,
@@ -269,18 +255,36 @@ export class HomePage implements OnInit {
   }
 
 
-  isEnglish = false;
-
   onLanguageChange() {
     // Toggles between true or false when pressed;
     this.isEnglish = !this.isEnglish;
-
     if (this.isEnglish) {
       this.translateService.use('en');
     } else {
       this.translateService.use('sv');
     }
+  }
+
+  ionViewWillEnter() {
+    console.log("Life Cycle @  ionViewWillEnter");
+    this.updateFlagFromChild();
+
 
   }
+
+  ionViewDidEnter() {
+    console.log("Life Cycle @  ionViewDidEnter");
+    this.shadowFixShow = true;
+  }
+
+  ionViewWillLeave() {
+    console.log("Life Cycle @  ionWillLeave");
+    this.shadowFixShow = false;
+  }
+
+  updateFlagFromChild() {
+    this.isEnglish = this.translateService.currentLang == 'en';
+  }
+
 
 }

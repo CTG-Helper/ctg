@@ -1,7 +1,9 @@
+
+
 page-start {
 
   .content {
-   background-color: #009688;
+   background-color: color($colors, primary);
   }
 
   .icon-flag-english,
@@ -17,6 +19,7 @@ page-start {
     border: 0;
     padding: 0;
     margin: 10px 0;
+    background-color: white;
   }
 
 
@@ -35,9 +38,11 @@ page-start {
     width: 204px;
   }
 
-  .hr-style{
+  .hr-style {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
+
+
 }

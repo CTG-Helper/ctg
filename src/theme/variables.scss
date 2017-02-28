@@ -4,16 +4,12 @@ $font-path: "../assets/fonts";
 
 @import "ionic.globals";
 
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
-
-
-
 
 // Named Color Variables
 // --------------------------------------------------
@@ -24,66 +20,59 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #009688,
-  secondary:  #00796B,
-  accent:     #1DE9B6,
-  danger:     #D32F2F,
-  light:      #f4f4f4,
-  dark:       #222,
-  warning:    #f4b342,
+  primary: #009688,        // 500
+  primary-light: #4DB6AC,  // 300
+  primary-dark: #00695C,  // 800
+  secondary: #00695C,      // same as dark (temp)
+  accent: #1DE9B6,
+  danger: #D32F2F,
+  light: #f4f4f4,
+  dark: #222,
+  warning: #f4b342,
   result-box: #B2DFDB,
   transparent:rgba(0, 121, 107, 0.84),
 
+
+
+  primary-text: #212121,
+  secondary-text: #757575,
+
+
+
   //instruction backgroundcolor
-  instructionColor: #919191 ,
-
+  instructionColor: #919191,
   //variability variables
-  variability1:  #f53d3d, //danger
-  variability2:  #f53d3d, //danger
-  variability3:  #009688, //normal
-  variability4:  #f53d3d, //danger
-  variability5:  #f4b342, //warning
-  variability6:  #f4b342, //warning
-  variability7:  #009688, //normal
-
+  variability1: #f53d3d, //danger
+  variability2: #f53d3d, //danger
+  variability3: #009688, //normal
+  variability4: #f53d3d, //danger
+  variability5: #f4b342, //warning
+  variability6: #f4b342, //warning
+  variability7: #009688, //normal
   //baseline variables
-  baseline1:  #f53d3d, //danger
-  baseline2:  #f4b342, //warning
-  baseline3:  #009688, //normal
-  baseline4:  #f4b342, //warning
-
+  baseline1: #f53d3d, //danger
+  baseline2: #f4b342, //warning
+  baseline3: #009688, //normal
+  baseline4: #f4b342, //warning
   // deceleration frequency variables
-  decelerationsFrequency1:  #f53d3d, //danger
-  decelerationsFrequency2:  #f4b342, //warning
-
+  decelerationsFrequency1: #f53d3d, //danger
+  decelerationsFrequency2: #f4b342, //warning
   // accelerations variables
-  accelerations1:  #009688, //normal
-  accelerations2:  #f4b342 //warning
+  accelerations1: #009688, //normal
+  accelerations2: #f4b342 //warning
 );
-
-
-
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -91,17 +80,13 @@ $colors: (
 // then be future customized. This import comes last
 // so that the above variables are used and Ionic's
 // default are overridden.
-
 @import "ionic.theme.default";
-
 
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
-
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------

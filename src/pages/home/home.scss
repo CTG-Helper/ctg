@@ -4,7 +4,6 @@ page-home {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
   }
 
-
   .segment-button {
     min-height: 7.2rem;
     padding: 20px 0;
@@ -24,6 +23,11 @@ page-home {
     cursor: pointer;
   }
 
+  .hr-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
 
   .segment-ios .segment-button,
   .segment-md .segment-button {
@@ -35,19 +39,18 @@ page-home {
     padding: 2px;
   }
 
-
   .segment-ios {
     padding: 0 10px;
   }
 
   .item-divider-ios {
-    background-color: #00695C;
+    background-color: color($colors, primary-dark);
     margin: 20px 0;
     color: white;
   }
 
   .card-ios {
-    box-shadow:  0 1px 2px rgba(0, 0, 0, 0.48);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
     padding: 0;
   }
 
@@ -64,16 +67,10 @@ page-home {
     font-size: 16px;
   }
 
-  .col-fix {
-
-  }
-
   .instruction-p {
     color: white;
     font-size: 16px;
   }
-
-
 
   .measure-button-title {
     font-size: 15px;
@@ -85,10 +82,21 @@ page-home {
     font-style: italic;
   }
 
-  .hr-style{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  .nav-bottom-toolbar {
+   // min-height: 76px;
+  }
+
+  .toolbar-divider {
+    min-height: 0;
+    height: 21px;
+  }
+
+  .item-ios {
+    padding: 0;
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-right: 7px;
   }
 
 }
