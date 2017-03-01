@@ -130,5 +130,11 @@
   "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "The result are abnormal, Press measurebutton at the bottom for instructions",
   "CURRENT_INSTRUCTION_FINISHED_NORMAL": "The result are normal, continue with standard procedures!",
 
-  "CURRENT_INSTRUCTION_FATAL": "The result are pathological, press measurebutton at the bottom for instructions!"
+  "CURRENT_INSTRUCTION_FATAL": "The result are pathological, press measurebutton at the bottom for instructions!",
+
+  "INSTRUCTION_HEADER":"Instructions",
+  "INSTRUCTION_TEXT": "In the main menu you can select the language by clicking the flag in the top right corner. To perform a CTG press the CTG Button. Want to know more about the team behind the app, press the button about us",
+  "INSTRUCTION_CTG_TEXT": "When you perform a CTG, select an option under each heading. If the results are pathological the color red appears, if the result is abnormal the color yellow is displayed, if the result is normal the color green appears. Under each heading there are also an information button that you can press to learn more about the various options and information about each measure values. In order to obtain action proposals, press the button at the bottom",
+  "MENU_HEADING": "How the main menu works",
+  "CTG_HEADING": "How to use the CTG page"
 }

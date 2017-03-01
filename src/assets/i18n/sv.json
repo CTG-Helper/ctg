@@ -124,6 +124,11 @@
   "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "Resultatet är avvikande, klicka på åtgärdsknappen längst ner för instruktioner!",
   "CURRENT_INSTRUCTION_FINISHED_NORMAL": "Resultatet är normalt, fortsätt med normalt arbete!",
 
-  "CURRENT_INSTRUCTION_FATAL": "Resultatet är patologisk, klicka på åtgärdsknappen längst ner för instruktioner!"
+  "CURRENT_INSTRUCTION_FATAL": "Resultatet är patologisk, klicka på åtgärdsknappen längst ner för instruktioner!",
 
+  "INSTRUCTION_HEADER":"Instruktioner",
+  "INSTRUCTION_TEXT": "I huvudmenyn kan du välja språk genom att trycka på flaggan uppe till höger. För att utföra ett CTG trycker du på knappen CTG. Vill du veta mer om teamet bakom applikationen trycker du på knappen om oss",
+  "INSTRUCTION_CTG_TEXT": "När du utför ett CTG ska du välja ett alternativ under varje rubrik, visar de sig att resultatet är patologisk kommer färgen röd visas, är resultatet avvikande kommer färgen gul visas, är resultatet normalt kommer färgen grön visas. Under varje rubrik finns också en informationsknapp som du kan trycka på för att läsa mer om de olika valen och om varje mätvärde. För att få fram åtgärdsförslag trycker du på knappen längst ner ",
+  "MENU_HEADING": "Hur du använder huvudmenyn",
+  "CTG_HEADING": "Hur du använder CTG sidan"
 }
