@@ -6,9 +6,12 @@
         <i [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'" class="icon-flag-english"></i>
       </button>
     </ion-buttons>
+
   </ion-navbar>
-  <ion-toolbar no-border color="primary" class="toolbar-divider"> <hr class="hr-style"></ion-toolbar>
+  <ion-toolbar no-border color="primary" class="toolbar-divider"><hr class="hr-style"></ion-toolbar>
+
   <ion-toolbar color="primary" class="nav-bottom-toolbar" no-border text-center>
+
     <p class="instruction-p">{{currentInstruction | translate}}</p>
   </ion-toolbar>
 </ion-header>
@@ -42,7 +45,7 @@
             {{'LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN' | translate }}
           </ion-segment-button>
           <ion-segment-button value="variability2" class="remove-border-bottom">
-            2-5 bpm
+            {{ '2-5_MORE_THAN_60_MIN' | translate }}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -91,6 +94,39 @@
     </ion-item-group>
     <!-- END -->
 
+    <!-- Segment and header 4 -->
+    <ion-item-group text-center>
+      <ion-item-divider>
+       - {{ 'DECELERATION_FORM' | translate }}
+        <ion-icon (click)="openInfoModal('decelerationsForm')" name='information-circle' item-right></ion-icon>
+      </ion-item-divider>
+      <ion-item>
+        <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="decelerationsForm2" class="remove-border-bottom">
+            {{'VARIABLE_DECELERATION_MILD_NONE_COMPLICATED' | translate }}
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm3" class="remove-border-bottom">
+            {{'VARIABLE_DECELERATIONS_SEVERE_COMPLICATED' | translate}}
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm4" class="remove-border-bottom">
+            {{'UNIFORM_EARLY' | translate}}
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+      <ion-item>
+        <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
+          <ion-segment-button value="decelerationsForm5">
+            {{'UNIFORM_LATE' | translate}}
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm1">
+            {{'PROLONGED_3_MIN' | translate}}
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm6">
+            {{'PROLONGED_5_MIN' | translate}}
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-item-group>
 
     <!-- Segment and header 3 -->
     <ion-item-group text-center>
@@ -115,36 +151,7 @@
     <!-- END -->
 
 
-    <!-- Segment and header 4 -->
-    <ion-item-group text-center>
-      <ion-item-divider>
-       - {{ 'DECELERATION_FORM' | translate }}
-        <ion-icon (click)="openInfoModal('decelerationsForm')" name='information-circle' item-right></ion-icon>
-      </ion-item-divider>
-      <ion-item>
-        <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="decelerationsForm2" class="remove-border-bottom">
-            {{'VARIABLE_DECELERATION_MILD_NONE_COMPLICATED' | translate }}
-          </ion-segment-button>
-          <ion-segment-button value="decelerationsForm3" class="remove-border-bottom">
-            {{'VARIABLE_DECELERATIONS_SEVERE_COMPLICATED' | translate}}
-          </ion-segment-button>
-        </ion-segment>
-      </ion-item>
-      <ion-item>
-        <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="decelerationsForm4">
-            {{'UNIFORM_EARLY' | translate}}
-          </ion-segment-button>
-          <ion-segment-button value="decelerationsForm5">
-            {{'UNIFORM_LATE' | translate}}
-          </ion-segment-button>
-          <ion-segment-button value="decelerationsForm1">
-            {{'PROLONGED' | translate}}
-          </ion-segment-button>
-        </ion-segment>
-      </ion-item>
-    </ion-item-group>
+
 
 
     <!-- Segment and header 5 -->

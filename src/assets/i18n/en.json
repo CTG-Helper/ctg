@@ -63,13 +63,14 @@
 
   "LESS_THAN_2_BPM_MORE_THAN_20_MIN": "Less than 2 bpm for more than 20 min",
   "LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN": "Less than 2 bpm between 10 and 20 min",
-  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"Less than 2 bpm for less than 10 min",
+  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"2-5 bpm for more than 20 min",
+  "2-5_MORE_THAN_60_MIN":"2-5 bpm for more than 60 min",
   "MORE_THAN_25_BPM": "More than 25 bpm",
   "SINUSOIDAL_PATTERN":"Sinusoidal pattern",
 
 
   "LESS_THAN_100_BPM": "Less than 100 bpm",
-  "160_BPM_OR_MORE": "160 bpm or more",
+  "160_BPM_OR_MORE": "More than 160 bpm",
 
 
   "NO_REPETITIVE": "No repetitive",
@@ -81,7 +82,8 @@
   "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Severe/complicated)",
   "UNIFORM_EARLY": "Consistently early",
   "UNIFORM_LATE": "Consistently Late",
-  "PROLONGED": "Prolonged",
+  "PROLONGED_3_MIN": "Prolonged for more than 3 min",
+  "PROLONGED_5_MIN": "Prolonged for more than 5 min",
 
 
   "ABSENCE": "Absent",

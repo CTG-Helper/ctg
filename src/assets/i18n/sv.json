@@ -32,7 +32,7 @@
   "VARIABILITY_SEGMENT_INFO_4":"Mellan 2 – 5 BPM",
   "VARIABILITY_SEGMENT_INFO_5":"Mellan 5 – 25 BPM",
   "VARIABILITY_SEGMENT_INFO_6":"Mer än 25 BPM",
-  "VARIABILITY_SEGMENT_INFO_7":"Sinus mönster , Sinusodialt mönster definieras som ett jämnt vågliknande mönster med periodiska förändringar av hjärtfrekvensen, utan korttidsvariabilitet och utan accelerationer.",
+  "VARIABILITY_SEGMENT_INFO_7":"Sinus mönster, Sinusodialt mönster definieras som ett jämnt vågliknande mönster med periodiska förändringar av hjärtfrekvensen, utan korttidsvariabilitet och utan accelerationer.",
 
 
   "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Ej återkommande",
@@ -58,13 +58,14 @@
 
   "LESS_THAN_2_BPM_MORE_THAN_20_MIN": "Mindre än 2 bpm för mer än 20 min",
   "LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN": "Mindre än 2 bpm mellan 10 och 20 min",
-  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"Mindre än 2 bpm för mindre än 10 min",
+  "LESS_THAN_2_BPM_FOR_LESS_THAN_10_MIN":"2-5 bpm i mer än 20 min",
+  "2-5_MORE_THAN_60_MIN":"2-5 bpm i mer än 60 min",
   "MORE_THAN_25_BPM": "Mer än 25 bpm",
   "SINUSOIDAL_PATTERN":"Sinus mönster",
 
 
   "LESS_THAN_100_BPM": "Mindre än 100 bpm",
-  "160_BPM_OR_MORE": "160 bpm eller mer",
+  "160_BPM_OR_MORE": "Mer än 160 bpm",
 
 
   "NO_REPETITIVE": "Ej återkommande",
@@ -76,7 +77,8 @@
   "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Komplicerad deceleration",
   "UNIFORM_EARLY": "Uniforma tidiga",
   "UNIFORM_LATE": "Uniforma sena",
-  "PROLONGED": "Långvarig deceleration",
+  "PROLONGED_3_MIN": "Långvarig deceleration i mer än 3 min",
+  "PROLONGED_5_MIN": "Långvarig deceleration i mer än 5 min",
 
 
   "ABSENCE": "Förekommande",
