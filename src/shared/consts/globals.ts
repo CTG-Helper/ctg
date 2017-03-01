@@ -17,6 +17,7 @@ export const DECISION = {
   DECELERATIONS_FORM_3: "decelerationsForm3",
   DECELERATIONS_FORM_4: "decelerationsForm4",
   DECELERATIONS_FORM_5: "decelerationsForm5",
+  DECELERATIONS_FORM_6: "decelerationsForm6",
 
   // Variability
   VARIABILITY_1: "variability1",
