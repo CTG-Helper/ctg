@@ -30,11 +30,11 @@
       </ion-item-divider>
       <ion-item>
         <ion-segment [color]="variability" [(ngModel)]="variability" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="variability1" class="remove-border-bottom">
-            {{'LESS_THAN_2_BPM_MORE_THAN_20_MIN' | translate }}
-          </ion-segment-button>
           <ion-segment-button value="variability6" class="remove-border-bottom">
             {{'LESS_THAN_2_BPM_BETWEEN_10_N_20_MIN' | translate }}
+          </ion-segment-button>
+          <ion-segment-button value="variability1" class="remove-border-bottom">
+            {{'LESS_THAN_2_BPM_MORE_THAN_20_MIN' | translate }}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
@@ -108,16 +108,22 @@
           <ion-segment-button value="decelerationsForm3" class="remove-border-bottom">
             {{'VARIABLE_DECELERATIONS_SEVERE_COMPLICATED' | translate}}
           </ion-segment-button>
+
+        </ion-segment>
+      </ion-item>
+      <ion-item>
+        <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
           <ion-segment-button value="decelerationsForm4" class="remove-border-bottom">
             {{'UNIFORM_EARLY' | translate}}
+          </ion-segment-button>
+          <ion-segment-button value="decelerationsForm5" class="remove-border-bottom">
+            {{'UNIFORM_LATE' | translate}}
           </ion-segment-button>
         </ion-segment>
       </ion-item>
       <ion-item>
         <ion-segment [color]="decelerationStatus" [(ngModel)]="decelerationsForm" (ngModelChange)="whatToDo()">
-          <ion-segment-button value="decelerationsForm5">
-            {{'UNIFORM_LATE' | translate}}
-          </ion-segment-button>
+
           <ion-segment-button value="decelerationsForm1">
             {{'PROLONGED_3_MIN' | translate}}
           </ion-segment-button>

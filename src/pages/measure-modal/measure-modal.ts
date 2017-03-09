@@ -35,16 +35,19 @@ export class MeasureModalPage implements OnInit {
     else if (this.measures == MEASURE.ABNORMAL) {
       this.interpretation = "ABNORMAL_INTERPRETATION";
       this.measureList = [
-        "ABNORMAL_CORRECT_REVERSIBLE_CAUSES",
-        "ABNORMAL_CONTINUE_CTG",
-        "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST"];
+        "ABNORMAL_MEASURE_1",
+        "ABNORMAL_MEASURE_2",
+        "ABNORMAL_MEASURE_3"];
     }
 
     else if (this.measures == MEASURE.FATAL) {
       this.interpretation = "FATAL_INTERPRETATION";
       this.measureList = [
-        "FATAL_CORRECT_REVERSIBLE_CAUSES",
-        "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH"];
+        "FATAL_MEASURE_1",
+        "FATAL_MEASURE_2",
+        "FATAL_MEASURE_3",
+        "FATAL_MEASURE_4",
+        "FATAL_MEASURE_5"];
     }
   }
 
