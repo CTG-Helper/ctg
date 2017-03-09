@@ -8,6 +8,7 @@ export const DECISION = {
   BASELINE_4:  "baseline4",
 
   // Decelerations Frequency
+  DECELERATIONS_FREQUENCY_1: "decelerationsFrequency1",
   DECELERATIONS_FREQUENCY_2: "decelerationsFrequency2",
   DECELERATIONS_FREQUENCY_3: "decelerationsFrequency3",
 

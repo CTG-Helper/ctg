@@ -1,5 +1,5 @@
 {
-  "HOME_TITLE": "CTG decision support",
+  "HOME_TITLE": "CTG interpretation app",
 
 
   "CTG_BUTTON": "CTG",
@@ -15,11 +15,11 @@
   "ACCELERATIONS": "Accelerations",
 
 
-  "BASELINE_INFO": "The NICHD nomenclature defines baseline fetal heart rate as: The baseline FHR is determined by approximating the mean FHR rounded to increments of 5 beats per minute (bpm) during a 10-minute window, excluding accelerations and decelerations and periods of marked FHR variability (greater than 25 bpm). There must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10-minute window, or the baseline for that period is indeterminate. In such cases, it may be necessary to refer to the previous 10-minute window for determination of the baseline. Abnormal baseline is termed bradycardia when the baseline FHR is less than 110 bpm; it is termed tachycardia when the baseline FHR is greater than 160 bpm.",
-  "DECELERATION_FREQUENCY_INFO": "Periodic refers to decelerations that are associated with contractions; episodic refers to those not associated with contractions. There are four types of decelerations as defined by the NICHD nomenclature, all of which are visually assessed",
-  "DECELERATION_FORM_INFO": "Periodic refers to decelerations that are associated with contractions; episodic refers to those not associated with contractions. There are four types of decelerations as defined by the NICHD nomenclature, all of which are visually assessed",
-  "VARIABILITY_INFO": "Moderate baseline fetal heart rate variability reflects the delivery of oxygen to the fetal central nervous system. Its presence is reassuring in predicting an absence of metabolic acidemia and hypoxic injury to the fetus at the time it is observed.[9] In contrast, the presence of mild baseline FHR variability, or an absence of FHR variability does not reliably predict fetal acidemia or hypoxia; lack of moderate baseline FHR variability may be a result of the fetal sleep cycle, or a result of medications, extreme prematurity, congenital anomalies, or pre-existing neurological injury.[9]",
-  "ACCELERATION_INFO": "The NICHD nomenclature[9] defines an acceleration as a visually apparent abrupt increase in fetal heart rate. An abrupt increase is defined as an increase from the onset of acceleration to the peak in less than or equal to 30 seconds. To be called an acceleration, the peak must be greater than or equal to 15 bpm, and the acceleration must last greater than or equal to 15 seconds from the onset to return to baseline.[12] A prolonged acceleration is greater than or equal to 2 minutes but less than 10 minutes in duration. An acceleration lasting greater than or equal to 10 minutes is defined as a baseline change. Before 32 weeks of gestation, accelerations are defined as having a peak greater than or equal to 10 bpm and a duration of greater than or equal to 10 seconds.",
+  "BASELINE_INFO": "The baseline FHR is determined by approximating the mean FHR rounded to increments of 5 beats per minute (bpm) during a 10-minute window, excluding accelerations and decelerations and periods of marked FHR variability (greater than 25 bpm). There must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10-minute window, or the baseline for that period is indeterminate. In such cases, it may be necessary to refer to the previous 10-minute window for determination of the baseline. Abnormal baseline is termed bradycardia when the baseline FHR is less than 110 bpm; it is termed tachycardia when the baseline FHR is greater than 160 bpm.",
+  "DECELERATION_FREQUENCY_INFO": "Periodic refers to decelerations that are associated with more than 50% contractions. Episodic refers to those not associated with contractions or are observed in association with less than 50% contractions. There are four types of decelerations, all of which are visually assessed",
+  "DECELERATION_FORM_INFO": "There are four types of decelerations as defined by the, all of which are visually assessed",
+  "VARIABILITY_INFO": "Moderate baseline fetal heart rate variability reflects the delivery of oxygen to the fetal central nervous system. Its presence is reassuring in predicting an absence of metabolic acidemia and hypoxic injury to the fetus at the time it is observed. In contrast, the presence of mild baseline FHR variability, or an absence of FHR variability does not reliably predict fetal acidemia or hypoxia; lack of moderate baseline FHR variability may be a result of the fetal sleep cycle, or a result of medications, extreme prematurity, congenital anomalies, or pre-existing neurological injury.",
+  "ACCELERATION_INFO": "Acceleration is a visually apparent abrupt increase in fetal heart rate. An abrupt increase is defined as an increase from the onset of acceleration to the peak in less than or equal to 30 seconds. To be called an acceleration, the peak must be greater than or equal to 15 bpm, and the acceleration must last greater than or equal to 15 seconds from the onset to return to baseline. A prolonged acceleration is greater than or equal to 2 minutes but less than 10 minutes in duration. An acceleration lasting greater than or equal to 10 minutes is defined as a baseline change. Before 32 weeks of gestation, accelerations are defined as having a peak greater than or equal to 10 bpm and a duration of greater than or equal to 10 seconds.",
 
 
 
@@ -29,30 +29,31 @@
   "BASELINE_SEGMENT_INFO_4":"160 BPM or more",
 
 
-  "VARIABILITY_SEGMENT_INFO_1":"Less than 2 BPM for more than 20 min, Sign off severe hypoxia indication for acute intervention ",
-  "VARIABILITY_SEGMENT_INFO_2":"Less than 2 BPM between 10-20 min, baby could be asleep consider waking the baby",
-  "VARIABILITY_SEGMENT_INFO_3":"Less than 2 BPM for less than 10 min, normal baby can be asleep",
-  "VARIABILITY_SEGMENT_INFO_4":"2-5 BPM. Reduced variability is amplitude<5 bpm for > 40-60 min in baseline segments, or for > 3 min during decelerations. ",
-  "VARIABILITY_SEGMENT_INFO_5":"5-25 BPM, Beat-to-beat or short-term variability is the oscillation of the FHR around the baseline in amplitude of 5 to 10 bpm. Long-term variability is a somewhat slower oscillation in heart rate and has a frequency of three to 10 cycles per minute and an amplitude of 10 to 25 bpm. ",
-  "VARIABILITY_SEGMENT_INFO_6":"More than 25 BPM, sign of saltatory pattern",
-  "VARIABILITY_SEGMENT_INFO_7":"Sinusoidal pattern is a regular, smooth, undulating pattern resembling a sinus wave, with amplitude 5-15 bpm at frequency 3-5 cycles/min, lasting for >30 min and coinciding with absent accelerations",
+  "VARIABILITY_SEGMENT_INFO_1":"Less than 2 BPM for less than 10 min, baby can be asleep and it's normal ",
+  "VARIABILITY_SEGMENT_INFO_2":"Less than 2 BPM between 10-20 min, baby could be asleep, but consider waking the baby beacuse it's suspicious",
+  "VARIABILITY_SEGMENT_INFO_3":"Less than 2 BPM for more than 20 min, could be a sign off severe hypoxia, and it's indication for acute intervention, it's pathological",
+  "VARIABILITY_SEGMENT_INFO_4":"2-5 BPM. Reduced variability is amplitude < 5 bpm for > 40-60 min in baseline segments, or for > 3 min during decelerations, it's suspicious",
+  "VARIABILITY_SEGMENT_INFO_5":"5-25 BPM, Beat-to-beat or short-term variability is the oscillation of the FHR around the baseline in amplitude of 5 to 10 bpm. Long-term variability is a somewhat slower oscillation in heart rate and has a frequency of three to 10 cycles per minute and an amplitude of 10 to 25 bpm, it's normal ",
+  "VARIABILITY_SEGMENT_INFO_6":"More than 25 BPM, sign of saltatory pattern, it's suspicious",
+  "VARIABILITY_SEGMENT_INFO_7":"Sinusoidal pattern is a regular, smooth, undulating pattern resembling a sinus wave, with amplitude 5-15 bpm at frequency 3-5 cycles/min, lasting for > 30 min and coinciding with absent accelerations, it's pathological",
 
 
 
-  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"No repetitive, normal",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"No repetitive combined with less than 50% contractions",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_2":"Repetitive variable, complicated or late consistently decelerations combined with 50% av uterus contractions or more in the last 30 min",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_3":"Repetitive variable,complicated or late consistently decelerations combined with 50% av uterus contractions or more in the last 20 min ",
 
 
-  "DECELERATION_FORM_SEGMENT_INFO_1":"Variable  decelerations Mild/non-complicated, classified according to their depth and duration , when the depth is above 80 bpm or the amplitude is less than 60 bpm and the duration is less than 30 seconds ",
-  "DECELERATION_FORM_SEGMENT_INFO_2":"Variable decelerations  Moderate severe/complicated if repetitivathe duration is longer than 60 seconds, pathological",
-  "DECELERATION_FORM_SEGMENT_INFO_3":"Consistently Early decelerations are caused by fetal head compression during uterine contraction, resulting in vagal stimulation and slowing of the heart rate ",
-  "DECELERATION_FORM_SEGMENT_INFO_4":"Consistently Late decelerations start more than 20 seconds after the onset of a contraction and take more than 30 seconds to recover to baseline values .Late decelerations are associated with uteroplacental insufficiency and are provoked by uterine contractions.",
+  "DECELERATION_FORM_SEGMENT_INFO_1":"Variable  decelerations Mild/non-complicated, classified according to the duration that is less than 60 seconds ",
+  "DECELERATION_FORM_SEGMENT_INFO_2":"Variable decelerations  Moderate severe/complicated classified according to the duration that is longer than 60 seconds, is pathological",
+  "DECELERATION_FORM_SEGMENT_INFO_3":"Early decelerations are caused by fetal head compression during uterine contraction, resulting in vagal stimulation and slowing of the heart rate ",
+  "DECELERATION_FORM_SEGMENT_INFO_4":"Late decelerations start more than 20 seconds after the onset of a contraction and take more than 30 seconds to recover to baseline values .Late decelerations are associated with uteroplacental insufficiency and are provoked by uterine contractions.",
   "DECELERATION_FORM_SEGMENT_INFO_5":"Prolonged, severe prolonged bradycardia of less than 80 bpm that lasts for three minutes or longer is an ominous finding indicating severe hypoxia.",
+  "DECELERATION_FORM_SEGMENT_INFO_6":"Prolonged, severe prolonged bradycardia of less than 80 bpm that lasts for five minutes or longer is an ominous finding indicating severe hypoxia.",
 
 
-  "ACCELERATION_SEGMENT_INFO_1":"Present",
-  "ACCELERATION_SEGMENT_INFO_2":"Absent",
+  "ACCELERATION_SEGMENT_INFO_1":"Present is normal",
+  "ACCELERATION_SEGMENT_INFO_2":"Absent in more than two hours is suspicious",
 
 
   "CHOOSE_CONDITIONS": "Please choose the conditions above to get appropriate information text",
@@ -73,20 +74,20 @@
   "160_BPM_OR_MORE": "More than 160 bpm",
 
 
-  "NO_REPETITIVE": "No repetitive",
+  "NO_REPETITIVE": "No repetitive combined with more than 50% contractions",
   "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Repetitive decelerations last 20 min",
   "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Repetitive decelerations last 30 min",
 
 
-  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variable decelerations (Mild/none complicated)",
-  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Severe/complicated)",
-  "UNIFORM_EARLY": "Consistently early",
-  "UNIFORM_LATE": "Consistently Late",
-  "PROLONGED_3_MIN": "Prolonged for more than 3 min",
-  "PROLONGED_5_MIN": "Prolonged for more than 5 min",
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variable decelerations (Mild/none complicated) in duration less than 60 sec",
+  "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Severe/complicated) in duration more than 60 sec",
+  "UNIFORM_EARLY": "Early decelerations",
+  "UNIFORM_LATE": "Late decelerations",
+  "PROLONGED_3_MIN": "Prolonged deceleration up to 3 min",
+  "PROLONGED_5_MIN": "Prolonged deceleration for more than 5 min",
 
 
-  "ABSENCE": "Absent",
+  "ABSENCE": "Absent for more than two hour",
   "PRESENCE": "Present",
 
 
@@ -114,15 +115,18 @@
   "MEASURES": "Measures",
 
   "ABNORMAL_INTERPRETATION": "Low risk for hypoxia",
-  "ABNORMAL_CORRECT_REVERSIBLE_CAUSES": "Correct reversible causes",
-  "ABNORMAL_CONTINUE_CTG": "Continue CTG",
-  "ABNORMAL_CONSIDER_STIMULATIONSTEST_SCALP_BLOODTEST": "Consider stimulation test and scalp bloodtest",
+  "ABNORMAL_MEASURE_1": "Place mother on her left side.",
+  "ABNORMAL_MEASURE_2": "Treat any hypotension and hypovolemia.",
+  "ABNORMAL_MEASURE_3": "Collect blood sample from the fetus to lactate or pH and acid-base.",
 
   "FATAL_INTERPRETATION": "Moderate/high risk for hypoxia",
-  "FATAL_CORRECT_REVERSIBLE_CAUSES": "Correct reversible causes",
-  "FATAL_PERFORM_STIMULATION_TEST_SCALP_TEST_OR_GIVE_BIRTH": "Perform stimulationtest/scalpbloodtest or deliver baby",
+  "FATAL_MEASURE_1": "Place mother on her left side.",
+  "FATAL_MEASURE_2": "Treat any hypotension and hypovolemia.",
+  "FATAL_MEASURE_3": "Turn off any oxytocin drip, give any beta Receptor Stimulant drugs.",
+  "FATAL_MEASURE_4": "Collect blood sample from the fetus to lactate or pH and acid-base.",
+  "FATAL_MEASURE_5": "If fetal risk is assessed as high despite the measures taken start the delivery as soon as possible.",
 
-  "CURRENT_INSTRUCTION_VARIABILITY": "Choose one option in variability",
+  "CURRENT_INSTRUCTION_VARIABILITY": "Choose one option in every category",
   "CURRENT_INSTRUCTION_BASELINE": "Choose one option in baseline",
   "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Choose one option in decelaration frequency",
   "CURRENT_INSTRUCTION_DECELARATIONFORM": "Choose one option in decelaration form",

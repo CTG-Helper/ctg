@@ -68,6 +68,7 @@ export class InformationModalPage implements OnInit {
         this.segmentText_3 = this.translateService.instant("DECELERATION_FORM_SEGMENT_INFO_3");
         this.segmentText_4 = this.translateService.instant("DECELERATION_FORM_SEGMENT_INFO_4");
         this.segmentText_5 = this.translateService.instant("DECELERATION_FORM_SEGMENT_INFO_5");
+        this.segmentText_6 = this.translateService.instant("DECELERATION_FORM_SEGMENT_INFO_6");
         break;
       case DECISION_TYPE.ACCELERATIONS:
         this.title = "ACCELERATIONS";
