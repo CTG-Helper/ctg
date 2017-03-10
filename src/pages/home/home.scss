@@ -121,6 +121,8 @@ page-home {
     background-size: cover;
     width: 48px;
     height: 100%;
+    border-radius: 4px;
+
   }
 
   .icon-flag-swedish {
@@ -128,6 +130,14 @@ page-home {
     background-size: cover;
     width: 48px;
     height: 100%;
+    border-radius: 4px;
+
+  }
+
+  .flag-button {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
+    padding:0;
   }
 
 }
