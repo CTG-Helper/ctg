@@ -8,8 +8,8 @@ page-start {
 
   .icon-flag-english,
   .icon-flag-swedish {
-    width: 70px;
-    height: 70px;
+    width: 88px;
+    height: 100%;
   }
 
   .shadow-light-button {
@@ -24,9 +24,19 @@ page-start {
 
 
 
+  .icon-flag-english {
+    background-image: url("../assets/flags/english-flag.png");
+    background-size: cover;
+    width: 67px;
+    height: 100%;
+  }
 
-
-
+  .icon-flag-swedish {
+    background-image: url('../assets/flags/swedish-flag.png');
+    background-size: cover;
+    width: 67px;
+    height: 100%;
+  }
 
 
 

@@ -115,4 +115,19 @@ page-home {
   .margin-fixer {
     margin-top: -21px;
   }
+
+  .icon-flag-english {
+    background-image: url("../assets/flags/english-flag.png");
+    background-size: cover;
+    width: 48px;
+    height: 100%;
+  }
+
+  .icon-flag-swedish {
+    background-image: url('../assets/flags/swedish-flag.png');
+    background-size: cover;
+    width: 48px;
+    height: 100%;
+  }
+
 }
