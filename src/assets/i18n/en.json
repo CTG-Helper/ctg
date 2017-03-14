@@ -31,15 +31,15 @@
 
   "VARIABILITY_SEGMENT_INFO_1":"Less than 2 BPM for less than 10 min, baby can be asleep and it's normal ",
   "VARIABILITY_SEGMENT_INFO_2":"Less than 2 BPM between 10-20 min, baby could be asleep, but consider waking the baby beacuse it's suspicious",
-  "VARIABILITY_SEGMENT_INFO_3":"Less than 2 BPM for more than 20 min, could be a sign off severe hypoxia, and it's indication for acute intervention, it's pathological",
+  "VARIABILITY_SEGMENT_INFO_3":"Less than 2 BPM for more than 20 min, could be a sign off severe hypoxia, and it's an indication for acute intervention, it's pathological",
   "VARIABILITY_SEGMENT_INFO_4":"2-5 BPM. Reduced variability is amplitude < 5 bpm for > 40-60 min in baseline segments, or for > 3 min during decelerations, it's suspicious",
   "VARIABILITY_SEGMENT_INFO_5":"5-25 BPM, Beat-to-beat or short-term variability is the oscillation of the FHR around the baseline in amplitude of 5 to 10 bpm. Long-term variability is a somewhat slower oscillation in heart rate and has a frequency of three to 10 cycles per minute and an amplitude of 10 to 25 bpm, it's normal ",
   "VARIABILITY_SEGMENT_INFO_6":"More than 25 BPM, sign of saltatory pattern, it's suspicious",
-  "VARIABILITY_SEGMENT_INFO_7":"Sinusoidal pattern is a regular, smooth, undulating pattern resembling a sinus wave, with amplitude 5-15 bpm at frequency 3-5 cycles/min, lasting for > 30 min and coinciding with absent accelerations, it's pathological",
+  "VARIABILITY_SEGMENT_INFO_7":"Sinusoidal pattern is a regular, smooth, undulating pattern resembling a sinus wave, with amplitude of 5-15 bpm at frequency 3-5 cycles/min, lasting for > 30 min and coinciding with absent accelerations, it's pathological",
 
 
 
-  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"No repetitive combined with less than 50% contractions",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Non repetitive combined with less than 50% contractions",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_2":"Repetitive variable, complicated or late consistently decelerations combined with 50% av uterus contractions or more in the last 30 min",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_3":"Repetitive variable,complicated or late consistently decelerations combined with 50% av uterus contractions or more in the last 20 min ",
 
@@ -47,13 +47,13 @@
   "DECELERATION_FORM_SEGMENT_INFO_1":"Variable  decelerations Mild/non-complicated, classified according to the duration that is less than 60 seconds ",
   "DECELERATION_FORM_SEGMENT_INFO_2":"Variable decelerations  Moderate severe/complicated classified according to the duration that is longer than 60 seconds, is pathological",
   "DECELERATION_FORM_SEGMENT_INFO_3":"Early decelerations are caused by fetal head compression during uterine contraction, resulting in vagal stimulation and slowing of the heart rate ",
-  "DECELERATION_FORM_SEGMENT_INFO_4":"Late decelerations start more than 20 seconds after the onset of a contraction and take more than 30 seconds to recover to baseline values .Late decelerations are associated with uteroplacental insufficiency and are provoked by uterine contractions.",
+  "DECELERATION_FORM_SEGMENT_INFO_4":"Late decelerations start more than 20 seconds after the onset of a contraction and take more than 30 seconds to recover to baseline values. Late decelerations are associated with uteroplacental insufficiency and are provoked by uterine contractions.",
   "DECELERATION_FORM_SEGMENT_INFO_5":"Prolonged, severe prolonged bradycardia of less than 80 bpm that lasts for three minutes or longer is an ominous finding indicating severe hypoxia.",
   "DECELERATION_FORM_SEGMENT_INFO_6":"Prolonged, severe prolonged bradycardia of less than 80 bpm that lasts for five minutes or longer is an ominous finding indicating severe hypoxia.",
 
 
   "ACCELERATION_SEGMENT_INFO_1":"Present is normal",
-  "ACCELERATION_SEGMENT_INFO_2":"Absent in more than two hours is suspicious",
+  "ACCELERATION_SEGMENT_INFO_2":"Absent in for more than two hours is suspicious",
 
 
   "CHOOSE_CONDITIONS": "Please choose the conditions above to get appropriate information text",
@@ -74,7 +74,7 @@
   "160_BPM_OR_MORE": "More than 160 bpm",
 
 
-  "NO_REPETITIVE": "No repetitive combined with more than 50% contractions",
+  "NO_REPETITIVE": "Non repetitive combined with more than 50% contractions",
   "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Repetitive decelerations last 20 min",
   "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Repetitive decelerations last 30 min",
 
@@ -91,7 +91,7 @@
   "PRESENCE": "Present",
 
 
-  "RESULTBUTTON_NORMAL_TITLE": "The result are normal, no special measures needed",
+  "RESULTBUTTON_NORMAL_TITLE": "The results are normal, no special measures needed",
   "RESULTBUTTON_NORMAL_CLICK": "",
 
   "RESULTBUTTON_ABNORMAL_TITLE": "The result are abnormal",
@@ -123,7 +123,7 @@
   "FATAL_MEASURE_1": "Place mother on her left side.",
   "FATAL_MEASURE_2": "Treat any hypotension and hypovolemia.",
   "FATAL_MEASURE_3": "Turn off any oxytocin drip, give any beta Receptor Stimulant drugs.",
-  "FATAL_MEASURE_4": "Collect blood sample from the fetus to lactate or pH and acid-base.",
+  "FATAL_MEASURE_4": "Collect blood sample from the fetus to lactate or PH and acid-base.",
   "FATAL_MEASURE_5": "If fetal risk is assessed as high despite the measures taken start the delivery as soon as possible.",
 
   "CURRENT_INSTRUCTION_VARIABILITY": "Choose one option in every category",
@@ -138,7 +138,19 @@
 
   "INSTRUCTION_HEADER":"Instructions",
   "INSTRUCTION_TEXT": "In the main menu you can select the language by clicking the flag in the top right corner. To perform a CTG press the CTG Button. Want to know more about the team behind the app, press the button about us",
-  "INSTRUCTION_CTG_TEXT": "When you perform a CTG, select an option under each heading. If the results are pathological the color red appears, if the result is abnormal the color yellow is displayed, if the result is normal the color green appears. Under each heading there are also an information button that you can press to learn more about the various options and information about each measure values. In order to obtain action proposals, press the button at the bottom",
+  "INSTRUCTION_CTG_TEXT": "When you perform a CTG, select an option under each heading. If the results are pathological the color red appears, if the result is abnormal the color yellow is displayed, if the result is normal the color green appears. Under each heading there is also an information button that you can press to learn more about the various options and information about each measure values. In order to obtain action proposals, press the button at the bottom",
   "MENU_HEADING": "How the main menu works",
-  "CTG_HEADING": "How to use the CTG page"
+  "CTG_HEADING": "How to use the CTG page",
+
+  "ABOUT_HEADING": "About the application",
+  "ABOUT_CONTENT_1": "The application has been developed by a study made by students at University West and a doctor from Norra Älvsborgs Länssjukhus.",
+  "ABOUT_CONTENT_2":"The application is completely free and available for anyone who would like to use it.",
+  "ABOUT_CONTENT_3":"The purpose of the application is to act as guidelines in fetal monitoring. Actions related to the guidelines provided by the applications should only be viewed as a compliment.",
+  "ABOUT_CONTENT_4":"The information is based on The International Federation of Gynecology and Obstetrics (FIGO) och Svensk förening för Obstetrik och Gynekologi (SFOG).",
+  "ABOUT_TEAM":"Developer team",
+  "ABOUT_OWNER":"Owner",
+  "ABOUT_OWNER_TEXT":"Dr. Nikolaos Andrikopoulos",
+  "ABOUT_DEVELOPER":"Developers",
+  "ABOUT_CONTACT":"Contact",
+  "ABOUT_ITALIC": "The developers of the applications holds no responsibility in the actions taken based on the guidelines provided by the application"
 }
