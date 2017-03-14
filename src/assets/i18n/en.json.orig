@@ -122,9 +122,15 @@
   "FATAL_INTERPRETATION": "Moderate/high risk for hypoxia",
   "FATAL_MEASURE_1": "Place mother on her left side.",
   "FATAL_MEASURE_2": "Treat any hypotension and hypovolemia.",
+<<<<<<< HEAD
   "FATAL_MEASURE_3": "Turn off any oxytocin infusion, give any beta Receptor Stimulant drugs.",
   "FATAL_MEASURE_4": "Evaluate the use off taking a blod sample from the fetus to measure Ph or lactate",
   "FATAL_MEASURE_5": "If fetal risk is assessed as high despite the measures taken evaluate to deliver the baby as soon as possible.",
+=======
+  "FATAL_MEASURE_3": "Turn off any oxytocin drip, give any beta Receptor Stimulant drugs.",
+  "FATAL_MEASURE_4": "Collect blood sample from the fetus to lactate or PH and acid-base.",
+  "FATAL_MEASURE_5": "If fetal risk is assessed as high despite the measures taken start the delivery as soon as possible.",
+>>>>>>> fd5324e68356abeecdf0a34213b8b67f66379f7a
 
   "CURRENT_INSTRUCTION_VARIABILITY": "Choose one option in every category",
   "CURRENT_INSTRUCTION_BASELINE": "Choose one option in baseline",
