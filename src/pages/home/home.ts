@@ -25,6 +25,7 @@ export class HomePage implements OnInit {
   shadowFixShow = false;
   currentLang = "";
   isEnglish = false;
+  instructionColor = "white"
 
   measureButtonTitle: string = "CHOOSE_CONDITIONS";
   measureButtonClick: string = "";
@@ -84,14 +85,13 @@ export class HomePage implements OnInit {
     this.setColorToDecelerationSegments();
 
     // Case Fatal, if results are pathological
-    if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 &&
-    this.baseline == DECISION.BASELINE_4) ||
-    (this.variability == DECISION.VARIABILITY_7 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 &&
-    this.decelerationsForm == DECISION.DECELERATIONS_FORM_3) ||
+    if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.baseline == DECISION.BASELINE_4) ||
+    (this.variability == DECISION.VARIABILITY_7 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_3) ||
     (this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
+    (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
       _.includes(this.case_fatal_baselines, this.baseline) ||
       _.includes(this.case_fatal_variabilitys, this.variability) ||
-      _.includes(this.case_fatal_decelerationsFrequencies, this.decelerationsFrequency)||
+      _.includes(this.case_fatal_decelerationsFrequencies, this.decelerationsFrequency) ||
       _.includes(this.case_fatal_decelerationsForms, this.decelerationsForm)) {
       this.isNormalState = false;
       this.color = COLOR.DANGER;
@@ -140,13 +140,15 @@ export class HomePage implements OnInit {
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
       this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_6 ||
-      this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) {
+      this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3)) {
       this.decelerationStatus = "danger";
     }
     else if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
       (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_2) ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 ||
+      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) {
       this.decelerationStatus = "warning";
     }
