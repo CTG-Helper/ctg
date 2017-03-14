@@ -133,5 +133,17 @@
   "INSTRUCTION_TEXT": "I huvudmenyn kan du välja språk genom att trycka på flaggan uppe till höger. För att utföra ett CTG trycker du på knappen CTG. Vill du veta mer om teamet bakom applikationen trycker du på knappen om oss",
   "INSTRUCTION_CTG_TEXT": "När du utför ett CTG ska du välja ett alternativ under varje rubrik, visar de sig att resultatet är patologisk kommer färgen röd visas, är resultatet avvikande kommer färgen gul visas, är resultatet normalt kommer färgen grön visas. Under varje rubrik finns också en informationsknapp som du kan trycka på för att läsa mer om de olika valen och om varje mätvärde. För att få fram åtgärdsförslag trycker du på knappen längst ner ",
   "MENU_HEADING": "Hur du använder huvudmenyn",
-  "CTG_HEADING": "Hur du använder CTG sidan"
+  "CTG_HEADING": "Hur du använder CTG sidan",
+
+  "ABOUT_HEADING": "Om applikationen",
+  "ABOUT_CONTENT_1": "Applikationen har utvecklas genom en studie i samarbete mellan läkare från Norra Älvsborgs Länssjukhus och studenter på Högskolan Väst i Trollhättan, Sverige.",
+  "ABOUT_CONTENT_2":"Applikationen är helt gratis och finns att ladda ned från App Store, Google Play samt Windows Store.",
+  "ABOUT_CONTENT_3":"Syfte med applikationen är att hjälpa vårdgivare genom förenklad och mer strukturerad CTG-bedömning. Åtgärder relaterade till CTG-avläsning förslås av applikationen. Applikationen skall endast ses som ett komplement till användares bedömningsförmåga.",
+  "ABOUT_CONTENT_4":"Applikationen baseras på information från The International Federation of Gynecology and Obstetrics (FIGO) och Svensk förening för Obstetrik och Gynekologi (SFOG).",
+  "ABOUT_TEAM":"Projektgrupp",
+  "ABOUT_OWNER":"Ägare",
+  "ABOUT_OWNER_TEXT":"Specialistläkare Ob/Gyn Nikolaos Andrikopoulos",
+  "ABOUT_DEVELOPER":"Utvecklare",
+  "ABOUT_CONTACT":"Kontakt",
+  "ABOUT_ITALIC": "Utvecklare av applikation ansvarar ej för beslut som tas vid förlossningsarbete"
 }
