@@ -2,28 +2,25 @@
   <ion-navbar color="primary">
     <ion-title>{{ 'HOME_TITLE' | translate }}</ion-title>
     <ion-buttons end>
-      <button ion-button class="flag-button" (click)="onLanguageChange()">
-        <i [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'" class="icon-flag-english"></i>
-      </button>
+      <div style="width: 45px; height: 40px" [ngClass]="isEnglish ? 'icon-flag-swedish' : 'icon-flag-english'" (click)="onLanguageChange()">
+      </div>
     </ion-buttons>
 
   </ion-navbar>
   <ion-toolbar no-border color="primary" class="toolbar-divider"><hr class="hr-style"></ion-toolbar>
 
   <ion-toolbar color="primary" class="nav-bottom-toolbar" no-border text-center>
-
-    <p class="instruction-p" >{{currentInstruction | translate}}</p>
+    <div  [ngClass]="measuresInfoText === 'fatal' ? 'test' : ''">
+      <p class="instruction-p">{{currentInstruction | translate}}</p>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-list no-lines class="margin-fixer">
-
-
     <!-- Segment and header 1 -->
     <ion-item-group text-center>
-
       <ion-item-divider>
        - {{ 'VARIABILITY' | translate }}
         <ion-icon (click)="openInfoModal('variability')" name='information-circle' item-right></ion-icon>
