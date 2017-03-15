@@ -41,7 +41,7 @@ export class HomePage implements OnInit {
   // Arrays with the abnormal conditions to check against to see if the current status is abnormal
   case_abnormal_baselines = [DECISION.BASELINE_2, DECISION.BASELINE_4];
   case_abnormal_variabilitys = [DECISION.VARIABILITY_5, DECISION.VARIABILITY_6, DECISION.VARIABILITY_7];
-  case_abnormal_decelerationsFrequencies = [DECISION.DECELERATIONS_FREQUENCY_3];
+  case_abnormal_decelerationsFrequencies = [];
   case_abnormal_decelerationsForms = [DECISION.DECELERATIONS_FORM_1];
   case_abnormal_accelerations = [DECISION.ACCELERATIONS_2];
 
@@ -87,6 +87,9 @@ export class HomePage implements OnInit {
     (this.variability == DECISION.VARIABILITY_7 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_3) ||
     (this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
     (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
+    (this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
+    (this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
+    (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_5) ||
       _.includes(this.case_fatal_baselines, this.baseline) ||
       _.includes(this.case_fatal_variabilitys, this.variability) ||
       _.includes(this.case_fatal_decelerationsFrequencies, this.decelerationsFrequency) ||
@@ -139,19 +142,18 @@ export class HomePage implements OnInit {
       this.baseline == DECISION.BASELINE_4) ||
       (this.variability == DECISION.VARIABILITY_7 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 &&
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_3) ||
+      (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_5) ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_6 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
-      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3)) {
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2)) {
       this.decelerationStatus = "danger";
     }
     else if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
-      (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_2) ||
-      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 ||
       this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
-      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) {
       this.decelerationStatus = "warning";
     }
