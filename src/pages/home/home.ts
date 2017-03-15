@@ -25,7 +25,7 @@ export class HomePage implements OnInit {
   shadowFixShow = false;
   currentLang = "";
   isEnglish = false;
-  instructionColor = "white"
+  test = "red";
 
   measureButtonTitle: string = "CHOOSE_CONDITIONS";
   measureButtonClick: string = "";
@@ -79,9 +79,7 @@ export class HomePage implements OnInit {
 
 
   whatToDo() {
-    console.log(this.variability);
-    console.log(this.decelerationsForm);
-    console.log(this.decelerationsFrequency);
+
     this.setColorToDecelerationSegments();
 
     // Case Fatal, if results are pathological
@@ -128,6 +126,7 @@ export class HomePage implements OnInit {
     }
     //this.lastDesicion();
     this.generateNextStep();
+    console.log(this.measuresInfoText);
   }
 
 

@@ -11,8 +11,7 @@
   <ion-toolbar no-border color="primary" class="toolbar-divider"><hr class="hr-style"></ion-toolbar>
 
   <ion-toolbar color="primary" class="nav-bottom-toolbar" no-border text-center>
-
-    <p class="instruction-p" >{{currentInstruction | translate}}</p>
+    <p  [style.color] = "measuresInfoText == 'fatal' ? red : white" class="instruction-p">{{currentInstruction | translate}}</p>
   </ion-toolbar>
 </ion-header>
 
