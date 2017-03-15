@@ -13,9 +13,9 @@
   "ACCELERATIONS": "Accelerationer",
 
   "BASELINE_INFO":"Förändringar av forstrets hjärtfrekvens behöver inte bero på hypoxi utan på andra omständigheter hos fostret eller i dess omgivning. Som exempel kan nämnas normala förändringar i fostrets aktivitet, yttre faktorer (som tryck på fosterhuvudet under kontraktion, mammans läge, smärta, uttorkning, hyperventilering), ökad temperatur hos mamman och läkemedel.",
-  "DECELERATION_FREQUENCY_INFO":"Kombinationer av uniforma tidiga eller variabla decelerationer med uniforma sena decelerationer i anslutning till varje värk, utgör ett patologiskt mönster. Detta mönster kan ses vid hyperaktivt värkarbete, framförallt orsakat av överstimulering med oxytocin. Mönstret kan vara svårt att känna igen, och de täta decelerationerna kan ge ett falskt intryck av god variabilitet.",
-  "DECELERATION_FORM_INFO": "Variabla decelerationer är den mest vanligt förekommande typen av deceleration under förlossning. Variabla decelerationer skiljer sig från uniforma tidiga och sena decelerationer genom att de varierar i form, djup, duration och ibland i tidsrelation till kontraktionerna. Decelerationerna kan ses i början, på toppen eller slutet av kontraktionerna och ibland även mellan kontraktionerna. Amplituden och durationen kan variera från kontraktion till kontraktion. Mönstret kan förändras mycket snabbt. I samband med variabla decelerationer ses ofta pre- och postaccelerationer.",
-  "VARIABILITY_INFO":"Variabilitet utgörs av snabba variationer kring den basala hjärtfrekvensen, och mäts med amplituden i variationernas bandbredd. Normal variabilitet skall ligga mellan 5 och 25 slag/minut. Man kan skilja mellan korttids- och långtidsvariabilitet vid datoriserad tolkning. Korttidsvariabilitet är variationen i slag-till-slag-intervallet mellan två hjärtslag medan långtidsvariabiliteten är förändringar i basalfrekvensen som se under längre tid.",
+  "DECELERATION_FREQUENCY_INFO":"Frekvens av decelerationer i anslutning till varje värk, utgör ett patologiskt mönster. Detta mönster kan ses vid hyperaktivt värkarbete, framförallt orsakat av överstimulering med oxytocin och de täta decelerationerna kan ge ett falskt intryck av god variabilitet.",
+  "DECELERATION_FORM_INFO": "Variabla decelerationer är den mest vanligt förekommande typen av deceleration under förlossning. Definieras som sänkning i basalfrekvens i minst 15 slag/minut under minst 15 sekunder. Variabla decelerationer skiljer sig från uniforma tidiga och sena decelerationer genom att de varierar i form och tidsrelation till kontraktionerna. Decelerationerna kan ses i början, på toppen eller slutet av kontraktionerna och ibland även mellan kontraktionerna. Amplituden och durationen kan variera från kontraktion till kontraktion. Mönstret kan förändras mycket snabbt. I samband med variabla decelerationer ses ofta pre- och postaccelerationer.",
+  "VARIABILITY_INFO":"Variabilitet utgörs av snabba variationer kring den basala hjärtfrekvensen, och mäts med amplituden i variationernas bandbredd. Normal variabilitet skall ligga mellan 5 och 25 slag/minut. Man kan skilja mellan korttids- och långtidsvariabilitet vid datoriserad tolkning. Korttidsvariabilitet är variationen i slag-till-slag-intervallet mellan två hjärtslag medan långtidsvariabiliteten är förändringar i basalfrekvensen som ses under längre tid.",
   "ACCELERATION_INFO": "Accelerationer är en ökning av frekvensen på minst 15 slag/minut under minst 15 sekunder, orsakade av ett kortvarigt sympatikuspåslag. Accelerationer ses oftast under fostrets vakenhetsperioder i samband med fosterrörelser eller kontraktioner.",
 
 
@@ -25,8 +25,8 @@
   "BASELINE_SEGMENT_INFO_4":"Mer än 160 BPM",
 
 
-  "VARIABILITY_SEGMENT_INFO_1":"Mindre än 2 BPM för mindre än 10 minuter, barnet kan sova vilket är normalt.",
-  "VARIABILITY_SEGMENT_INFO_2":"Mindre än 2 BPM under 10 – 20 minuter är avvikande. Barnet kan dock sova, överväg att väcka barnet",
+  "VARIABILITY_SEGMENT_INFO_1":"Mindre än 2 BPM för mindre än 10 minuter, tyder på att barnet kan sova vilket är normalt.",
+  "VARIABILITY_SEGMENT_INFO_2":"Mindre än 2 BPM under 10 – 20 minuter är avvikande. Överväg att väcka barnet",
   "VARIABILITY_SEGMENT_INFO_3":"Mindre än 2 BPM för mer än 20 min är patologiskt. Defineras som upphävd variabilitet (<2 slag/min), indicerar omedelbar åtgärd, eventuell förlossning",
   "VARIABILITY_SEGMENT_INFO_4":"Mellan 2 – 5 BPM är avvikande",
   "VARIABILITY_SEGMENT_INFO_5":"Mellan 5 – 25 BPM är normalt",
@@ -117,7 +117,7 @@
   "FATAL_MEASURE_2": "Behandla eventuellt blodtrycksfall och hypovolemi.",
   "FATAL_MEASURE_3": "Stäng av eventuellt oxytocindropp, ge eventuellt betareceptorstimulerande läkemedel.",
   "FATAL_MEASURE_4": "Ta eventuellt blodprov från fostret för laktat eller pH och syra-basstatus.",
-  "FATAL_MEASURE_5": "Om risken för fostret bedöms som stor trots vidtagna åtgärder bör man förlösa patienten snarast.",
+  "FATAL_MEASURE_5": "Om risken för fostret bedöms som stor trots vidtagna åtgärder bör man förlösa snarast.",
 
   "CURRENT_INSTRUCTION_VARIABILITY": "Välj ett alternativ under varje rubrik",
   "CURRENT_INSTRUCTION_BASELINE": "Välj ett alternativ under basal hjärtfrekvens",
@@ -139,7 +139,7 @@
   "ABOUT_CONTENT_1": "Applikationen har utvecklas genom en studie i samarbete mellan läkare från Norra Älvsborgs Länssjukhus och studenter på Högskolan Väst i Trollhättan, Sverige.",
   "ABOUT_CONTENT_2":"Applikationen är helt gratis och finns att ladda ned från App Store, Google Play samt Windows Store.",
   "ABOUT_CONTENT_3":"Syfte med applikationen är att hjälpa vårdgivare genom förenklad och mer strukturerad CTG-bedömning. Åtgärder relaterade till CTG-avläsning förslås av applikationen. Applikationen skall endast ses som ett komplement till användares bedömningsförmåga.",
-  "ABOUT_CONTENT_4":"Applikationen baseras på information från The International Federation of Gynecology and Obstetrics (FIGO) och Svensk förening för Obstetrik och Gynekologi (SFOG).",
+  "ABOUT_CONTENT_4":"Applikationen baseras på information från The International Federation of Gynecology and Obstetrics (FIGO).",
   "ABOUT_TEAM":"Projektgrupp",
   "ABOUT_OWNER":"Ägare",
   "ABOUT_OWNER_TEXT":"Specialistläkare Ob/Gyn Nikolaos Andrikopoulos",
