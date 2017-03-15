@@ -34,12 +34,12 @@
   "VARIABILITY_SEGMENT_INFO_7":"Sinusodialt mönster definieras som ett jämnt vågliknande mönster med periodiska förändringar av hjärtfrekvensen, utan korttidsvariabilitet och utan accelerationer, vilket är patologiskt",
 
 
-  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Ej återkommande eller i samband med mindre än 50% av värkar",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Icke förekommande eller i samband med mindre än 50% av värkar",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_2":"Återkommande decelerationer senaste 20 min",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_3":"Återkommande decelerationer senaste 30 min",
 
 
-  "DECELERATION_FORM_SEGMENT_INFO_1":"Okomplicerade variabla decelerationer i duration mindre än 60 sek",
+  "DECELERATION_FORM_SEGMENT_INFO_1":"Icke förekommande eller okomplicerade variabla decelerationer i duration mindre än 60 sek",
   "DECELERATION_FORM_SEGMENT_INFO_2":"Komplicerade variabla decelerationer i duration mer än 60 sek",
   "DECELERATION_FORM_SEGMENT_INFO_3":"Uniforma tidiga decelerationer",
   "DECELERATION_FORM_SEGMENT_INFO_4":"Uniforma sena decelerationer",
@@ -68,12 +68,12 @@
   "160_BPM_OR_MORE": "Mer än 160 bpm",
 
 
-  "NO_REPETITIVE": "Ej återkommande eller i samband med mindre än 50% av värkar",
+  "NO_REPETITIVE": "Icke förekommande eller i samband med mindre än 50% av värkar",
   "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Återkommande decelerationer senaste 20 min",
   "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Återkommande decelerationer senaste 30 min",
 
 
-  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Okomplicerade variabla decelerationer i duration mindre än 60 sek",
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Icke förekommande eller okomplicerade variabla decelerationer i duration mindre än 60 sek",
   "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Komplicerade variabla decelerationer i duration mer än 60 sek",
   "UNIFORM_EARLY": "Uniforma tidiga decelerationer",
   "UNIFORM_LATE": "Uniforma sena decelerationer",
