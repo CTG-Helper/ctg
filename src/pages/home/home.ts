@@ -35,7 +35,7 @@ export class HomePage implements OnInit {
   // Arrays with the fatal conditions to check against to see if the current status is fatal.
   case_fatal_baselines = [DECISION.BASELINE_1];
   case_fatal_variabilitys = [DECISION.VARIABILITY_1, DECISION.VARIABILITY_2, DECISION.VARIABILITY_4];
-  case_fatal_decelerationsFrequencies = [DECISION.DECELERATIONS_FREQUENCY_2];
+  case_fatal_decelerationsFrequencies = [];
   case_fatal_decelerationsForms = [DECISION.DECELERATIONS_FORM_6];
 
   // Arrays with the abnormal conditions to check against to see if the current status is abnormal
@@ -102,6 +102,8 @@ export class HomePage implements OnInit {
 
     // Case Abnormal, if results are not that bad but bad
     else if ((this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
+      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
       _.includes(this.case_abnormal_baselines, this.baseline) ||
       _.includes(this.case_abnormal_variabilitys, this.variability) ||
       _.includes(this.case_abnormal_accelerations, this.accelerations) ||
@@ -126,7 +128,8 @@ export class HomePage implements OnInit {
     }
     //this.lastDesicion();
     this.generateNextStep();
-    console.log(this.measuresInfoText);
+    console.log(this.decelerationsFrequency);
+    console.log(this.decelerationsForm)
   }
 
 
@@ -137,7 +140,6 @@ export class HomePage implements OnInit {
       (this.variability == DECISION.VARIABILITY_7 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 &&
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_3) ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_3 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
-      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_6 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3)) {
@@ -147,6 +149,8 @@ export class HomePage implements OnInit {
       (this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 && this.decelerationsForm == DECISION.DECELERATIONS_FORM_2) ||
       (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_1 ||
+      this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2 ||
+      (this.decelerationsForm == DECISION.DECELERATIONS_FORM_4 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_2) ||
       this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3 ||
       this.decelerationsForm == DECISION.DECELERATIONS_FORM_5 && this.decelerationsFrequency == DECISION.DECELERATIONS_FREQUENCY_3) {
       this.decelerationStatus = "warning";
