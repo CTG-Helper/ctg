@@ -39,12 +39,12 @@
 
 
 
-  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Non-repetitive combined with less than 50% contractions",
+  "DECELERATION_FREQUENCY_SEGMENT_INFO_1":"Non existing or non-repetitive combined with less than 50% contractions",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_2":"Repetitive variable complicated or late decelerations that are consistently combined with 50% of the uterine contractions or more in the last 30 min",
   "DECELERATION_FREQUENCY_SEGMENT_INFO_3":"Repetitive variable complicated or late decelerations that are consistently combined with 50% of the uterine contractions or more in the last 20 min ",
 
 
-  "DECELERATION_FORM_SEGMENT_INFO_1":"Variable  decelerations Mild/non-complicated, classified according to the duration that is less than 60 seconds ",
+  "DECELERATION_FORM_SEGMENT_INFO_1":"Non existing or variable  decelerations Mild/non-complicated, classified according to the duration that is less than 60 seconds ",
   "DECELERATION_FORM_SEGMENT_INFO_2":"Variable decelerations  Moderate severe/complicated classified according to the duration that is longer than 60 seconds and is pathological when repetitive in combination with more than 50% of the uterine contractions",
   "DECELERATION_FORM_SEGMENT_INFO_3":"Early decelerations are caused by fetal head compression during uterine contraction, resulting in vagal stimulation and slowing of the heart rate and it's normal but sometimes it's hard to determine",
   "DECELERATION_FORM_SEGMENT_INFO_4":"Late decelerations start more than 20 seconds after the onset of a contraction and take more than 30 seconds to recover to baseline values. Late decelerations are associated with uteroplacental insufficiency and are provoked by uterine contractions and it's pathological.",
@@ -74,12 +74,12 @@
   "160_BPM_OR_MORE": "More than 160 bpm",
 
 
-  "NO_REPETITIVE": "Non repetitive combined with more than 50% contractions",
+  "NO_REPETITIVE": "Non existing or non repetitive combined with more than 50% contractions",
   "REPETITIVE_DECELERATIONS_LAST_20_MIN": "Repetitive decelerations last 20 min",
   "REPETITIVE_DECELERATIONS_LAST_30_MIN": "Repetitive decelerations last 30 min",
 
 
-  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Variable decelerations (Mild/none complicated) in duration less than 60 sec",
+  "VARIABLE_DECELERATION_MILD_NONE_COMPLICATED": "Non existing or variable decelerations (Mild/none complicated) in duration less than 60 sec",
   "VARIABLE_DECELERATIONS_SEVERE_COMPLICATED": "Variable decelerations (Severe/complicated) in duration more than 60 sec",
   "UNIFORM_EARLY": "Early decelerations",
   "UNIFORM_LATE": "Late decelerations",
