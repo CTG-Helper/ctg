@@ -95,10 +95,10 @@
   "RESULTBUTTON_NORMAL_CLICK": "",
 
   "RESULTBUTTON_ABNORMAL_TITLE": "The result are abnormal",
-  "RESULTBUTTON_ABNORMAL_CLICK": "CLICK HERE FOR MEASURES!",
-
+  "RESULTBUTTON_ABNORMAL_CLICK": "Click here for measures!",
+ 
   "RESULTBUTTON_FATAL_TITLE": "The result are pathological",
-  "RESULTBUTTON_FATAL_CLICK": "CLICK HERE FOR MEASURES!",
+  "RESULTBUTTON_FATAL_CLICK": "Click here for measures!",
 
   "CONTINUE_WITH_STANDARD_PROCEDURES": "Continue with standard procedures",
   "MORE_INFO": "Click here for measures",
