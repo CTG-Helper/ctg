@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams, ViewController} from 'ionic-angular';
-import {TranslateService, LangChangeEvent} from "ng2-translate";
+import { NavParams, ViewController} from 'ionic-angular';
+import {TranslateService} from "ng2-translate";
 
 @Component({
   selector: 'page-about',

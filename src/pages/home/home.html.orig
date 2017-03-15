@@ -10,18 +10,13 @@
   <ion-toolbar no-border color="primary" class="toolbar-divider"><hr class="hr-style"></ion-toolbar>
 
   <ion-toolbar color="primary" class="nav-bottom-toolbar" no-border text-center>
-
-
-    <div  *ngIf="measuresInfoText !== 'fatal'" >
+<<<<<<< HEAD
+    <div  [ngClass]="measuresInfoText === 'fatal' ? 'test' : ''">
       <p class="instruction-p">{{currentInstruction | translate}}</p>
     </div>
-
-
-    <div *ngIf="measuresInfoText === 'fatal'" class="test" (click)="openMeasureModal()">
-      <p class="instruction-p">{{currentInstruction | translate}}</p>
-    </div>
-
-
+=======
+    <p  [style.color] = "measuresInfoText == 'fatal' ? red : white" class="instruction-p">{{currentInstruction | translate}}</p>
+>>>>>>> 532358b2b5bf99984db789e29b498fdfd1ceb538
   </ion-toolbar>
 </ion-header>
 

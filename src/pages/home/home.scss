@@ -81,7 +81,7 @@ page-home {
   .instruction-p {
     color: white;
     font-size: 16px;
-    margin-top: 0px;
+    margin: 0;
     font-style:italic;
 
   }
@@ -119,25 +119,26 @@ page-home {
   .icon-flag-english {
     background-image: url("../assets/flags/english-flag.png");
     background-size: cover;
-    width: 48px;
+    width: 38px;
     height: 100%;
     border-radius: 4px;
-
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
   }
 
   .icon-flag-swedish {
     background-image: url('../assets/flags/swedish-flag.png');
     background-size: cover;
-    width: 48px;
+    width: 38px;
     height: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
     border-radius: 4px;
-
   }
 
-  .flag-button {
+  .test {
+    background-color: #D32F2F;
+    padding: 5px 5px;
     border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.48);
-    padding:0;
+    margin: 0 29px;
   }
 
   .fatal-color {
