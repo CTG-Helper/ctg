@@ -99,8 +99,6 @@ export class HomePage implements OnInit {
       this.measuresInfoText = MEASURE.FATAL;
       this.measureButtonTitle = "RESULTBUTTON_FATAL_TITLE";
       this.measureButtonClick = "RESULTBUTTON_FATAL_CLICK";
-      console.log(this.measureButtonTitle);
-      console.log(this.measureButtonClick);
     }
 
     // Case Abnormal, if results are not that bad but bad
@@ -126,13 +124,9 @@ export class HomePage implements OnInit {
       this.measureButtonTitle = "RESULTBUTTON_NORMAL_TITLE";
       this.measureButtonClick = "";
       this.isNormalState = true;
-      console.log(this.measureButtonTitle);
-      console.log(this.measureButtonClick);
     }
     //this.lastDesicion();
     this.generateNextStep();
-    console.log(this.decelerationsFrequency);
-    console.log(this.decelerationsForm)
   }
 
 
@@ -287,19 +281,14 @@ export class HomePage implements OnInit {
   }
 
   ionViewWillEnter() {
-    console.log("Life Cycle @  ionViewWillEnter");
     this.updateFlagFromChild();
-
-
   }
 
   ionViewDidEnter() {
-    console.log("Life Cycle @  ionViewDidEnter");
     this.shadowFixShow = true;
   }
 
   ionViewWillLeave() {
-    console.log("Life Cycle @  ionWillLeave");
     this.shadowFixShow = false;
   }
 

@@ -11,7 +11,7 @@ import {StartPage} from "../pages/start/start";
 export class MyApp {
   rootPage = StartPage;
 
-  defaultLanguage = "sv";
+  defaultLanguage = "en";
 
   constructor(platform: Platform, translateService: TranslateService) {
     platform.ready().then(() => {

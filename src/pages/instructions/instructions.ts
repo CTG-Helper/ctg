@@ -22,16 +22,11 @@ export class InstructionsPage implements OnInit {
 
   ngOnInit() {
     this.viewCtrl.setBackButtonText(this.translateService.instant('BACK'));
-    this.initText();
     this.instructionHeader = this.translateService.instant("INSTRUCTION_HEADER");
     this.instructionText = this.translateService.instant("INSTRUCTION_TEXT");
     this.instructionCtgText = this.translateService.instant("INSTRUCTION_CTG_TEXT");
     this.menuHeading = this.translateService.instant("MENU_HEADING");
     this.ctgHeading = this.translateService.instant("CTG_HEADING");
-  }
-
-  initText() {
-
   }
 
 
