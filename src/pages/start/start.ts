@@ -14,19 +14,15 @@ export class StartPage {
   ctgPage = HomePage;
   aboutPage = AboutPage;
   instructionPage = InstructionsPage;
+  isEnglish = true;
 
 
   constructor(private translateService: TranslateService) {
   }
 
-
   ionViewWillEnter() {
     this.updateFlagFromChild();
   }
-
-
-  isEnglish = true;
-
 
   updateFlagFromChild() {
     this.isEnglish = this.translateService.currentLang == 'en';
