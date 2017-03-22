@@ -25,7 +25,7 @@ export class StartPage {
   }
 
 
-  isEnglish = false;
+  isEnglish = true;
 
 
   updateFlagFromChild() {

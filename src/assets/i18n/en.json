@@ -96,7 +96,7 @@
 
   "RESULTBUTTON_ABNORMAL_TITLE": "The result are abnormal",
   "RESULTBUTTON_ABNORMAL_CLICK": "Click here for measures!",
- 
+
   "RESULTBUTTON_FATAL_TITLE": "The result are pathological",
   "RESULTBUTTON_FATAL_CLICK": "Click here for measures!",
 
@@ -131,7 +131,7 @@
   "CURRENT_INSTRUCTION_DECELARATIONFREQUENCY": "Choose one option in decelaration frequency",
   "CURRENT_INSTRUCTION_DECELARATIONFORM": "Choose one option in decelaration form",
   "CURRENT_INSTRUCTION_ACCELARATIONS": "Choose one option in accelerations",
-  "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "The result are abnormal, Press measure button at the bottom for instructions",
+  "CURRENT_INSTRUCTION_FINISHED_ABNORMAL": "The result are abnormal, Press here or measure button at the bottom for instructions",
   "CURRENT_INSTRUCTION_FINISHED_NORMAL": "The result are normal, continue with standard procedures!",
 
   "CURRENT_INSTRUCTION_FATAL": "The result are pathological, press measure button at the bottom for instructions!",
